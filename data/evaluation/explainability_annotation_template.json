@@ -1,0 +1,190 @@
+[
+  {
+    "query_id": "Q01",
+    "query": "How can attackers execute commands using PowerShell?",
+    "expected_mitre_ids": [
+      "T1059.001"
+    ],
+    "retrieved_ids": [
+      "T1086",
+      "T1059.001",
+      "T1504",
+      "T1546.013",
+      "T1059"
+    ],
+    "evidence_relevant": null,
+    "evidence_sufficient": null,
+    "graph_support_valid": null,
+    "explanation_faithful": null,
+    "annotator_notes": ""
+  },
+  {
+    "query_id": "Q02",
+    "query": "What MITRE technique represents Windows Command Shell execution?",
+    "expected_mitre_ids": [
+      "T1059.003"
+    ],
+    "retrieved_ids": [
+      "T1059.003",
+      "T1059",
+      "T1202",
+      "T1059.004"
+    ],
+    "evidence_relevant": null,
+    "evidence_sufficient": null,
+    "graph_support_valid": null,
+    "explanation_faithful": null,
+    "annotator_notes": ""
+  },
+  {
+    "query_id": "Q03",
+    "query": "Which technique involves injecting code into another running process?",
+    "expected_mitre_ids": [
+      "T1055"
+    ],
+    "retrieved_ids": [
+      "T1055",
+      "T1055.002",
+      "T1055.012",
+      "T1055.001",
+      "T1055.003"
+    ],
+    "evidence_relevant": null,
+    "evidence_sufficient": null,
+    "graph_support_valid": null,
+    "explanation_faithful": null,
+    "annotator_notes": ""
+  },
+  {
+    "query_id": "Q04",
+    "query": "Which MITRE technique covers credential dumping from operating systems?",
+    "expected_mitre_ids": [
+      "T1003"
+    ],
+    "retrieved_ids": [
+      "T1003",
+      "T1552",
+      "T1056.001",
+      "T1110.004",
+      "T1003.001"
+    ],
+    "evidence_relevant": null,
+    "evidence_sufficient": null,
+    "graph_support_valid": null,
+    "explanation_faithful": null,
+    "annotator_notes": ""
+  },
+  {
+    "query_id": "Q05",
+    "query": "What technique represents phishing attacks?",
+    "expected_mitre_ids": [
+      "T1566"
+    ],
+    "retrieved_ids": [
+      "T1566",
+      "T1598",
+      "T1598.004",
+      "T1598.003",
+      "T1566.004"
+    ],
+    "evidence_relevant": null,
+    "evidence_sufficient": null,
+    "graph_support_valid": null,
+    "explanation_faithful": null,
+    "annotator_notes": ""
+  },
+  {
+    "query_id": "Q06",
+    "query": "Which technique involves attackers using legitimate accounts?",
+    "expected_mitre_ids": [
+      "T1078"
+    ],
+    "retrieved_ids": [
+      "T1586",
+      "T1586.002",
+      "T1657",
+      "T1586.001",
+      "T1684.001"
+    ],
+    "evidence_relevant": null,
+    "evidence_sufficient": null,
+    "graph_support_valid": null,
+    "explanation_faithful": null,
+    "annotator_notes": ""
+  },
+  {
+    "query_id": "Q07",
+    "query": "Which MITRE technique represents remote services used by attackers?",
+    "expected_mitre_ids": [
+      "T1021"
+    ],
+    "retrieved_ids": [
+      "T1210",
+      "T1563",
+      "T1108",
+      "T1583.004",
+      "T1133"
+    ],
+    "evidence_relevant": null,
+    "evidence_sufficient": null,
+    "graph_support_valid": null,
+    "explanation_faithful": null,
+    "annotator_notes": ""
+  },
+  {
+    "query_id": "Q08",
+    "query": "Which technique is used to transfer tools or files into a compromised system?",
+    "expected_mitre_ids": [
+      "T1105"
+    ],
+    "retrieved_ids": [
+      "T1570",
+      "T1105",
+      "T1070.004",
+      "T1608.002",
+      "T1071.002"
+    ],
+    "evidence_relevant": null,
+    "evidence_sufficient": null,
+    "graph_support_valid": null,
+    "explanation_faithful": null,
+    "annotator_notes": ""
+  },
+  {
+    "query_id": "Q09",
+    "query": "Which technique involves scheduled tasks or jobs for persistence?",
+    "expected_mitre_ids": [
+      "T1053"
+    ],
+    "retrieved_ids": [
+      "T1168",
+      "T1053.007",
+      "T1053",
+      "T1053.003",
+      "T1053.001"
+    ],
+    "evidence_relevant": null,
+    "evidence_sufficient": null,
+    "graph_support_valid": null,
+    "explanation_faithful": null,
+    "annotator_notes": ""
+  },
+  {
+    "query_id": "Q10",
+    "query": "Which MITRE technique represents command and scripting interpreter activity?",
+    "expected_mitre_ids": [
+      "T1059"
+    ],
+    "retrieved_ids": [
+      "T1059",
+      "T1202",
+      "T1064",
+      "T1027.010"
+    ],
+    "evidence_relevant": null,
+    "evidence_sufficient": null,
+    "graph_support_valid": null,
+    "explanation_faithful": null,
+    "annotator_notes": ""
+  }
+]

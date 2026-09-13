@@ -1,0 +1,378 @@
+{
+  "overall_metrics": {
+    "total_queries_evaluated": 10,
+    "total_retrieved_items": 50,
+    "supported_retrieved_items": 50,
+    "evidence_coverage": 1.0,
+    "total_evidence_blocks": 100,
+    "identifiable_provenance_blocks": 100,
+    "provenance_coverage": 1.0,
+    "attack_mapping_coverage_top5": 0.8,
+    "attack_mapping_coverage_any_layer": 1.0,
+    "graph_support_coverage": 1.0,
+    "multihop_path_coverage": 1.0,
+    "avg_evidence_items_per_query": 10.0,
+    "avg_relationships_per_query": 54.5,
+    "avg_attack_paths_per_query": 21.6
+  },
+  "queries": [
+    {
+      "query_id": "Q01",
+      "query": "How can attackers execute commands using PowerShell?",
+      "expected_mitre_ids": [
+        "T1059.001"
+      ],
+      "retrieved_mitre_ids": [
+        "T1086",
+        "T1059.001",
+        "T1504",
+        "T1546.013",
+        "T1059"
+      ],
+      "retrieved_count": 5,
+      "supported_retrieved_count": 5,
+      "query_evidence_coverage": 1.0,
+      "evidence_count": 10,
+      "provenance_count": 10,
+      "query_provenance_coverage": 1.0,
+      "relationship_count": 55,
+      "attack_path_count": 37,
+      "expected_in_top5": true,
+      "expected_in_graph_evidence": true,
+      "expected_in_attack_paths": false,
+      "has_graph_support": true,
+      "has_multihop_support": true,
+      "provenance_sources": [
+        "MITRE_VECTOR",
+        "NEO4J_GRAPH"
+      ],
+      "limitations": [
+        "Static vector database snapshot from MITRE Enterprise ATT&CK v14.1",
+        "Graph neighbor expansion capped at 10 hops/relationships per entity",
+        "Qualitative relevance requires human domain expert validation"
+      ]
+    },
+    {
+      "query_id": "Q02",
+      "query": "What MITRE technique represents Windows Command Shell execution?",
+      "expected_mitre_ids": [
+        "T1059.003"
+      ],
+      "retrieved_mitre_ids": [
+        "T1059.003",
+        "T1059",
+        "T1202",
+        "T1059.004"
+      ],
+      "retrieved_count": 5,
+      "supported_retrieved_count": 5,
+      "query_evidence_coverage": 1.0,
+      "evidence_count": 10,
+      "provenance_count": 10,
+      "query_provenance_coverage": 1.0,
+      "relationship_count": 54,
+      "attack_path_count": 16,
+      "expected_in_top5": true,
+      "expected_in_graph_evidence": true,
+      "expected_in_attack_paths": false,
+      "has_graph_support": true,
+      "has_multihop_support": true,
+      "provenance_sources": [
+        "MITRE_VECTOR",
+        "NEO4J_GRAPH"
+      ],
+      "limitations": [
+        "Static vector database snapshot from MITRE Enterprise ATT&CK v14.1",
+        "Graph neighbor expansion capped at 10 hops/relationships per entity",
+        "Qualitative relevance requires human domain expert validation"
+      ]
+    },
+    {
+      "query_id": "Q03",
+      "query": "Which technique involves injecting code into another running process?",
+      "expected_mitre_ids": [
+        "T1055"
+      ],
+      "retrieved_mitre_ids": [
+        "T1055",
+        "T1055.002",
+        "T1055.012",
+        "T1055.001",
+        "T1055.003"
+      ],
+      "retrieved_count": 5,
+      "supported_retrieved_count": 5,
+      "query_evidence_coverage": 1.0,
+      "evidence_count": 10,
+      "provenance_count": 10,
+      "query_provenance_coverage": 1.0,
+      "relationship_count": 64,
+      "attack_path_count": 23,
+      "expected_in_top5": true,
+      "expected_in_graph_evidence": true,
+      "expected_in_attack_paths": false,
+      "has_graph_support": true,
+      "has_multihop_support": true,
+      "provenance_sources": [
+        "MITRE_VECTOR",
+        "NEO4J_GRAPH"
+      ],
+      "limitations": [
+        "Static vector database snapshot from MITRE Enterprise ATT&CK v14.1",
+        "Graph neighbor expansion capped at 10 hops/relationships per entity",
+        "Qualitative relevance requires human domain expert validation"
+      ]
+    },
+    {
+      "query_id": "Q04",
+      "query": "Which MITRE technique covers credential dumping from operating systems?",
+      "expected_mitre_ids": [
+        "T1003"
+      ],
+      "retrieved_mitre_ids": [
+        "T1003",
+        "T1552",
+        "T1056.001",
+        "T1110.004",
+        "T1003.001"
+      ],
+      "retrieved_count": 5,
+      "supported_retrieved_count": 5,
+      "query_evidence_coverage": 1.0,
+      "evidence_count": 10,
+      "provenance_count": 10,
+      "query_provenance_coverage": 1.0,
+      "relationship_count": 63,
+      "attack_path_count": 23,
+      "expected_in_top5": true,
+      "expected_in_graph_evidence": true,
+      "expected_in_attack_paths": false,
+      "has_graph_support": true,
+      "has_multihop_support": true,
+      "provenance_sources": [
+        "MITRE_VECTOR",
+        "NEO4J_GRAPH"
+      ],
+      "limitations": [
+        "Static vector database snapshot from MITRE Enterprise ATT&CK v14.1",
+        "Graph neighbor expansion capped at 10 hops/relationships per entity",
+        "Qualitative relevance requires human domain expert validation"
+      ]
+    },
+    {
+      "query_id": "Q05",
+      "query": "What technique represents phishing attacks?",
+      "expected_mitre_ids": [
+        "T1566"
+      ],
+      "retrieved_mitre_ids": [
+        "T1566",
+        "T1598",
+        "T1598.004",
+        "T1598.003",
+        "T1566.004"
+      ],
+      "retrieved_count": 5,
+      "supported_retrieved_count": 5,
+      "query_evidence_coverage": 1.0,
+      "evidence_count": 10,
+      "provenance_count": 10,
+      "query_provenance_coverage": 1.0,
+      "relationship_count": 57,
+      "attack_path_count": 19,
+      "expected_in_top5": true,
+      "expected_in_graph_evidence": true,
+      "expected_in_attack_paths": false,
+      "has_graph_support": true,
+      "has_multihop_support": true,
+      "provenance_sources": [
+        "MITRE_VECTOR",
+        "NEO4J_GRAPH"
+      ],
+      "limitations": [
+        "Static vector database snapshot from MITRE Enterprise ATT&CK v14.1",
+        "Graph neighbor expansion capped at 10 hops/relationships per entity",
+        "Qualitative relevance requires human domain expert validation"
+      ]
+    },
+    {
+      "query_id": "Q06",
+      "query": "Which technique involves attackers using legitimate accounts?",
+      "expected_mitre_ids": [
+        "T1078"
+      ],
+      "retrieved_mitre_ids": [
+        "T1586",
+        "T1586.002",
+        "T1657",
+        "T1586.001",
+        "T1684.001"
+      ],
+      "retrieved_count": 5,
+      "supported_retrieved_count": 5,
+      "query_evidence_coverage": 1.0,
+      "evidence_count": 10,
+      "provenance_count": 10,
+      "query_provenance_coverage": 1.0,
+      "relationship_count": 63,
+      "attack_path_count": 30,
+      "expected_in_top5": false,
+      "expected_in_graph_evidence": true,
+      "expected_in_attack_paths": false,
+      "has_graph_support": true,
+      "has_multihop_support": true,
+      "provenance_sources": [
+        "MITRE_VECTOR",
+        "NEO4J_GRAPH"
+      ],
+      "limitations": [
+        "Static vector database snapshot from MITRE Enterprise ATT&CK v14.1",
+        "Graph neighbor expansion capped at 10 hops/relationships per entity",
+        "Qualitative relevance requires human domain expert validation"
+      ]
+    },
+    {
+      "query_id": "Q07",
+      "query": "Which MITRE technique represents remote services used by attackers?",
+      "expected_mitre_ids": [
+        "T1021"
+      ],
+      "retrieved_mitre_ids": [
+        "T1210",
+        "T1563",
+        "T1108",
+        "T1583.004",
+        "T1133"
+      ],
+      "retrieved_count": 5,
+      "supported_retrieved_count": 5,
+      "query_evidence_coverage": 1.0,
+      "evidence_count": 10,
+      "provenance_count": 10,
+      "query_provenance_coverage": 1.0,
+      "relationship_count": 39,
+      "attack_path_count": 7,
+      "expected_in_top5": false,
+      "expected_in_graph_evidence": true,
+      "expected_in_attack_paths": false,
+      "has_graph_support": true,
+      "has_multihop_support": true,
+      "provenance_sources": [
+        "MITRE_VECTOR",
+        "NEO4J_GRAPH"
+      ],
+      "limitations": [
+        "Static vector database snapshot from MITRE Enterprise ATT&CK v14.1",
+        "Graph neighbor expansion capped at 10 hops/relationships per entity",
+        "Qualitative relevance requires human domain expert validation"
+      ]
+    },
+    {
+      "query_id": "Q08",
+      "query": "Which technique is used to transfer tools or files into a compromised system?",
+      "expected_mitre_ids": [
+        "T1105"
+      ],
+      "retrieved_mitre_ids": [
+        "T1570",
+        "T1105",
+        "T1070.004",
+        "T1608.002",
+        "T1071.002"
+      ],
+      "retrieved_count": 5,
+      "supported_retrieved_count": 5,
+      "query_evidence_coverage": 1.0,
+      "evidence_count": 10,
+      "provenance_count": 10,
+      "query_provenance_coverage": 1.0,
+      "relationship_count": 59,
+      "attack_path_count": 16,
+      "expected_in_top5": true,
+      "expected_in_graph_evidence": true,
+      "expected_in_attack_paths": false,
+      "has_graph_support": true,
+      "has_multihop_support": true,
+      "provenance_sources": [
+        "MITRE_VECTOR",
+        "NEO4J_GRAPH"
+      ],
+      "limitations": [
+        "Static vector database snapshot from MITRE Enterprise ATT&CK v14.1",
+        "Graph neighbor expansion capped at 10 hops/relationships per entity",
+        "Qualitative relevance requires human domain expert validation"
+      ]
+    },
+    {
+      "query_id": "Q09",
+      "query": "Which technique involves scheduled tasks or jobs for persistence?",
+      "expected_mitre_ids": [
+        "T1053"
+      ],
+      "retrieved_mitre_ids": [
+        "T1168",
+        "T1053.007",
+        "T1053",
+        "T1053.003",
+        "T1053.001"
+      ],
+      "retrieved_count": 5,
+      "supported_retrieved_count": 5,
+      "query_evidence_coverage": 1.0,
+      "evidence_count": 10,
+      "provenance_count": 10,
+      "query_provenance_coverage": 1.0,
+      "relationship_count": 47,
+      "attack_path_count": 30,
+      "expected_in_top5": true,
+      "expected_in_graph_evidence": true,
+      "expected_in_attack_paths": false,
+      "has_graph_support": true,
+      "has_multihop_support": true,
+      "provenance_sources": [
+        "MITRE_VECTOR",
+        "NEO4J_GRAPH"
+      ],
+      "limitations": [
+        "Static vector database snapshot from MITRE Enterprise ATT&CK v14.1",
+        "Graph neighbor expansion capped at 10 hops/relationships per entity",
+        "Qualitative relevance requires human domain expert validation"
+      ]
+    },
+    {
+      "query_id": "Q10",
+      "query": "Which MITRE technique represents command and scripting interpreter activity?",
+      "expected_mitre_ids": [
+        "T1059"
+      ],
+      "retrieved_mitre_ids": [
+        "T1059",
+        "T1202",
+        "T1064",
+        "T1027.010"
+      ],
+      "retrieved_count": 5,
+      "supported_retrieved_count": 5,
+      "query_evidence_coverage": 1.0,
+      "evidence_count": 10,
+      "provenance_count": 10,
+      "query_provenance_coverage": 1.0,
+      "relationship_count": 44,
+      "attack_path_count": 15,
+      "expected_in_top5": true,
+      "expected_in_graph_evidence": true,
+      "expected_in_attack_paths": false,
+      "has_graph_support": true,
+      "has_multihop_support": true,
+      "provenance_sources": [
+        "MITRE_VECTOR",
+        "NEO4J_GRAPH"
+      ],
+      "limitations": [
+        "Static vector database snapshot from MITRE Enterprise ATT&CK v14.1",
+        "Graph neighbor expansion capped at 10 hops/relationships per entity",
+        "Qualitative relevance requires human domain expert validation"
+      ]
+    }
+  ]
+}

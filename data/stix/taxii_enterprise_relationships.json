@@ -1,0 +1,2819 @@
+{
+  "source": "MITRE ATT&CK TAXII 2.1",
+  "api_root": "https://attack-taxii.mitre.org/api/v21",
+  "collection_id": "x-mitre-collection--1f5f1533-f617-4ca8-9ab4-6a02367fa019",
+  "filter": "relationship",
+  "object_count": 100,
+  "objects": [
+    {
+      "id": "relationship--33b2a8e7-658a-4c00-bd88-bcc36c980012",
+      "modified": "2026-07-31T18:47:18.022Z",
+      "created": "2025-10-16T19:04:25.171Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Palo Alto SharePoint Vulnerabilities JUL 2025",
+          "description": "Unit 42. (2025, July 31). Active Exploitation of Microsoft SharePoint Vulnerabilities: Threat Brief (Updated). Retrieved October 15, 2025.",
+          "url": "https://unit42.paloaltonetworks.com/microsoft-sharepoint-cve-2025-49704-cve-2025-49706-cve-2025-53770/"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [SharePoint ToolShell Exploitation](https://attack.mitre.org/campaigns/C0058), threat actors UPX-packed malicous payloads including 4L4MD4R ransomware.(Citation: Palo Alto SharePoint Vulnerabilities JUL 2025)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--1a0576df-df21-4775-843e-844d8a58a94b",
+      "target_ref": "attack-pattern--deb98323-e13f-4b0c-8d94-175379069062",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--d87615c7-501a-4b78-87fb-ba2c1a2faffb",
+      "modified": "2026-07-31T18:47:19.501Z",
+      "created": "2022-09-07T14:14:50.343Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Talos Frankenstein June 2019",
+          "description": "Adamitis, D. et al. (2019, June 4). It's alive: Threat actors cobble together open-source pieces into monstrous Frankenstein campaign. Retrieved May 11, 2020.",
+          "url": "https://blog.talosintelligence.com/2019/06/frankenstein-campaign.html"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [Frankenstein](https://attack.mitre.org/campaigns/C0001), the threat actors deobfuscated Base64-encoded commands following the execution of a malicious script, which revealed a small script designed to obtain an additional payload.(Citation: Talos Frankenstein June 2019)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--26d9ebae-de59-427f-ae9a-349456bae4b1",
+      "target_ref": "attack-pattern--3ccef7ae-cb5e-48f6-8302-897105fbf55c",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--e9384783-49a9-4ef0-89e7-aa2f94f389df",
+      "modified": "2026-07-31T18:47:19.254Z",
+      "created": "2025-10-16T19:17:40.610Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Palo Alto SharePoint Vulnerabilities JUL 2025",
+          "description": "Unit 42. (2025, July 31). Active Exploitation of Microsoft SharePoint Vulnerabilities: Threat Brief (Updated). Retrieved October 15, 2025.",
+          "url": "https://unit42.paloaltonetworks.com/microsoft-sharepoint-cve-2025-49704-cve-2025-49706-cve-2025-53770/"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [SharePoint ToolShell Exploitation](https://attack.mitre.org/campaigns/C0058), threat actors used a loader to download and execute ransomware.(Citation: Palo Alto SharePoint Vulnerabilities JUL 2025)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--1a0576df-df21-4775-843e-844d8a58a94b",
+      "target_ref": "attack-pattern--e6919abc-99f9-4c6c-95a5-14761e7b2add",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--f5c80a6c-8bbe-449d-80fb-8c5d7035d25d",
+      "modified": "2026-07-31T21:14:22.925Z",
+      "created": "2023-03-17T15:31:03.659Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "ESET Lazarus Jun 2020",
+          "description": "Breitenbacher, D and Osis, K. (2020, June 17). OPERATION IN(TER)CEPTION: Targeted Attacks Against European Aerospace and Military Companies. Retrieved December 20, 2021.",
+          "url": "https://www.welivesecurity.com/wp-content/uploads/2020/06/ESET_Operation_Interception.pdf"
+        },
+        {
+          "source_name": "McAfee Lazarus Jul 2020",
+          "description": "Cashman, M. (2020, July 29). Operation North Star Campaign. Retrieved December 20, 2021.",
+          "url": "https://www.mcafee.com/blogs/other-blogs/mcafee-labs/operation-north-star-a-job-offer-thats-too-good-to-be-true/?hilite=%27Operation%27%2C%27North%27%2C%27Star%27"
+        },
+        {
+          "source_name": "ClearSky Lazarus Aug 2020",
+          "description": "ClearSky Research Team. (2020, August 13). Operation 'Dream Job' Widespread North Korean Espionage Campaign. Retrieved December 20, 2021.",
+          "url": "https://www.clearskysec.com/wp-content/uploads/2020/08/Dream-Job-Campaign.pdf"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "For [Operation Dream Job](https://attack.mitre.org/campaigns/C0022), [Lazarus Group](https://attack.mitre.org/groups/G0032) compromised servers to host their malicious tools.(Citation: ClearSky Lazarus Aug 2020)(Citation: ESET Lazarus Jun 2020)(Citation: McAfee Lazarus Jul 2020)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--0257b35b-93ef-4a70-80dd-ad5258e6045b",
+      "target_ref": "attack-pattern--e196b5c5-8118-4a1c-ab8a-936586ce3db5",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--9e9798ed-5cb1-4997-9701-d6adefc1bdab",
+      "modified": "2026-07-31T18:47:19.539Z",
+      "created": "2025-01-14T23:07:44.823Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Recorded Future RedDelta 2025",
+          "description": "Insikt Group. (2025, January 9). Chinese State-Sponsored RedDelta Targeted Taiwan, Mongolia, and Southeast Asia with Adapted PlugX Infection Chain. Retrieved January 14, 2025.",
+          "url": "https://go.recordedfuture.com/hubfs/reports/cta-cn-2025-0109.pdf"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "[Mustang Panda](https://attack.mitre.org/groups/G0129) activities during [RedDelta Modified PlugX Infection Chain Operations](https://attack.mitre.org/campaigns/C0047) largely focused on ways to install a variant of [PlugX](https://attack.mitre.org/software/S0013) on victim machines.(Citation: Recorded Future RedDelta 2025)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--276671b5-5425-48db-ad65-c8c2564a969b",
+      "target_ref": "malware--64fa0de0-6240-41f4-8638-f4ca7ed528fd",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--3cfb23f1-ae6c-4ba9-acf0-b5e592ea5597",
+      "modified": "2026-07-31T18:47:18.819Z",
+      "created": "2022-09-07T19:13:02.789Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Talos Frankenstein June 2019",
+          "description": "Adamitis, D. et al. (2019, June 4). It's alive: Threat actors cobble together open-source pieces into monstrous Frankenstein campaign. Retrieved May 11, 2020.",
+          "url": "https://blog.talosintelligence.com/2019/06/frankenstein-campaign.html"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [Frankenstein](https://attack.mitre.org/campaigns/C0001), the threat actors established persistence through a scheduled task using the command: `/Create /F /SC DAILY /ST 09:00 /TN WinUpdate /TR`, named \"WinUpdate\" (Citation: Talos Frankenstein June 2019)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--26d9ebae-de59-427f-ae9a-349456bae4b1",
+      "target_ref": "attack-pattern--005a06c6-14bf-4118-afa0-ebcd8aebb0c9",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--0eed42c5-98b2-409a-abaf-95915fc93d79",
+      "modified": "2026-07-31T21:14:22.401Z",
+      "created": "2023-03-17T14:56:02.234Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "McAfee Lazarus Jul 2020",
+          "description": "Cashman, M. (2020, July 29). Operation North Star Campaign. Retrieved December 20, 2021.",
+          "url": "https://www.mcafee.com/blogs/other-blogs/mcafee-labs/operation-north-star-a-job-offer-thats-too-good-to-be-true/?hilite=%27Operation%27%2C%27North%27%2C%27Star%27"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [Operation Dream Job](https://attack.mitre.org/campaigns/C0022), [Lazarus Group](https://attack.mitre.org/groups/G0032) used Windows API `ObtainUserAgentString` to obtain the victim's User-Agent and used the value to connect to their C2 server.(Citation: McAfee Lazarus Jul 2020)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--0257b35b-93ef-4a70-80dd-ad5258e6045b",
+      "target_ref": "attack-pattern--391d824f-0ef1-47a0-b0ee-c59a75e27670",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--6051e3e5-dd5c-4753-8e7d-66c2e18a044a",
+      "modified": "2026-07-31T18:47:18.289Z",
+      "created": "2025-10-16T16:26:44.041Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Microsoft SharePoint Exploit JUL 2025",
+          "description": "Microsoft Threat Intelligence. (2025, July 22). Disrupting active exploitation of on-premises SharePoint vulnerabilities. Retrieved October 15, 2025.",
+          "url": "https://www.microsoft.com/en-us/security/blog/2025/07/22/disrupting-active-exploitation-of-on-premises-sharepoint-vulnerabilities/#storm-2603"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [SharePoint ToolShell Exploitation](https://attack.mitre.org/campaigns/C0058), threat actors used [Mimikatz](https://attack.mitre.org/software/S0002) to dump LSASS memory.(Citation: Microsoft SharePoint Exploit JUL 2025)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--1a0576df-df21-4775-843e-844d8a58a94b",
+      "target_ref": "attack-pattern--65f2d882-3f41-4d48-8a06-29af77ec9f90",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--a49c8e4c-876a-4771-a1e5-f54aad2f0fcd",
+      "modified": "2026-07-31T18:47:18.837Z",
+      "created": "2025-10-16T16:14:19.534Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Microsoft SharePoint Exploit JUL 2025",
+          "description": "Microsoft Threat Intelligence. (2025, July 22). Disrupting active exploitation of on-premises SharePoint vulnerabilities. Retrieved October 15, 2025.",
+          "url": "https://www.microsoft.com/en-us/security/blog/2025/07/22/disrupting-active-exploitation-of-on-premises-sharepoint-vulnerabilities/#storm-2603"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [SharePoint ToolShell Exploitation](https://attack.mitre.org/campaigns/C0058), threat actors modified Internet Information Services (IIS) components to load suspicious .NET assemblies for persistence.(Citation: Microsoft SharePoint Exploit JUL 2025)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--1a0576df-df21-4775-843e-844d8a58a94b",
+      "target_ref": "attack-pattern--b46a801b-fd98-491c-a25a-bca25d6e3001",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--fb94932d-5286-42c4-817d-5d04f59763b2",
+      "modified": "2026-07-31T18:47:18.603Z",
+      "created": "2024-10-03T10:14:24.083Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Lumen KVBotnet 2023",
+          "description": "Black Lotus Labs. (2023, December 13). Routers Roasting On An Open Firewall: The KV-Botnet Investigation. Retrieved June 10, 2024.",
+          "url": "https://blog.lumen.com/routers-roasting-on-an-open-firewall-the-kv-botnet-investigation/"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "[KV Botnet Activity](https://attack.mitre.org/campaigns/C0035) involved removal of security tools, as well as other identified IOT malware, from compromised devices.(Citation: Lumen KVBotnet 2023)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--0c259854-4044-4f6c-ac49-118d484b3e3b",
+      "target_ref": "attack-pattern--cba37adb-d6fb-4610-b069-dd04c0643384",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--b7362262-2738-4d3f-a993-c116557a4eaa",
+      "modified": "2026-07-31T21:14:22.829Z",
+      "created": "2023-03-17T14:51:42.500Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "McAfee Lazarus Jul 2020",
+          "description": "Cashman, M. (2020, July 29). Operation North Star Campaign. Retrieved December 20, 2021.",
+          "url": "https://www.mcafee.com/blogs/other-blogs/mcafee-labs/operation-north-star-a-job-offer-thats-too-good-to-be-true/?hilite=%27Operation%27%2C%27North%27%2C%27Star%27"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [Operation Dream Job](https://attack.mitre.org/campaigns/C0022), [Lazarus Group](https://attack.mitre.org/groups/G0032) uses HTTP and HTTPS to contact actor-controlled C2 servers.(Citation: McAfee Lazarus Jul 2020) ",
+      "relationship_type": "uses",
+      "source_ref": "campaign--0257b35b-93ef-4a70-80dd-ad5258e6045b",
+      "target_ref": "attack-pattern--df8b2a25-8bdf-4856-953c-a04372b1c161",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--2a13b64a-2173-4565-aca6-bbf3edfdc499",
+      "modified": "2026-07-31T21:14:22.497Z",
+      "created": "2023-03-17T15:32:35.180Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "ESET Lazarus Jun 2020",
+          "description": "Breitenbacher, D and Osis, K. (2020, June 17). OPERATION IN(TER)CEPTION: Targeted Attacks Against European Aerospace and Military Companies. Retrieved December 20, 2021.",
+          "url": "https://www.welivesecurity.com/wp-content/uploads/2020/06/ESET_Operation_Interception.pdf"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [Operation Dream Job](https://attack.mitre.org/campaigns/C0022), [Lazarus Group](https://attack.mitre.org/groups/G0032) created fake email accounts to correspond with fake LinkedIn personas; [Lazarus Group](https://attack.mitre.org/groups/G0032) also established email accounts to match those of the victim as part of their BEC attempt.(Citation: ESET Lazarus Jun 2020)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--0257b35b-93ef-4a70-80dd-ad5258e6045b",
+      "target_ref": "attack-pattern--65013dd2-bc61-43e3-afb5-a14c4fa7437a",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--11875739-9167-4e09-8a97-0e5b19d5e795",
+      "modified": "2026-07-31T18:47:17.830Z",
+      "created": "2025-10-16T16:13:16.582Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Microsoft SharePoint Exploit JUL 2025",
+          "description": "Microsoft Threat Intelligence. (2025, July 22). Disrupting active exploitation of on-premises SharePoint vulnerabilities. Retrieved October 15, 2025.",
+          "url": "https://www.microsoft.com/en-us/security/blog/2025/07/22/disrupting-active-exploitation-of-on-premises-sharepoint-vulnerabilities/#storm-2603"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [SharePoint ToolShell Exploitation](https://attack.mitre.org/campaigns/C0058), threat actors used scheduled tasks to help establish persistence.(Citation: Microsoft SharePoint Exploit JUL 2025)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--1a0576df-df21-4775-843e-844d8a58a94b",
+      "target_ref": "attack-pattern--005a06c6-14bf-4118-afa0-ebcd8aebb0c9",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--f2443bd0-d421-4710-9375-81f55968729a",
+      "modified": "2026-07-31T18:47:19.855Z",
+      "created": "2025-01-14T22:57:05.909Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Recorded Future RedDelta 2025",
+          "description": "Insikt Group. (2025, January 9). Chinese State-Sponsored RedDelta Targeted Taiwan, Mongolia, and Southeast Asia with Adapted PlugX Infection Chain. Retrieved January 14, 2025.",
+          "url": "https://go.recordedfuture.com/hubfs/reports/cta-cn-2025-0109.pdf"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "[Mustang Panda](https://attack.mitre.org/groups/G0129) used Microsoft Management Console Snap-In Control files, or MSC files, executed via MMC to run follow-on PowerShell commands during [RedDelta Modified PlugX Infection Chain Operations](https://attack.mitre.org/campaigns/C0047).(Citation: Recorded Future RedDelta 2025)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--276671b5-5425-48db-ad65-c8c2564a969b",
+      "target_ref": "attack-pattern--ffbcfdb0-de22-4106-9ed3-fc23c8a01407",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--b8458076-fd1f-48e1-a637-57690c4fe59d",
+      "modified": "2026-07-31T21:14:22.842Z",
+      "created": "2023-03-17T15:26:43.132Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "ESET Lazarus Jun 2020",
+          "description": "Breitenbacher, D and Osis, K. (2020, June 17). OPERATION IN(TER)CEPTION: Targeted Attacks Against European Aerospace and Military Companies. Retrieved December 20, 2021.",
+          "url": "https://www.welivesecurity.com/wp-content/uploads/2020/06/ESET_Operation_Interception.pdf"
+        },
+        {
+          "source_name": "ClearSky Lazarus Aug 2020",
+          "description": "ClearSky Research Team. (2020, August 13). Operation 'Dream Job' Widespread North Korean Espionage Campaign. Retrieved December 20, 2021.",
+          "url": "https://www.clearskysec.com/wp-content/uploads/2020/08/Dream-Job-Campaign.pdf"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [Operation Dream Job](https://attack.mitre.org/campaigns/C0022), [Lazarus Group](https://attack.mitre.org/groups/G0032) used a custom build of open-source command-line dbxcli to exfiltrate stolen data to Dropbox.(Citation: ESET Lazarus Jun 2020)(Citation: ClearSky Lazarus Aug 2020)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--0257b35b-93ef-4a70-80dd-ad5258e6045b",
+      "target_ref": "attack-pattern--bf1b6176-597c-4600-bfcd-ac989670f96b",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--50ee9427-67e7-4db4-b931-1b872cd73e86",
+      "modified": "2026-07-31T18:47:19.408Z",
+      "created": "2025-01-14T23:05:51.046Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Recorded Future RedDelta 2025",
+          "description": "Insikt Group. (2025, January 9). Chinese State-Sponsored RedDelta Targeted Taiwan, Mongolia, and Southeast Asia with Adapted PlugX Infection Chain. Retrieved January 14, 2025.",
+          "url": "https://go.recordedfuture.com/hubfs/reports/cta-cn-2025-0109.pdf"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "[Mustang Panda](https://attack.mitre.org/groups/G0129) captured victim operating system type via User Agent analysis during [RedDelta Modified PlugX Infection Chain Operations](https://attack.mitre.org/campaigns/C0047).(Citation: Recorded Future RedDelta 2025)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--276671b5-5425-48db-ad65-c8c2564a969b",
+      "target_ref": "attack-pattern--354a7f88-63fb-41b5-a801-ce3b377b36f1",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--7dd876da-7f2b-4bdb-9cc1-424dd53dd6cd",
+      "modified": "2026-07-31T18:47:19.185Z",
+      "created": "2022-09-07T14:47:39.383Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Talos Frankenstein June 2019",
+          "description": "Adamitis, D. et al. (2019, June 4). It's alive: Threat actors cobble together open-source pieces into monstrous Frankenstein campaign. Retrieved May 11, 2020.",
+          "url": "https://blog.talosintelligence.com/2019/06/frankenstein-campaign.html"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [Frankenstein](https://attack.mitre.org/campaigns/C0001), the threat actors exploited CVE-2017-11882 to execute code on the victim's machine.(Citation: Talos Frankenstein June 2019)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--26d9ebae-de59-427f-ae9a-349456bae4b1",
+      "target_ref": "attack-pattern--be2dcee9-a7a7-4e38-afd6-21b31ecc3d63",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--431f7f45-8955-48d3-948a-891ed2a59c3f",
+      "modified": "2026-07-31T21:14:22.541Z",
+      "created": "2023-03-17T14:49:16.088Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "ESET Lazarus Jun 2020",
+          "description": "Breitenbacher, D and Osis, K. (2020, June 17). OPERATION IN(TER)CEPTION: Targeted Attacks Against European Aerospace and Military Companies. Retrieved December 20, 2021.",
+          "url": "https://www.welivesecurity.com/wp-content/uploads/2020/06/ESET_Operation_Interception.pdf"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [Operation Dream Job](https://attack.mitre.org/campaigns/C0022), [Lazarus Group](https://attack.mitre.org/groups/G0032) used PowerShell commands to explore the environment of compromised victims.(Citation: ESET Lazarus Jun 2020)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--0257b35b-93ef-4a70-80dd-ad5258e6045b",
+      "target_ref": "attack-pattern--970a3432-3237-47ad-bcca-7d8cbb217736",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--191aac5f-38bc-429b-8343-32eb17fa4919",
+      "modified": "2026-07-31T18:47:18.629Z",
+      "created": "2022-09-07T19:17:14.632Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Talos Frankenstein June 2019",
+          "description": "Adamitis, D. et al. (2019, June 4). It's alive: Threat actors cobble together open-source pieces into monstrous Frankenstein campaign. Retrieved May 11, 2020.",
+          "url": "https://blog.talosintelligence.com/2019/06/frankenstein-campaign.html"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [Frankenstein](https://attack.mitre.org/campaigns/C0001), the threat actors used [Empire](https://attack.mitre.org/software/S0363) to obtain the compromised machine's name.(Citation: Talos Frankenstein June 2019)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--26d9ebae-de59-427f-ae9a-349456bae4b1",
+      "target_ref": "attack-pattern--354a7f88-63fb-41b5-a801-ce3b377b36f1",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--3c7dad36-c2dc-4a9d-b0fb-fee2414512b5",
+      "modified": "2026-07-31T18:47:18.146Z",
+      "created": "2025-10-16T16:11:06.799Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Trend Micro SharePoint Attacks JUL 2025",
+          "description": " Trend Micro Research. (2022, July 22). Proactive Security Insights for SharePoint Attacks (CVE-2025-53770 and CVE-2025-53771). Retrieved October 15, 2025.",
+          "url": "https://www.trendmicro.com/en_us/research/25/g/cve-2025-53770-and-cve-2025-53771-sharepoint-attacks.html"
+        },
+        {
+          "source_name": "ESET ToolShell JUL 2025",
+          "description": "ESET Research. (2025, July 24). ToolShell: An all-you-can-eat buffet for threat actors. Retrieved October 15, 2025.",
+          "url": "https://www.welivesecurity.com/en/eset-research/toolshell-an-all-you-can-eat-buffet-for-threat-actors/"
+        },
+        {
+          "source_name": "Eye Research ToolShell JUL 2025",
+          "description": "Eye Security. (2025, July 19). SharePoint Under Siege: ToolShell Exploit (CVE-2025-49706 & CVE-2025-49704). Retrieved October 15, 2025.",
+          "url": "https://research.eye.security/sharepoint-under-siege/"
+        },
+        {
+          "source_name": "SentinelOne ToolShell JUL 2025",
+          "description": "Kenin, S. et al. (2025, July 21). SharePoint ToolShell | Zero-Day Exploited in-the-Wild Targets Enterprise Servers. Retrieved October 15, 2025.",
+          "url": "https://www.sentinelone.com/blog/sharepoint-toolshell-zero-day-exploited-in-the-wild-targets-enterprise-servers/"
+        },
+        {
+          "source_name": "Microsoft SharePoint Exploit JUL 2025",
+          "description": "Microsoft Threat Intelligence. (2025, July 22). Disrupting active exploitation of on-premises SharePoint vulnerabilities. Retrieved October 15, 2025.",
+          "url": "https://www.microsoft.com/en-us/security/blog/2025/07/22/disrupting-active-exploitation-of-on-premises-sharepoint-vulnerabilities/#storm-2603"
+        },
+        {
+          "source_name": "Palo Alto SharePoint Vulnerabilities JUL 2025",
+          "description": "Unit 42. (2025, July 31). Active Exploitation of Microsoft SharePoint Vulnerabilities: Threat Brief (Updated). Retrieved October 15, 2025.",
+          "url": "https://unit42.paloaltonetworks.com/microsoft-sharepoint-cve-2025-49704-cve-2025-49706-cve-2025-53770/"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "\nDuring [SharePoint ToolShell Exploitation](https://attack.mitre.org/campaigns/C0058), threat actors followed exploitation of SharePoint servers with installation of a malicious .aspx web shell (spinstall0.aspx) that was written to the `_layouts/15/` directory, granting persistent HTTP-based access.(Citation: Microsoft SharePoint Exploit JUL 2025)(Citation: ESET ToolShell JUL 2025)(Citation: Eye Research ToolShell JUL 2025)(Citation: Trend Micro SharePoint Attacks JUL 2025)(Citation: SentinelOne ToolShell JUL 2025)(Citation: Palo Alto SharePoint Vulnerabilities JUL 2025)\n",
+      "relationship_type": "uses",
+      "source_ref": "campaign--1a0576df-df21-4775-843e-844d8a58a94b",
+      "target_ref": "attack-pattern--5d0d3609-d06d-49e1-b9c9-b544e0c618cb",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--5e3c0815-5dc8-44a4-9dce-16bff49fb218",
+      "modified": "2026-07-31T21:14:22.616Z",
+      "created": "2023-03-17T15:09:55.636Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "ESET Lazarus Jun 2020",
+          "description": "Breitenbacher, D and Osis, K. (2020, June 17). OPERATION IN(TER)CEPTION: Targeted Attacks Against European Aerospace and Military Companies. Retrieved December 20, 2021.",
+          "url": "https://www.welivesecurity.com/wp-content/uploads/2020/06/ESET_Operation_Interception.pdf"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [Operation Dream Job](https://attack.mitre.org/campaigns/C0022), [Lazarus Group](https://attack.mitre.org/groups/G0032) digitally signed their own malware to evade detection.(Citation: ESET Lazarus Jun 2020)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--0257b35b-93ef-4a70-80dd-ad5258e6045b",
+      "target_ref": "attack-pattern--32901740-b42c-4fdd-bc02-345b5dc57082",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--36223feb-8e44-47e9-9092-d03abf148107",
+      "modified": "2026-07-31T20:48:13.519Z",
+      "created": "2024-11-20T23:24:53.469Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Dragos FROSTYGOOP 2024",
+          "description": "Mark Graham, Carolyn Ahlers, Kyle O'Meara; Dragos. (2024, July). Impact of FrostyGoop ICS Malware on Connected OT Systems. Retrieved November 20, 2024.",
+          "url": "https://hub.dragos.com/hubfs/Reports/Dragos-FrostyGoop-ICS-Malware-Intel-Brief-0724_r2.pdf"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [FrostyGoop Incident](https://attack.mitre.org/campaigns/C0041), the adversary initiated Layer Two Tunnelling Protocol (L2TP) connections to Moscow-based IP addresses.(Citation: Dragos FROSTYGOOP 2024)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--1169ff24-b35f-4d8d-8cf3-643a2834227f",
+      "target_ref": "attack-pattern--355be19c-ffc9-46d5-8d50-d6a036c675b6",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--883cf8ae-faba-4dfa-82b9-b9c09282b4e2",
+      "modified": "2026-07-31T18:47:18.160Z",
+      "created": "2024-06-10T19:13:34.146Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Lumen KVBotnet 2023",
+          "description": "Black Lotus Labs. (2023, December 13). Routers Roasting On An Open Firewall: The KV-Botnet Investigation. Retrieved June 10, 2024.",
+          "url": "https://blog.lumen.com/routers-roasting-on-an-open-firewall-the-kv-botnet-investigation/"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "[KV Botnet Activity](https://attack.mitre.org/campaigns/C0035) utilizes multiple Bash scripts during botnet installation stages, and the final botnet payload allows for running commands in the Bash shell.(Citation: Lumen KVBotnet 2023)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--0c259854-4044-4f6c-ac49-118d484b3e3b",
+      "target_ref": "attack-pattern--a9d4b653-6915-42af-98b2-5758c4ceee56",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--4b66e057-adbc-498d-99ee-156e0d17bd53",
+      "modified": "2026-07-31T21:14:22.562Z",
+      "created": "2023-03-17T13:51:05.665Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "McAfee Lazarus Nov 2020",
+          "description": "Beek, C. (2020, November 5). Operation North Star: Behind The Scenes. Retrieved December 20, 2021.",
+          "url": "https://www.mcafee.com/blogs/other-blogs/mcafee-labs/operation-north-star-behind-the-scenes/"
+        },
+        {
+          "source_name": "ESET Lazarus Jun 2020",
+          "description": "Breitenbacher, D and Osis, K. (2020, June 17). OPERATION IN(TER)CEPTION: Targeted Attacks Against European Aerospace and Military Companies. Retrieved December 20, 2021.",
+          "url": "https://www.welivesecurity.com/wp-content/uploads/2020/06/ESET_Operation_Interception.pdf"
+        },
+        {
+          "source_name": "McAfee Lazarus Jul 2020",
+          "description": "Cashman, M. (2020, July 29). Operation North Star Campaign. Retrieved December 20, 2021.",
+          "url": "https://www.mcafee.com/blogs/other-blogs/mcafee-labs/operation-north-star-a-job-offer-thats-too-good-to-be-true/?hilite=%27Operation%27%2C%27North%27%2C%27Star%27"
+        },
+        {
+          "source_name": "ClearSky Lazarus Aug 2020",
+          "description": "ClearSky Research Team. (2020, August 13). Operation 'Dream Job' Widespread North Korean Espionage Campaign. Retrieved December 20, 2021.",
+          "url": "https://www.clearskysec.com/wp-content/uploads/2020/08/Dream-Job-Campaign.pdf"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "(Citation: ClearSky Lazarus Aug 2020)(Citation: McAfee Lazarus Jul 2020)(Citation: McAfee Lazarus Nov 2020)(Citation: ESET Lazarus Jun 2020)",
+      "relationship_type": "attributed-to",
+      "source_ref": "campaign--0257b35b-93ef-4a70-80dd-ad5258e6045b",
+      "target_ref": "intrusion-set--c93fccb1-e8e8-42cf-ae33-2ad1d183913a",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--35fe4117-1f37-4968-8b9a-21ce4217516f",
+      "modified": "2026-07-31T21:14:22.514Z",
+      "created": "2023-03-17T15:28:48.190Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "ESET Lazarus Jun 2020",
+          "description": "Breitenbacher, D and Osis, K. (2020, June 17). OPERATION IN(TER)CEPTION: Targeted Attacks Against European Aerospace and Military Companies. Retrieved December 20, 2021.",
+          "url": "https://www.welivesecurity.com/wp-content/uploads/2020/06/ESET_Operation_Interception.pdf"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [Operation Dream Job](https://attack.mitre.org/campaigns/C0022), [Lazarus Group](https://attack.mitre.org/groups/G0032) acquired servers to host their malicious tools.(Citation: ESET Lazarus Jun 2020)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--0257b35b-93ef-4a70-80dd-ad5258e6045b",
+      "target_ref": "attack-pattern--60c4b628-4807-4b0b-bbf5-fdac8643c337",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--4c39d715-d631-41fc-b015-0df20d0507d5",
+      "modified": "2026-07-31T18:47:18.985Z",
+      "created": "2022-09-07T14:48:37.341Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Talos Frankenstein June 2019",
+          "description": "Adamitis, D. et al. (2019, June 4). It's alive: Threat actors cobble together open-source pieces into monstrous Frankenstein campaign. Retrieved May 11, 2020.",
+          "url": "https://blog.talosintelligence.com/2019/06/frankenstein-campaign.html"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [Frankenstein](https://attack.mitre.org/campaigns/C0001), the threat actors downloaded files and tools onto a victim machine.(Citation: Talos Frankenstein June 2019)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--26d9ebae-de59-427f-ae9a-349456bae4b1",
+      "target_ref": "attack-pattern--e6919abc-99f9-4c6c-95a5-14761e7b2add",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--e869a152-1a24-4ae6-9060-2e6cd928589f",
+      "modified": "2026-07-31T20:48:13.577Z",
+      "created": "2024-11-20T23:18:28.732Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Dragos FROSTYGOOP 2024",
+          "description": "Mark Graham, Carolyn Ahlers, Kyle O'Meara; Dragos. (2024, July). Impact of FrostyGoop ICS Malware on Connected OT Systems. Retrieved November 20, 2024.",
+          "url": "https://hub.dragos.com/hubfs/Reports/Dragos-FrostyGoop-ICS-Malware-Intel-Brief-0724_r2.pdf"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "[FrostyGoop Incident](https://attack.mitre.org/campaigns/C0041) was likely enabled by the adversary exploiting an unknown vulnerability in an external-facing router.(Citation: Dragos FROSTYGOOP 2024)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--1169ff24-b35f-4d8d-8cf3-643a2834227f",
+      "target_ref": "attack-pattern--3f886f2a-874f-4333-b794-aa6075009b1c",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--57e7d8ef-33dd-4a08-bce2-e516a9662383",
+      "modified": "2026-07-31T21:14:22.598Z",
+      "created": "2023-03-17T15:06:39.892Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "ClearSky Lazarus Aug 2020",
+          "description": "ClearSky Research Team. (2020, August 13). Operation 'Dream Job' Widespread North Korean Espionage Campaign. Retrieved December 20, 2021.",
+          "url": "https://www.clearskysec.com/wp-content/uploads/2020/08/Dream-Job-Campaign.pdf"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [Operation Dream Job](https://attack.mitre.org/campaigns/C0022), [Lazarus Group](https://attack.mitre.org/groups/G0032) used tools that collected `GetTickCount` and `GetSystemTimeAsFileTime` data to detect sandbox or VMware services.(Citation: ClearSky Lazarus Aug 2020)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--0257b35b-93ef-4a70-80dd-ad5258e6045b",
+      "target_ref": "attack-pattern--4bed873f-0b7d-41d4-b93a-b6905d1f90b0",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--88b934e6-7620-49dd-a5a4-ce92c5d42b30",
+      "modified": "2026-07-31T18:47:19.211Z",
+      "created": "2022-09-07T13:55:01.537Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Talos Frankenstein June 2019",
+          "description": "Adamitis, D. et al. (2019, June 4). It's alive: Threat actors cobble together open-source pieces into monstrous Frankenstein campaign. Retrieved May 11, 2020.",
+          "url": "https://blog.talosintelligence.com/2019/06/frankenstein-campaign.html"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [Frankenstein](https://attack.mitre.org/campaigns/C0001), the threat actors ran a command script to set up persistence as a scheduled task named \"WinUpdate\", as well as other encoded commands from the command-line (Citation: Talos Frankenstein June 2019)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--26d9ebae-de59-427f-ae9a-349456bae4b1",
+      "target_ref": "attack-pattern--d1fcf083-a721-4223-aedf-bf8960798d62",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--afd3118f-bde5-4c02-8e82-045edec0dfdc",
+      "modified": "2026-07-31T21:14:22.803Z",
+      "created": "2023-03-17T14:42:58.326Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "ESET Lazarus Jun 2020",
+          "description": "Breitenbacher, D and Osis, K. (2020, June 17). OPERATION IN(TER)CEPTION: Targeted Attacks Against European Aerospace and Military Companies. Retrieved December 20, 2021.",
+          "url": "https://www.welivesecurity.com/wp-content/uploads/2020/06/ESET_Operation_Interception.pdf"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [Operation Dream Job](https://attack.mitre.org/campaigns/C0022), [Lazarus Group](https://attack.mitre.org/groups/G0032) used WMIC to executed a remote XSL script.(Citation: ESET Lazarus Jun 2020)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--0257b35b-93ef-4a70-80dd-ad5258e6045b",
+      "target_ref": "attack-pattern--01a5a209-b94c-450b-b7f9-946497d91055",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--4e7e832c-4066-4045-b180-8585d50adc0c",
+      "modified": "2026-07-31T20:48:13.536Z",
+      "created": "2024-11-20T23:19:34.026Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Dragos FROSTYGOOP 2024",
+          "description": "Mark Graham, Carolyn Ahlers, Kyle O'Meara; Dragos. (2024, July). Impact of FrostyGoop ICS Malware on Connected OT Systems. Retrieved November 20, 2024.",
+          "url": "https://hub.dragos.com/hubfs/Reports/Dragos-FrostyGoop-ICS-Malware-Intel-Brief-0724_r2.pdf"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "[FrostyGoop Incident](https://attack.mitre.org/campaigns/C0041) deployed a ReGeorg variant web shell to impacted systems following initial access for persistence.(Citation: Dragos FROSTYGOOP 2024)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--1169ff24-b35f-4d8d-8cf3-643a2834227f",
+      "target_ref": "attack-pattern--5d0d3609-d06d-49e1-b9c9-b544e0c618cb",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--bcf36359-e8be-4842-8174-489a679f32a4",
+      "modified": "2026-07-31T21:14:22.851Z",
+      "created": "2023-04-10T19:29:32.968Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "ClearSky Lazarus Aug 2020",
+          "description": "ClearSky Research Team. (2020, August 13). Operation 'Dream Job' Widespread North Korean Espionage Campaign. Retrieved December 20, 2021.",
+          "url": "https://www.clearskysec.com/wp-content/uploads/2020/08/Dream-Job-Campaign.pdf"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [Operation Dream Job](https://attack.mitre.org/campaigns/C0022), [Lazarus Group](https://attack.mitre.org/groups/G0032) used tools that used the `IsDebuggerPresent` call to detect debuggers.(Citation: ClearSky Lazarus Aug 2020)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--0257b35b-93ef-4a70-80dd-ad5258e6045b",
+      "target_ref": "attack-pattern--e4dc8c01-417f-458d-9ee0-bb0617c1b391",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--2963d541-8e6b-4376-a165-876145293a7e",
+      "modified": "2026-07-31T18:47:17.798Z",
+      "created": "2024-06-10T19:02:38.183Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Lumen KVBotnet 2023",
+          "description": "Black Lotus Labs. (2023, December 13). Routers Roasting On An Open Firewall: The KV-Botnet Investigation. Retrieved June 10, 2024.",
+          "url": "https://blog.lumen.com/routers-roasting-on-an-open-firewall-the-kv-botnet-investigation/"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "[KV Botnet Activity](https://attack.mitre.org/campaigns/C0035) used various scripts to remove or disable security tools, such as <code>http_watchdog</code> and <code>firewallsd</code>, as well as tools related to other botnet infections, such as <code>mips_ff</code>, on victim devices.(Citation: Lumen KVBotnet 2023)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--0c259854-4044-4f6c-ac49-118d484b3e3b",
+      "target_ref": "attack-pattern--bbde9781-60aa-4b8a-a911-895b0c1b3872",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--8e8c23a5-ca50-4c40-992e-7bd1491077e7",
+      "modified": "2026-07-31T18:47:19.497Z",
+      "created": "2025-01-14T23:03:42.037Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Recorded Future RedDelta 2025",
+          "description": "Insikt Group. (2025, January 9). Chinese State-Sponsored RedDelta Targeted Taiwan, Mongolia, and Southeast Asia with Adapted PlugX Infection Chain. Retrieved January 14, 2025.",
+          "url": "https://go.recordedfuture.com/hubfs/reports/cta-cn-2025-0109.pdf"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "[Mustang Panda](https://attack.mitre.org/groups/G0129) used the GrimResource exploitation technique via specially crafted MSC files for arbitrary code execution during [RedDelta Modified PlugX Infection Chain Operations](https://attack.mitre.org/campaigns/C0047).(Citation: Recorded Future RedDelta 2025)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--276671b5-5425-48db-ad65-c8c2564a969b",
+      "target_ref": "attack-pattern--be2dcee9-a7a7-4e38-afd6-21b31ecc3d63",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--e86fefd2-7f69-4dfe-92e4-8c62421c8db6",
+      "modified": "2026-07-31T18:47:19.224Z",
+      "created": "2025-10-16T18:54:59.314Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Palo Alto SharePoint Vulnerabilities JUL 2025",
+          "description": "Unit 42. (2025, July 31). Active Exploitation of Microsoft SharePoint Vulnerabilities: Threat Brief (Updated). Retrieved October 15, 2025.",
+          "url": "https://unit42.paloaltonetworks.com/microsoft-sharepoint-cve-2025-49704-cve-2025-49706-cve-2025-53770/"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [SharePoint ToolShell Exploitation](https://attack.mitre.org/campaigns/C0058), threat actors scanned for SharePoint servers vulnerable to CVE-2025-53770.(Citation: Palo Alto SharePoint Vulnerabilities JUL 2025)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--1a0576df-df21-4775-843e-844d8a58a94b",
+      "target_ref": "attack-pattern--5502c4e9-24ef-4d5f-8ee9-9e906c2f82c4",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--c0956230-5ac8-49ce-9491-37d9171d926b",
+      "modified": "2026-07-31T18:47:19.056Z",
+      "created": "2025-10-15T20:47:54.421Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Microsoft SharePoint Exploit JUL 2025",
+          "description": "Microsoft Threat Intelligence. (2025, July 22). Disrupting active exploitation of on-premises SharePoint vulnerabilities. Retrieved October 15, 2025.",
+          "url": "https://www.microsoft.com/en-us/security/blog/2025/07/22/disrupting-active-exploitation-of-on-premises-sharepoint-vulnerabilities/#storm-2603"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "(Citation: Microsoft SharePoint Exploit JUL 2025)\n",
+      "relationship_type": "uses",
+      "source_ref": "campaign--1a0576df-df21-4775-843e-844d8a58a94b",
+      "target_ref": "tool--26c87906-d750-42c5-946c-d4162c73fc7b",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--078fe5f7-91b4-4864-960a-24c64b14996e",
+      "modified": "2026-07-31T21:14:22.391Z",
+      "created": "2023-03-17T15:00:49.466Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "ESET Lazarus Jun 2020",
+          "description": "Breitenbacher, D and Osis, K. (2020, June 17). OPERATION IN(TER)CEPTION: Targeted Attacks Against European Aerospace and Military Companies. Retrieved December 20, 2021.",
+          "url": "https://www.welivesecurity.com/wp-content/uploads/2020/06/ESET_Operation_Interception.pdf"
+        },
+        {
+          "source_name": "McAfee Lazarus Jul 2020",
+          "description": "Cashman, M. (2020, July 29). Operation North Star Campaign. Retrieved December 20, 2021.",
+          "url": "https://www.mcafee.com/blogs/other-blogs/mcafee-labs/operation-north-star-a-job-offer-thats-too-good-to-be-true/?hilite=%27Operation%27%2C%27North%27%2C%27Star%27"
+        },
+        {
+          "source_name": "ClearSky Lazarus Aug 2020",
+          "description": "ClearSky Research Team. (2020, August 13). Operation 'Dream Job' Widespread North Korean Espionage Campaign. Retrieved December 20, 2021.",
+          "url": "https://www.clearskysec.com/wp-content/uploads/2020/08/Dream-Job-Campaign.pdf"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [Operation Dream Job](https://attack.mitre.org/campaigns/C0022), [Lazarus Group](https://attack.mitre.org/groups/G0032) executed malware with `C:\\\\windows\\system32\\rundll32.exe \"C:\\ProgramData\\ThumbNail\\thumbnail.db\"`, `CtrlPanel S-6-81-3811-75432205-060098-6872 0 0 905`.(Citation: ClearSky Lazarus Aug 2020)(Citation: ESET Lazarus Jun 2020)(Citation: McAfee Lazarus Jul 2020)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--0257b35b-93ef-4a70-80dd-ad5258e6045b",
+      "target_ref": "attack-pattern--045d0922-2310-4e60-b5e4-3302302cb3c5",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--5898ba12-3f7f-4891-96b5-a1d464487013",
+      "modified": "2026-07-31T18:47:17.943Z",
+      "created": "2024-06-10T19:05:37.287Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Lumen KVBotnet 2023",
+          "description": "Black Lotus Labs. (2023, December 13). Routers Roasting On An Open Firewall: The KV-Botnet Investigation. Retrieved June 10, 2024.",
+          "url": "https://blog.lumen.com/routers-roasting-on-an-open-firewall-the-kv-botnet-investigation/"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "[KV Botnet Activity](https://attack.mitre.org/campaigns/C0035) focuses on compromise of small office-home office (SOHO) network devices to build the subsequent botnet.(Citation: Lumen KVBotnet 2023)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--0c259854-4044-4f6c-ac49-118d484b3e3b",
+      "target_ref": "attack-pattern--149b477f-f364-4824-b1b5-aa1d56115869",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--85e909bd-e5c0-423d-b3cd-410dad3b8b91",
+      "modified": "2026-07-31T18:47:18.080Z",
+      "created": "2024-06-10T19:40:03.699Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Lumen KVBotnet 2023",
+          "description": "Black Lotus Labs. (2023, December 13). Routers Roasting On An Open Firewall: The KV-Botnet Investigation. Retrieved June 10, 2024.",
+          "url": "https://blog.lumen.com/routers-roasting-on-an-open-firewall-the-kv-botnet-investigation/"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "[KV Botnet Activity](https://attack.mitre.org/campaigns/C0035) final payload installation includes mounting and binding to the <code>\\/proc\\/</code> filepath on the victim system to enable subsequent operation in memory while also removing on-disk artifacts.(Citation: Lumen KVBotnet 2023)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--0c259854-4044-4f6c-ac49-118d484b3e3b",
+      "target_ref": "attack-pattern--d201d4cc-214d-4a74-a1ba-b3fa09fd4591",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--29883758-034d-4811-9145-9e12652edf66",
+      "modified": "2026-07-31T18:47:18.678Z",
+      "created": "2022-09-07T14:50:05.741Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Talos Frankenstein June 2019",
+          "description": "Adamitis, D. et al. (2019, June 4). It's alive: Threat actors cobble together open-source pieces into monstrous Frankenstein campaign. Retrieved May 11, 2020.",
+          "url": "https://blog.talosintelligence.com/2019/06/frankenstein-campaign.html"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [Frankenstein](https://attack.mitre.org/campaigns/C0001), the threat actors ran encoded commands from the command line.(Citation: Talos Frankenstein June 2019)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--26d9ebae-de59-427f-ae9a-349456bae4b1",
+      "target_ref": "attack-pattern--d511a6f6-4a33-41d5-bc95-c343875d1377",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--49333b91-3071-4d7b-8bbd-b32d2e80d05f",
+      "modified": "2026-07-31T18:47:17.892Z",
+      "created": "2024-06-10T19:09:25.151Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Lumen KVBotnet 2023",
+          "description": "Black Lotus Labs. (2023, December 13). Routers Roasting On An Open Firewall: The KV-Botnet Investigation. Retrieved June 10, 2024.",
+          "url": "https://blog.lumen.com/routers-roasting-on-an-open-firewall-the-kv-botnet-investigation/"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "Scripts associated with [KV Botnet Activity](https://attack.mitre.org/campaigns/C0035) initial deployment can identify processes related to security tools and other botnet families for follow-on disabling during installation.(Citation: Lumen KVBotnet 2023)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--0c259854-4044-4f6c-ac49-118d484b3e3b",
+      "target_ref": "attack-pattern--8f4a33ec-8b1f-4b80-a2f6-642b2e479580",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--bf492c3c-026c-45f3-bdc4-9ea200af2bb4",
+      "modified": "2026-08-04T20:30:56.920Z",
+      "created": "2024-06-10T19:46:58.042Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Lumen KVBotnet 2023",
+          "description": "Black Lotus Labs. (2023, December 13). Routers Roasting On An Open Firewall: The KV-Botnet Investigation. Retrieved June 10, 2024.",
+          "url": "https://blog.lumen.com/routers-roasting-on-an-open-firewall-the-kv-botnet-investigation/"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "[KV Botnet Activity](https://attack.mitre.org/campaigns/C0035) involves managing events on victim systems via <code>libevent</code> to execute a callback function when any running process contains the following references in their path without also having a reference to <code>bioset</code>: busybox, wget, curl, tftp, telnetd, or lua. If the <code>bioset</code> string is not found, the related process is terminated.(Citation: Lumen KVBotnet 2023)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--0c259854-4044-4f6c-ac49-118d484b3e3b",
+      "target_ref": "attack-pattern--b6301b64-ef57-4cce-bb0b-77026f14a8db",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--44468587-67b5-4c44-8c2b-ed2b4769f055",
+      "modified": "2026-07-31T21:14:22.553Z",
+      "created": "2023-03-17T15:46:21.132Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "ClearSky Lazarus Aug 2020",
+          "description": "ClearSky Research Team. (2020, August 13). Operation 'Dream Job' Widespread North Korean Espionage Campaign. Retrieved December 20, 2021.",
+          "url": "https://www.clearskysec.com/wp-content/uploads/2020/08/Dream-Job-Campaign.pdf"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "For [Operation Dream Job](https://attack.mitre.org/campaigns/C0022), [Lazarus Group](https://attack.mitre.org/groups/G0032) gathered victim organization information to identify specific targets.(Citation: ClearSky Lazarus Aug 2020)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--0257b35b-93ef-4a70-80dd-ad5258e6045b",
+      "target_ref": "attack-pattern--937e4772-8441-4e4a-8bf0-8d447d667e23",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--ddbd85c0-2b3a-4311-966b-abc2e658c340",
+      "modified": "2026-07-31T18:47:41.346Z",
+      "created": "2024-06-10T18:59:41.165Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Lumen KVBotnet 2023",
+          "description": "Black Lotus Labs. (2023, December 13). Routers Roasting On An Open Firewall: The KV-Botnet Investigation. Retrieved June 10, 2024.",
+          "url": "https://blog.lumen.com/routers-roasting-on-an-open-firewall-the-kv-botnet-investigation/"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "[Volt Typhoon](https://attack.mitre.org/groups/G1017) used [KV Botnet Activity](https://attack.mitre.org/campaigns/C0035) to build intermediate communication chains between operators and victims, such as identified access to victims in Guam.(Citation: Lumen KVBotnet 2023)",
+      "relationship_type": "attributed-to",
+      "source_ref": "campaign--0c259854-4044-4f6c-ac49-118d484b3e3b",
+      "target_ref": "intrusion-set--174279b4-399f-4ddb-966e-5efedd1dd5f2",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--6e33c2e7-90b9-4d1e-9925-74d9cf2b4ef6",
+      "modified": "2026-07-31T18:47:17.987Z",
+      "created": "2024-10-03T10:15:12.937Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Lumen KVBotnet 2023",
+          "description": "Black Lotus Labs. (2023, December 13). Routers Roasting On An Open Firewall: The KV-Botnet Investigation. Retrieved June 10, 2024.",
+          "url": "https://blog.lumen.com/routers-roasting-on-an-open-firewall-the-kv-botnet-investigation/"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "[KV Botnet Activity](https://attack.mitre.org/campaigns/C0035) included the use of scripts to download additional payloads when compromising network nodes.(Citation: Lumen KVBotnet 2023)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--0c259854-4044-4f6c-ac49-118d484b3e3b",
+      "target_ref": "attack-pattern--e6919abc-99f9-4c6c-95a5-14761e7b2add",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--6948916f-eba5-4f23-8630-22035d00b7c3",
+      "modified": "2026-07-31T18:47:18.372Z",
+      "created": "2025-10-16T19:33:54.228Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Palo Alto SharePoint Vulnerabilities JUL 2025",
+          "description": "Unit 42. (2025, July 31). Active Exploitation of Microsoft SharePoint Vulnerabilities: Threat Brief (Updated). Retrieved October 15, 2025.",
+          "url": "https://unit42.paloaltonetworks.com/microsoft-sharepoint-cve-2025-49704-cve-2025-49706-cve-2025-53770/"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [SharePoint ToolShell Exploitation](https://attack.mitre.org/campaigns/C0058), threat actors demanded ransom payments to unencrypt filesystems and to refrain from publishing sensitive data exfiltrated from victim networks.(Citation: Palo Alto SharePoint Vulnerabilities JUL 2025)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--1a0576df-df21-4775-843e-844d8a58a94b",
+      "target_ref": "attack-pattern--851e071f-208d-4c79-adc6-5974c85c78f3",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--898120ce-0d97-424b-b0a1-70bfc84767ff",
+      "modified": "2026-07-31T20:48:13.544Z",
+      "created": "2024-11-20T23:27:17.617Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Dragos FROSTYGOOP 2024",
+          "description": "Mark Graham, Carolyn Ahlers, Kyle O'Meara; Dragos. (2024, July). Impact of FrostyGoop ICS Malware on Connected OT Systems. Retrieved November 20, 2024.",
+          "url": "https://hub.dragos.com/hubfs/Reports/Dragos-FrostyGoop-ICS-Malware-Intel-Brief-0724_r2.pdf"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [FrostyGoop Incident](https://attack.mitre.org/campaigns/C0041), the adversary downgraded firmware on victim devices in order to impair visibility into the process environment.(Citation: Dragos FROSTYGOOP 2024)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--1169ff24-b35f-4d8d-8cf3-643a2834227f",
+      "target_ref": "attack-pattern--30904c16-39f9-41c6-b01a-500eb8878442",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--b6c8454f-57ab-45a6-9b69-1794b17a860f",
+      "modified": "2026-07-31T18:47:18.339Z",
+      "created": "2025-04-04T13:56:11.282Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Lumen KVBotnet 2023",
+          "description": "Black Lotus Labs. (2023, December 13). Routers Roasting On An Open Firewall: The KV-Botnet Investigation. Retrieved June 10, 2024.",
+          "url": "https://blog.lumen.com/routers-roasting-on-an-open-firewall-the-kv-botnet-investigation/"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "[KV Botnet Activity](https://attack.mitre.org/campaigns/C0035) leveraged a bind mount to bind itself to the `/proc/` file path before deleting its files from the `/tmp/` directory.(Citation: Lumen KVBotnet 2023) ",
+      "relationship_type": "uses",
+      "source_ref": "campaign--0c259854-4044-4f6c-ac49-118d484b3e3b",
+      "target_ref": "attack-pattern--5bd41255-a224-4425-a2e2-e9d293eafe1c",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--79cf4f25-6d05-4756-a671-2d578c6db184",
+      "modified": "2026-07-31T21:14:22.688Z",
+      "created": "2023-03-17T15:26:04.773Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "ESET Lazarus Jun 2020",
+          "description": "Breitenbacher, D and Osis, K. (2020, June 17). OPERATION IN(TER)CEPTION: Targeted Attacks Against European Aerospace and Military Companies. Retrieved December 20, 2021.",
+          "url": "https://www.welivesecurity.com/wp-content/uploads/2020/06/ESET_Operation_Interception.pdf"
+        },
+        {
+          "source_name": "ClearSky Lazarus Aug 2020",
+          "description": "ClearSky Research Team. (2020, August 13). Operation 'Dream Job' Widespread North Korean Espionage Campaign. Retrieved December 20, 2021.",
+          "url": "https://www.clearskysec.com/wp-content/uploads/2020/08/Dream-Job-Campaign.pdf"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [Operation Dream Job](https://attack.mitre.org/campaigns/C0022), [Lazarus Group](https://attack.mitre.org/groups/G0032) sent victims spearphishing messages via LinkedIn concerning fictitious jobs.(Citation: ClearSky Lazarus Aug 2020)(Citation: ESET Lazarus Jun 2020)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--0257b35b-93ef-4a70-80dd-ad5258e6045b",
+      "target_ref": "attack-pattern--f6ad61ee-65f3-4bd0-a3f5-2f0accb36317",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--9af9cf1d-daf4-4b78-b569-fe33de5ea198",
+      "modified": "2026-07-31T18:47:18.258Z",
+      "created": "2024-06-10T19:03:36.592Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Lumen KVBotnet 2023",
+          "description": "Black Lotus Labs. (2023, December 13). Routers Roasting On An Open Firewall: The KV-Botnet Investigation. Retrieved June 10, 2024.",
+          "url": "https://blog.lumen.com/routers-roasting-on-an-open-firewall-the-kv-botnet-investigation/"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "[KV Botnet Activity](https://attack.mitre.org/campaigns/C0035) removes on-disk copies of tools and other artifacts after it the primary botnet payload has been loaded into memory on the victim device.(Citation: Lumen KVBotnet 2023)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--0c259854-4044-4f6c-ac49-118d484b3e3b",
+      "target_ref": "attack-pattern--d63a3fb8-9452-4e9d-a60a-54be68d5998c",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--a2c0d9fd-5ce9-4df1-8218-771b111bc1e4",
+      "modified": "2026-07-31T21:14:22.774Z",
+      "created": "2023-03-17T15:07:23.849Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "McAfee Lazarus Jul 2020",
+          "description": "Cashman, M. (2020, July 29). Operation North Star Campaign. Retrieved December 20, 2021.",
+          "url": "https://www.mcafee.com/blogs/other-blogs/mcafee-labs/operation-north-star-a-job-offer-thats-too-good-to-be-true/?hilite=%27Operation%27%2C%27North%27%2C%27Star%27"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [Operation Dream Job](https://attack.mitre.org/campaigns/C0022), [Lazarus Group](https://attack.mitre.org/groups/G0032) targeted Windows servers running Internet Information Systems (IIS) to install C2 components.(Citation: McAfee Lazarus Jul 2020)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--0257b35b-93ef-4a70-80dd-ad5258e6045b",
+      "target_ref": "attack-pattern--b46a801b-fd98-491c-a25a-bca25d6e3001",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--a9085e04-4072-4bb9-b76e-5d5d7da43cfb",
+      "modified": "2026-07-31T18:47:19.667Z",
+      "created": "2025-01-14T22:46:42.403Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Recorded Future RedDelta 2025",
+          "description": "Insikt Group. (2025, January 9). Chinese State-Sponsored RedDelta Targeted Taiwan, Mongolia, and Southeast Asia with Adapted PlugX Infection Chain. Retrieved January 14, 2025.",
+          "url": "https://go.recordedfuture.com/hubfs/reports/cta-cn-2025-0109.pdf"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "[Mustang Panda](https://attack.mitre.org/groups/G0129) distributed malicious LNK objects for user execution during [RedDelta Modified PlugX Infection Chain Operations](https://attack.mitre.org/campaigns/C0047).(Citation: Recorded Future RedDelta 2025)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--276671b5-5425-48db-ad65-c8c2564a969b",
+      "target_ref": "attack-pattern--232b7f21-adf9-4b42-b936-b9d6f7df856e",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--92cf3ea9-3499-4e12-b885-fcb43e0107ff",
+      "modified": "2026-07-31T18:47:19.241Z",
+      "created": "2022-09-07T19:46:56.596Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Talos Frankenstein June 2019",
+          "description": "Adamitis, D. et al. (2019, June 4). It's alive: Threat actors cobble together open-source pieces into monstrous Frankenstein campaign. Retrieved May 11, 2020.",
+          "url": "https://blog.talosintelligence.com/2019/06/frankenstein-campaign.html"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [Frankenstein](https://attack.mitre.org/campaigns/C0001), the threat actors used a script that ran WMI queries to check if a VM or sandbox was running, including VMWare and Virtualbox. The script would also call WMI to determine the number of cores allocated to the system; if less than two the script would stop execution.(Citation: Talos Frankenstein June 2019)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--26d9ebae-de59-427f-ae9a-349456bae4b1",
+      "target_ref": "attack-pattern--29be378d-262d-4e99-b00d-852d573628e6",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--71db0201-9d27-4c74-a242-198dccbac5ad",
+      "modified": "2026-07-31T21:14:22.668Z",
+      "created": "2023-09-20T15:11:06.448Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "ESET Lazarus Jun 2020",
+          "description": "Breitenbacher, D and Osis, K. (2020, June 17). OPERATION IN(TER)CEPTION: Targeted Attacks Against European Aerospace and Military Companies. Retrieved December 20, 2021.",
+          "url": "https://www.welivesecurity.com/wp-content/uploads/2020/06/ESET_Operation_Interception.pdf"
+        },
+        {
+          "source_name": "ClearSky Lazarus Aug 2020",
+          "description": "ClearSky Research Team. (2020, August 13). Operation 'Dream Job' Widespread North Korean Espionage Campaign. Retrieved December 20, 2021.",
+          "url": "https://www.clearskysec.com/wp-content/uploads/2020/08/Dream-Job-Campaign.pdf"
+        },
+        {
+          "source_name": "The Hacker News Lazarus Aug 2022",
+          "description": "Lakshmanan, R. (2022, August 17). North Korea Hackers Spotted Targeting Job Seekers with macOS Malware. Retrieved April 10, 2023.",
+          "url": "https://thehackernews.com/2022/08/north-korea-hackers-spotted-targeting.html"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [Operation Dream Job](https://attack.mitre.org/campaigns/C0022), [Lazarus Group](https://attack.mitre.org/groups/G0032) impersonated HR hiring personnel through LinkedIn messages and conducted interviews with victims in order to deceive them into downloading malware.(Citation: ClearSky Lazarus Aug 2020)(Citation: ESET Lazarus Jun 2020)(Citation: The Hacker News Lazarus Aug 2022)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--0257b35b-93ef-4a70-80dd-ad5258e6045b",
+      "target_ref": "attack-pattern--cd92d2b8-ce43-4666-9472-f1b4b9f4f8be",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--429bf982-fdf7-4404-9544-2cc7942b5939",
+      "modified": "2026-07-31T18:47:17.826Z",
+      "created": "2024-06-10T19:34:29.488Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Lumen KVBotnet 2023",
+          "description": "Black Lotus Labs. (2023, December 13). Routers Roasting On An Open Firewall: The KV-Botnet Investigation. Retrieved June 10, 2024.",
+          "url": "https://blog.lumen.com/routers-roasting-on-an-open-firewall-the-kv-botnet-investigation/"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "[KV Botnet Activity](https://attack.mitre.org/campaigns/C0035) gathers victim IP information during initial installation stages.(Citation: Lumen KVBotnet 2023)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--0c259854-4044-4f6c-ac49-118d484b3e3b",
+      "target_ref": "attack-pattern--707399d6-ab3e-4963-9315-d9d3818cd6a0",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--8c8ac729-e986-4503-a1c8-5696e78f4bdc",
+      "modified": "2026-07-31T18:47:18.600Z",
+      "created": "2025-10-16T16:32:11.941Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Microsoft SharePoint Exploit JUL 2025",
+          "description": "Microsoft Threat Intelligence. (2025, July 22). Disrupting active exploitation of on-premises SharePoint vulnerabilities. Retrieved October 15, 2025.",
+          "url": "https://www.microsoft.com/en-us/security/blog/2025/07/22/disrupting-active-exploitation-of-on-premises-sharepoint-vulnerabilities/#storm-2603"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [SharePoint ToolShell Exploitation](https://attack.mitre.org/campaigns/C0058), threat actors utilized [ngrok](https://attack.mitre.org/software/S0508) tunnels to deliver PowerShell payloads.(Citation: Microsoft SharePoint Exploit JUL 2025)\n\n",
+      "relationship_type": "uses",
+      "source_ref": "campaign--1a0576df-df21-4775-843e-844d8a58a94b",
+      "target_ref": "attack-pattern--4fe28b27-b13c-453e-a386-c2ef362a573b",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--d84d46d9-658e-4a88-a3f3-616ce6c47535",
+      "modified": "2026-07-31T18:47:19.478Z",
+      "created": "2022-09-07T19:26:44.899Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Talos Frankenstein June 2019",
+          "description": "Adamitis, D. et al. (2019, June 4). It's alive: Threat actors cobble together open-source pieces into monstrous Frankenstein campaign. Retrieved May 11, 2020.",
+          "url": "https://blog.talosintelligence.com/2019/06/frankenstein-campaign.html"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [Frankenstein](https://attack.mitre.org/campaigns/C0001), the threat actors used [Empire](https://attack.mitre.org/software/S0363) to find the public IP address of a compromised system.(Citation: Talos Frankenstein June 2019)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--26d9ebae-de59-427f-ae9a-349456bae4b1",
+      "target_ref": "attack-pattern--707399d6-ab3e-4963-9315-d9d3818cd6a0",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--7e12ea45-1adc-4c0c-95a7-68d5215760dc",
+      "modified": "2026-07-31T21:14:22.708Z",
+      "created": "2023-03-17T14:43:41.266Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "ESET Lazarus Jun 2020",
+          "description": "Breitenbacher, D and Osis, K. (2020, June 17). OPERATION IN(TER)CEPTION: Targeted Attacks Against European Aerospace and Military Companies. Retrieved December 20, 2021.",
+          "url": "https://www.welivesecurity.com/wp-content/uploads/2020/06/ESET_Operation_Interception.pdf"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [Operation Dream Job](https://attack.mitre.org/campaigns/C0022), [Lazarus Group](https://attack.mitre.org/groups/G0032) created scheduled tasks to set a periodic execution of a remote XSL script.(Citation: ESET Lazarus Jun 2020)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--0257b35b-93ef-4a70-80dd-ad5258e6045b",
+      "target_ref": "attack-pattern--005a06c6-14bf-4118-afa0-ebcd8aebb0c9",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--22c2e565-d3f8-42e6-aa87-03427432dc89",
+      "modified": "2026-07-31T18:47:19.232Z",
+      "created": "2025-01-14T23:08:40.483Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Recorded Future RedDelta 2025",
+          "description": "Insikt Group. (2025, January 9). Chinese State-Sponsored RedDelta Targeted Taiwan, Mongolia, and Southeast Asia with Adapted PlugX Infection Chain. Retrieved January 14, 2025.",
+          "url": "https://go.recordedfuture.com/hubfs/reports/cta-cn-2025-0109.pdf"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "[Mustang Panda](https://attack.mitre.org/groups/G0129) used similar installation techniques with DLL sideloading to install [ShadowPad](https://attack.mitre.org/software/S0596) during [RedDelta Modified PlugX Infection Chain Operations](https://attack.mitre.org/campaigns/C0047).(Citation: Recorded Future RedDelta 2025)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--276671b5-5425-48db-ad65-c8c2564a969b",
+      "target_ref": "malware--ec9e00dd-0313-4d5b-8105-c20aa47abffc",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--1c401eba-48ed-4daa-a123-6b4752c84026",
+      "modified": "2026-07-31T18:47:19.170Z",
+      "created": "2025-01-14T22:43:11.353Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Recorded Future RedDelta 2025",
+          "description": "Insikt Group. (2025, January 9). Chinese State-Sponsored RedDelta Targeted Taiwan, Mongolia, and Southeast Asia with Adapted PlugX Infection Chain. Retrieved January 14, 2025.",
+          "url": "https://go.recordedfuture.com/hubfs/reports/cta-cn-2025-0109.pdf"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "[Mustang Panda](https://attack.mitre.org/groups/G0129) proxied communication through the Cloudflare CDN service during [RedDelta Modified PlugX Infection Chain Operations](https://attack.mitre.org/campaigns/C0047).(Citation: Recorded Future RedDelta 2025)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--276671b5-5425-48db-ad65-c8c2564a969b",
+      "target_ref": "attack-pattern--731f4f55-b6d0-41d1-a7a9-072a66389aea",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--a69c8555-cd70-40ca-a250-d6e9c57f9279",
+      "modified": "2026-07-31T18:47:18.320Z",
+      "created": "2024-06-10T19:44:19.903Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Lumen KVBotnet 2023",
+          "description": "Black Lotus Labs. (2023, December 13). Routers Roasting On An Open Firewall: The KV-Botnet Investigation. Retrieved June 10, 2024.",
+          "url": "https://blog.lumen.com/routers-roasting-on-an-open-firewall-the-kv-botnet-investigation/"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "[KV Botnet Activity](https://attack.mitre.org/campaigns/C0035) involves changing process filename to <code>pr_set_mm_exe_file</code> and process name to <code>pr_set_name</code> during later infection stages.(Citation: Lumen KVBotnet 2023)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--0c259854-4044-4f6c-ac49-118d484b3e3b",
+      "target_ref": "attack-pattern--42e8de7b-37b2-4258-905a-6897815e58e0",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--cbc251b7-5541-408f-b11d-c57d600fc8cf",
+      "modified": "2026-07-31T18:47:19.447Z",
+      "created": "2022-09-07T14:19:54.989Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Talos Frankenstein June 2019",
+          "description": "Adamitis, D. et al. (2019, June 4). It's alive: Threat actors cobble together open-source pieces into monstrous Frankenstein campaign. Retrieved May 11, 2020.",
+          "url": "https://blog.talosintelligence.com/2019/06/frankenstein-campaign.html"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [Frankenstein](https://attack.mitre.org/campaigns/C0001), the threat actors collected information via [Empire](https://attack.mitre.org/software/S0363), which sent the data back to the adversary's C2.(Citation: Talos Frankenstein June 2019)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--26d9ebae-de59-427f-ae9a-349456bae4b1",
+      "target_ref": "attack-pattern--92d7da27-2d91-488e-a00c-059dc162766d",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--08052557-0aa5-49d0-9254-722e4f04804f",
+      "modified": "2026-07-31T18:47:18.581Z",
+      "created": "2022-09-07T19:09:19.218Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Talos Frankenstein June 2019",
+          "description": "Adamitis, D. et al. (2019, June 4). It's alive: Threat actors cobble together open-source pieces into monstrous Frankenstein campaign. Retrieved May 11, 2020.",
+          "url": "https://blog.talosintelligence.com/2019/06/frankenstein-campaign.html"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [Frankenstein](https://attack.mitre.org/campaigns/C0001), the threat actors used [Empire](https://attack.mitre.org/software/S0363) to obtain a list of all running processes.(Citation: Talos Frankenstein June 2019)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--26d9ebae-de59-427f-ae9a-349456bae4b1",
+      "target_ref": "attack-pattern--8f4a33ec-8b1f-4b80-a2f6-642b2e479580",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--49c8b6c8-9c61-45d1-b7d0-aa778f58f055",
+      "modified": "2026-07-31T18:47:18.224Z",
+      "created": "2025-10-16T19:07:37.882Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Palo Alto SharePoint Vulnerabilities JUL 2025",
+          "description": "Unit 42. (2025, July 31). Active Exploitation of Microsoft SharePoint Vulnerabilities: Threat Brief (Updated). Retrieved October 15, 2025.",
+          "url": "https://unit42.paloaltonetworks.com/microsoft-sharepoint-cve-2025-49704-cve-2025-49706-cve-2025-53770/"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [SharePoint ToolShell Exploitation](https://attack.mitre.org/campaigns/C0058), threat actors decrypted scripts prior to execution.(Citation: Palo Alto SharePoint Vulnerabilities JUL 2025)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--1a0576df-df21-4775-843e-844d8a58a94b",
+      "target_ref": "attack-pattern--3ccef7ae-cb5e-48f6-8302-897105fbf55c",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--1f6da45b-bf15-47d7-ab80-5c110b0f4d62",
+      "modified": "2026-07-31T21:14:22.467Z",
+      "created": "2023-03-17T14:50:22.910Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "McAfee Lazarus Jul 2020",
+          "description": "Cashman, M. (2020, July 29). Operation North Star Campaign. Retrieved December 20, 2021.",
+          "url": "https://www.mcafee.com/blogs/other-blogs/mcafee-labs/operation-north-star-a-job-offer-thats-too-good-to-be-true/?hilite=%27Operation%27%2C%27North%27%2C%27Star%27"
+        },
+        {
+          "source_name": "ClearSky Lazarus Aug 2020",
+          "description": "ClearSky Research Team. (2020, August 13). Operation 'Dream Job' Widespread North Korean Espionage Campaign. Retrieved December 20, 2021.",
+          "url": "https://www.clearskysec.com/wp-content/uploads/2020/08/Dream-Job-Campaign.pdf"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [Operation Dream Job](https://attack.mitre.org/campaigns/C0022), [Lazarus Group](https://attack.mitre.org/groups/G0032) executed a VBA written malicious macro after victims download malicious DOTM files; [Lazarus Group](https://attack.mitre.org/groups/G0032) also used Visual Basic macro code to extract a double Base64 encoded DLL implant.(Citation: ClearSky Lazarus Aug 2020)(Citation: McAfee Lazarus Jul 2020)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--0257b35b-93ef-4a70-80dd-ad5258e6045b",
+      "target_ref": "attack-pattern--dfd7cc1d-e1d8-4394-a198-97c4cab8aa67",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--0381e557-6c8d-45c5-b390-f7909f782d3f",
+      "modified": "2026-07-31T18:47:19.061Z",
+      "created": "2025-01-14T22:47:52.501Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Recorded Future RedDelta 2025",
+          "description": "Insikt Group. (2025, January 9). Chinese State-Sponsored RedDelta Targeted Taiwan, Mongolia, and Southeast Asia with Adapted PlugX Infection Chain. Retrieved January 14, 2025.",
+          "url": "https://go.recordedfuture.com/hubfs/reports/cta-cn-2025-0109.pdf"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "[Mustang Panda](https://attack.mitre.org/groups/G0129) used LNK files to execute PowerShell commands leading to eventual [PlugX](https://attack.mitre.org/software/S0013) installation during [RedDelta Modified PlugX Infection Chain Operations](https://attack.mitre.org/campaigns/C0047).(Citation: Recorded Future RedDelta 2025)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--276671b5-5425-48db-ad65-c8c2564a969b",
+      "target_ref": "attack-pattern--970a3432-3237-47ad-bcca-7d8cbb217736",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--b01660bb-1725-42f4-9419-495b8710e930",
+      "modified": "2026-07-31T21:14:22.811Z",
+      "created": "2023-03-17T14:10:39.072Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "McAfee Lazarus Nov 2020",
+          "description": "Beek, C. (2020, November 5). Operation North Star: Behind The Scenes. Retrieved December 20, 2021.",
+          "url": "https://www.mcafee.com/blogs/other-blogs/mcafee-labs/operation-north-star-behind-the-scenes/"
+        },
+        {
+          "source_name": "McAfee Lazarus Jul 2020",
+          "description": "Cashman, M. (2020, July 29). Operation North Star Campaign. Retrieved December 20, 2021.",
+          "url": "https://www.mcafee.com/blogs/other-blogs/mcafee-labs/operation-north-star-a-job-offer-thats-too-good-to-be-true/?hilite=%27Operation%27%2C%27North%27%2C%27Star%27"
+        },
+        {
+          "source_name": "ClearSky Lazarus Aug 2020",
+          "description": "ClearSky Research Team. (2020, August 13). Operation 'Dream Job' Widespread North Korean Espionage Campaign. Retrieved December 20, 2021.",
+          "url": "https://www.clearskysec.com/wp-content/uploads/2020/08/Dream-Job-Campaign.pdf"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [Operation Dream Job](https://attack.mitre.org/campaigns/C0022), [Lazarus Group](https://attack.mitre.org/groups/G0032) packed malicious .db files with Themida to evade detection.(Citation: ClearSky Lazarus Aug 2020)(Citation: McAfee Lazarus Jul 2020)(Citation: McAfee Lazarus Nov 2020)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--0257b35b-93ef-4a70-80dd-ad5258e6045b",
+      "target_ref": "attack-pattern--deb98323-e13f-4b0c-8d94-175379069062",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--7d68b5ba-dc59-4004-9742-3fbb0b22440e",
+      "modified": "2026-07-31T18:47:18.042Z",
+      "created": "2024-06-10T19:01:18.738Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Lumen KVBotnet 2023",
+          "description": "Black Lotus Labs. (2023, December 13). Routers Roasting On An Open Firewall: The KV-Botnet Investigation. Retrieved June 10, 2024.",
+          "url": "https://blog.lumen.com/routers-roasting-on-an-open-firewall-the-kv-botnet-investigation/"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "[KV Botnet Activity](https://attack.mitre.org/campaigns/C0035) used acquired Virtual Private Servers as control systems for devices infected with KV Botnet malware.(Citation: Lumen KVBotnet 2023)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--0c259854-4044-4f6c-ac49-118d484b3e3b",
+      "target_ref": "attack-pattern--79da0971-3147-4af6-a4f5-e8cd447cd795",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--5687f6c6-f749-456e-a7fe-179017d50e9b",
+      "modified": "2026-07-31T21:14:22.590Z",
+      "created": "2023-03-17T14:05:09.788Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "McAfee Lazarus Nov 2020",
+          "description": "Beek, C. (2020, November 5). Operation North Star: Behind The Scenes. Retrieved December 20, 2021.",
+          "url": "https://www.mcafee.com/blogs/other-blogs/mcafee-labs/operation-north-star-behind-the-scenes/"
+        },
+        {
+          "source_name": "McAfee Lazarus Jul 2020",
+          "description": "Cashman, M. (2020, July 29). Operation North Star Campaign. Retrieved December 20, 2021.",
+          "url": "https://www.mcafee.com/blogs/other-blogs/mcafee-labs/operation-north-star-a-job-offer-thats-too-good-to-be-true/?hilite=%27Operation%27%2C%27North%27%2C%27Star%27"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [Operation Dream Job](https://attack.mitre.org/campaigns/C0022), [Lazarus Group](https://attack.mitre.org/groups/G0032) used [Torisma](https://attack.mitre.org/software/S0678) to actively monitor for new drives and remote desktop connections on an infected system.(Citation: McAfee Lazarus Jul 2020)(Citation: McAfee Lazarus Nov 2020)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--0257b35b-93ef-4a70-80dd-ad5258e6045b",
+      "target_ref": "malware--0715560d-4299-4e84-9e20-6e80ab57e4f2",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--618b419c-d8a1-42cb-a846-ea465bd96618",
+      "modified": "2026-07-31T18:47:19.439Z",
+      "created": "2025-01-14T22:52:31.573Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Recorded Future RedDelta 2025",
+          "description": "Insikt Group. (2025, January 9). Chinese State-Sponsored RedDelta Targeted Taiwan, Mongolia, and Southeast Asia with Adapted PlugX Infection Chain. Retrieved January 14, 2025.",
+          "url": "https://go.recordedfuture.com/hubfs/reports/cta-cn-2025-0109.pdf"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "[Mustang Panda](https://attack.mitre.org/groups/G0129) used Run registry keys with names such as `OneNote Update` to execute legitimate executables that would load through search-order hijacking malicious DLLS to ensure persistence during [RedDelta Modified PlugX Infection Chain Operations](https://attack.mitre.org/campaigns/C0047).(Citation: Recorded Future RedDelta 2025)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--276671b5-5425-48db-ad65-c8c2564a969b",
+      "target_ref": "attack-pattern--9efb1ea7-c37b-4595-9640-b7680cd84279",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--deaf1941-b388-44e5-a8e9-09da85bf1067",
+      "modified": "2026-07-31T18:47:18.521Z",
+      "created": "2024-06-10T19:43:03.983Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Lumen KVBotnet 2023",
+          "description": "Black Lotus Labs. (2023, December 13). Routers Roasting On An Open Firewall: The KV-Botnet Investigation. Retrieved June 10, 2024.",
+          "url": "https://blog.lumen.com/routers-roasting-on-an-open-firewall-the-kv-botnet-investigation/"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "[KV Botnet Activity](https://attack.mitre.org/campaigns/C0035) gathers a list of filenames from the following locations during execution of the final botnet stage: <code>\\/usr\\/sbin\\/</code>, <code>\\/usr\\/bin\\/</code>,  <code>\\/sbin\\/</code>, <code>\\/pfrm2.0\\/bin\\/</code>, <code>\\/usr\\/local\\/bin\\/</code>.(Citation: Lumen KVBotnet 2023)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--0c259854-4044-4f6c-ac49-118d484b3e3b",
+      "target_ref": "attack-pattern--7bc57495-ea59-4380-be31-a64af124ef18",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--1448897c-4b9a-44ef-a0ce-371f98c1f2f3",
+      "modified": "2026-07-31T18:47:17.973Z",
+      "created": "2025-10-16T16:25:39.625Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Trend Micro SharePoint Attacks JUL 2025",
+          "description": " Trend Micro Research. (2022, July 22). Proactive Security Insights for SharePoint Attacks (CVE-2025-53770 and CVE-2025-53771). Retrieved October 15, 2025.",
+          "url": "https://www.trendmicro.com/en_us/research/25/g/cve-2025-53770-and-cve-2025-53771-sharepoint-attacks.html"
+        },
+        {
+          "source_name": "Eye Research ToolShell JUL 2025",
+          "description": "Eye Security. (2025, July 19). SharePoint Under Siege: ToolShell Exploit (CVE-2025-49706 & CVE-2025-49704). Retrieved October 15, 2025.",
+          "url": "https://research.eye.security/sharepoint-under-siege/"
+        },
+        {
+          "source_name": "SentinelOne ToolShell JUL 2025",
+          "description": "Kenin, S. et al. (2025, July 21). SharePoint ToolShell | Zero-Day Exploited in-the-Wild Targets Enterprise Servers. Retrieved October 15, 2025.",
+          "url": "https://www.sentinelone.com/blog/sharepoint-toolshell-zero-day-exploited-in-the-wild-targets-enterprise-servers/"
+        },
+        {
+          "source_name": "Microsoft SharePoint Exploit JUL 2025",
+          "description": "Microsoft Threat Intelligence. (2025, July 22). Disrupting active exploitation of on-premises SharePoint vulnerabilities. Retrieved October 15, 2025.",
+          "url": "https://www.microsoft.com/en-us/security/blog/2025/07/22/disrupting-active-exploitation-of-on-premises-sharepoint-vulnerabilities/#storm-2603"
+        },
+        {
+          "source_name": "Palo Alto SharePoint Vulnerabilities JUL 2025",
+          "description": "Unit 42. (2025, July 31). Active Exploitation of Microsoft SharePoint Vulnerabilities: Threat Brief (Updated). Retrieved October 15, 2025.",
+          "url": "https://unit42.paloaltonetworks.com/microsoft-sharepoint-cve-2025-49704-cve-2025-49706-cve-2025-53770/"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [SharePoint ToolShell Exploitation](https://attack.mitre.org/campaigns/C0058), threat actors accessed web.config and machine.config to extract MachineKey values, enabling them to forge legitimate VIEWSTATE tokens for future deserialization payloads.(Citation: Microsoft SharePoint Exploit JUL 2025)(Citation: Eye Research ToolShell JUL 2025)(Citation: Trend Micro SharePoint Attacks JUL 2025)(Citation: SentinelOne ToolShell JUL 2025)(Citation: Palo Alto SharePoint Vulnerabilities JUL 2025)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--1a0576df-df21-4775-843e-844d8a58a94b",
+      "target_ref": "attack-pattern--837f9164-50af-4ac0-8219-379d8a74cefc",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--a7160173-63e0-434a-a5e5-8a8347f6f828",
+      "modified": "2026-07-31T18:47:18.897Z",
+      "created": "2025-10-16T16:04:58.684Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "ESET ToolShell JUL 2025",
+          "description": "ESET Research. (2025, July 24). ToolShell: An all-you-can-eat buffet for threat actors. Retrieved October 15, 2025.",
+          "url": "https://www.welivesecurity.com/en/eset-research/toolshell-an-all-you-can-eat-buffet-for-threat-actors/"
+        },
+        {
+          "source_name": "Eye Research ToolShell JUL 2025",
+          "description": "Eye Security. (2025, July 19). SharePoint Under Siege: ToolShell Exploit (CVE-2025-49706 & CVE-2025-49704). Retrieved October 15, 2025.",
+          "url": "https://research.eye.security/sharepoint-under-siege/"
+        },
+        {
+          "source_name": "SentinelOne ToolShell JUL 2025",
+          "description": "Kenin, S. et al. (2025, July 21). SharePoint ToolShell | Zero-Day Exploited in-the-Wild Targets Enterprise Servers. Retrieved October 15, 2025.",
+          "url": "https://www.sentinelone.com/blog/sharepoint-toolshell-zero-day-exploited-in-the-wild-targets-enterprise-servers/"
+        },
+        {
+          "source_name": "Microsoft SharePoint Exploit JUL 2025",
+          "description": "Microsoft Threat Intelligence. (2025, July 22). Disrupting active exploitation of on-premises SharePoint vulnerabilities. Retrieved October 15, 2025.",
+          "url": "https://www.microsoft.com/en-us/security/blog/2025/07/22/disrupting-active-exploitation-of-on-premises-sharepoint-vulnerabilities/#storm-2603"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [SharePoint ToolShell Exploitation](https://attack.mitre.org/campaigns/C0058), threat actors utilized `cmd.exe` and batch scripts within the victim environment.(Citation: Microsoft SharePoint Exploit JUL 2025)(Citation: ESET ToolShell JUL 2025)(Citation: Eye Research ToolShell JUL 2025)(Citation: SentinelOne ToolShell JUL 2025)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--1a0576df-df21-4775-843e-844d8a58a94b",
+      "target_ref": "attack-pattern--d1fcf083-a721-4223-aedf-bf8960798d62",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--1195fdb7-59c3-4426-ba2d-ac86d079ddf9",
+      "modified": "2026-07-31T18:47:17.902Z",
+      "created": "2025-10-15T20:48:21.995Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Microsoft SharePoint Exploit JUL 2025",
+          "description": "Microsoft Threat Intelligence. (2025, July 22). Disrupting active exploitation of on-premises SharePoint vulnerabilities. Retrieved October 15, 2025.",
+          "url": "https://www.microsoft.com/en-us/security/blog/2025/07/22/disrupting-active-exploitation-of-on-premises-sharepoint-vulnerabilities/#storm-2603"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "(Citation: Microsoft SharePoint Exploit JUL 2025)\n",
+      "relationship_type": "uses",
+      "source_ref": "campaign--1a0576df-df21-4775-843e-844d8a58a94b",
+      "target_ref": "tool--ff6caf67-ea1f-4895-b80e-4bb0fc31c6db",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--9f6939de-be8d-45cc-8c2d-6a3c6972c2d2",
+      "modified": "2026-07-31T21:14:22.765Z",
+      "created": "2023-03-17T14:01:57.520Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "ClearSky Lazarus Aug 2020",
+          "description": "ClearSky Research Team. (2020, August 13). Operation 'Dream Job' Widespread North Korean Espionage Campaign. Retrieved December 20, 2021.",
+          "url": "https://www.clearskysec.com/wp-content/uploads/2020/08/Dream-Job-Campaign.pdf"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "(Citation: ClearSky Lazarus Aug 2020)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--0257b35b-93ef-4a70-80dd-ad5258e6045b",
+      "target_ref": "tool--a1dd2dbd-1550-44bf-abcc-1a4c52e97719",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--3eb4f68b-eaa3-4ea2-b340-c4fb9bbffe82",
+      "modified": "2026-07-31T18:47:18.178Z",
+      "created": "2025-10-15T20:42:59.548Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Microsoft SharePoint Exploit JUL 2025",
+          "description": "Microsoft Threat Intelligence. (2025, July 22). Disrupting active exploitation of on-premises SharePoint vulnerabilities. Retrieved October 15, 2025.",
+          "url": "https://www.microsoft.com/en-us/security/blog/2025/07/22/disrupting-active-exploitation-of-on-premises-sharepoint-vulnerabilities/#storm-2603"
+        },
+        {
+          "source_name": "Palo Alto SharePoint Vulnerabilities JUL 2025",
+          "description": "Unit 42. (2025, July 31). Active Exploitation of Microsoft SharePoint Vulnerabilities: Threat Brief (Updated). Retrieved October 15, 2025.",
+          "url": "https://unit42.paloaltonetworks.com/microsoft-sharepoint-cve-2025-49704-cve-2025-49706-cve-2025-53770/"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [SharePoint ToolShell Exploitation](https://attack.mitre.org/campaigns/C0058), threat actors registered C2 domains to spoof legitimate Microsoft domains.(Citation: Microsoft SharePoint Exploit JUL 2025)(Citation: Palo Alto SharePoint Vulnerabilities JUL 2025)\n",
+      "relationship_type": "uses",
+      "source_ref": "campaign--1a0576df-df21-4775-843e-844d8a58a94b",
+      "target_ref": "attack-pattern--40f5caa0-4cb7-4117-89fc-d421bb493df3",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--8d2d1a8e-7fa4-4726-aad2-7a21dfbe1c87",
+      "modified": "2026-07-31T18:47:18.190Z",
+      "created": "2024-06-10T19:33:49.898Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Lumen KVBotnet 2023",
+          "description": "Black Lotus Labs. (2023, December 13). Routers Roasting On An Open Firewall: The KV-Botnet Investigation. Retrieved June 10, 2024.",
+          "url": "https://blog.lumen.com/routers-roasting-on-an-open-firewall-the-kv-botnet-investigation/"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "[KV Botnet Activity](https://attack.mitre.org/campaigns/C0035) altered permissions on downloaded tools and payloads to enable execution on victim machines.(Citation: Lumen KVBotnet 2023)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--0c259854-4044-4f6c-ac49-118d484b3e3b",
+      "target_ref": "attack-pattern--09b130a2-a77e-4af0-a361-f46f9aad1345",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--2c095f1e-211d-4e84-b521-9cef12f1e83f",
+      "modified": "2026-07-31T21:14:22.505Z",
+      "created": "2023-03-17T15:30:20.085Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "McAfee Lazarus Nov 2020",
+          "description": "Beek, C. (2020, November 5). Operation North Star: Behind The Scenes. Retrieved December 20, 2021.",
+          "url": "https://www.mcafee.com/blogs/other-blogs/mcafee-labs/operation-north-star-behind-the-scenes/"
+        },
+        {
+          "source_name": "McAfee Lazarus Jul 2020",
+          "description": "Cashman, M. (2020, July 29). Operation North Star Campaign. Retrieved December 20, 2021.",
+          "url": "https://www.mcafee.com/blogs/other-blogs/mcafee-labs/operation-north-star-a-job-offer-thats-too-good-to-be-true/?hilite=%27Operation%27%2C%27North%27%2C%27Star%27"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "For [Operation Dream Job](https://attack.mitre.org/campaigns/C0022), [Lazarus Group](https://attack.mitre.org/groups/G0032) compromised domains in Italy and other countries for their C2 infrastructure.(Citation: McAfee Lazarus Jul 2020)(Citation: McAfee Lazarus Nov 2020)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--0257b35b-93ef-4a70-80dd-ad5258e6045b",
+      "target_ref": "attack-pattern--f9cc4d06-775f-4ee1-b401-4e2cc0da30ba",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--d5e069df-6933-417e-b62d-6c8701438382",
+      "modified": "2026-07-31T18:47:19.130Z",
+      "created": "2025-10-16T16:08:02.052Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Microsoft SharePoint Exploit JUL 2025",
+          "description": "Microsoft Threat Intelligence. (2025, July 22). Disrupting active exploitation of on-premises SharePoint vulnerabilities. Retrieved October 15, 2025.",
+          "url": "https://www.microsoft.com/en-us/security/blog/2025/07/22/disrupting-active-exploitation-of-on-premises-sharepoint-vulnerabilities/#storm-2603"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [SharePoint ToolShell Exploitation](https://attack.mitre.org/campaigns/C0058), threat actors leveraged [PsExec](https://attack.mitre.org/software/S0029) for command execution and used `services.exe` to disable Microsoft Defender via Registry keys.(Citation: Microsoft SharePoint Exploit JUL 2025)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--1a0576df-df21-4775-843e-844d8a58a94b",
+      "target_ref": "attack-pattern--f1951e8a-500e-4a26-8803-76d95c4554b4",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--f73d269a-9a0d-4485-9587-e0f0f2335c35",
+      "modified": "2026-07-31T21:14:22.934Z",
+      "created": "2023-03-17T15:50:51.884Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "ESET Lazarus Jun 2020",
+          "description": "Breitenbacher, D and Osis, K. (2020, June 17). OPERATION IN(TER)CEPTION: Targeted Attacks Against European Aerospace and Military Companies. Retrieved December 20, 2021.",
+          "url": "https://www.welivesecurity.com/wp-content/uploads/2020/06/ESET_Operation_Interception.pdf"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "For [Operation Dream Job](https://attack.mitre.org/campaigns/C0022), [Lazarus Group](https://attack.mitre.org/groups/G0032) used LinkedIn to identify and target employees within a chosen organization.(Citation: ESET Lazarus Jun 2020)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--0257b35b-93ef-4a70-80dd-ad5258e6045b",
+      "target_ref": "attack-pattern--bbe5b322-e2af-4a5e-9625-a4e62bf84ed3",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--9949853c-ab7e-43c8-bc77-8b9b6bddba50",
+      "modified": "2026-07-31T18:47:18.225Z",
+      "created": "2024-06-10T19:12:24.008Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Lumen KVBotnet 2023",
+          "description": "Black Lotus Labs. (2023, December 13). Routers Roasting On An Open Firewall: The KV-Botnet Investigation. Retrieved June 10, 2024.",
+          "url": "https://blog.lumen.com/routers-roasting-on-an-open-firewall-the-kv-botnet-investigation/"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "[KV Botnet Activity](https://attack.mitre.org/campaigns/C0035) installation steps include first identifying, then stopping, any process containing <code>[kworker\\/0:1]</code>, then renaming its initial installation stage to this process name.(Citation: Lumen KVBotnet 2023)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--0c259854-4044-4f6c-ac49-118d484b3e3b",
+      "target_ref": "attack-pattern--7bdca9d5-d500-4d7d-8c52-5fd47baf4c0c",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--42f078b7-f1ad-4507-9774-a4673a4c4acd",
+      "modified": "2026-07-31T18:47:18.891Z",
+      "created": "2022-09-07T19:45:21.300Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Talos Frankenstein June 2019",
+          "description": "Adamitis, D. et al. (2019, June 4). It's alive: Threat actors cobble together open-source pieces into monstrous Frankenstein campaign. Retrieved May 11, 2020.",
+          "url": "https://blog.talosintelligence.com/2019/06/frankenstein-campaign.html"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [Frankenstein](https://attack.mitre.org/campaigns/C0001), the threat actors relied on a victim to enable macros within a malicious Microsoft Word document likely sent via email.(Citation: Talos Frankenstein June 2019)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--26d9ebae-de59-427f-ae9a-349456bae4b1",
+      "target_ref": "attack-pattern--232b7f21-adf9-4b42-b936-b9d6f7df856e",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--6ddbec2b-2a42-476f-919d-da3e4b06a1e2",
+      "modified": "2026-07-31T21:14:22.644Z",
+      "created": "2023-03-17T14:42:29.695Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "ClearSky Lazarus Aug 2020",
+          "description": "ClearSky Research Team. (2020, August 13). Operation 'Dream Job' Widespread North Korean Espionage Campaign. Retrieved December 20, 2021.",
+          "url": "https://www.clearskysec.com/wp-content/uploads/2020/08/Dream-Job-Campaign.pdf"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [Operation Dream Job](https://attack.mitre.org/campaigns/C0022), [Lazarus Group](https://attack.mitre.org/groups/G0032) exfiltrated data from a compromised host to actor-controlled C2 servers.(Citation: ClearSky Lazarus Aug 2020)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--0257b35b-93ef-4a70-80dd-ad5258e6045b",
+      "target_ref": "attack-pattern--92d7da27-2d91-488e-a00c-059dc162766d",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--bfdc1a69-6bc6-4a73-a2f2-48e947d19895",
+      "modified": "2026-07-31T18:47:19.777Z",
+      "created": "2025-01-14T22:49:06.445Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Recorded Future RedDelta 2025",
+          "description": "Insikt Group. (2025, January 9). Chinese State-Sponsored RedDelta Targeted Taiwan, Mongolia, and Southeast Asia with Adapted PlugX Infection Chain. Retrieved January 14, 2025.",
+          "url": "https://go.recordedfuture.com/hubfs/reports/cta-cn-2025-0109.pdf"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "[Mustang Panda](https://attack.mitre.org/groups/G0129) initial payloads downloaded a Windows Installer MSI file that in turn dropped follow-on files leading to installation of [PlugX](https://attack.mitre.org/software/S0013) during [RedDelta Modified PlugX Infection Chain Operations](https://attack.mitre.org/campaigns/C0047).(Citation: Recorded Future RedDelta 2025)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--276671b5-5425-48db-ad65-c8c2564a969b",
+      "target_ref": "attack-pattern--365be77f-fc0e-42ee-bac8-4faf806d9336",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--c3d73dc3-06f6-422a-9be2-c4eb3ce36fbc",
+      "modified": "2026-07-31T21:14:22.865Z",
+      "created": "2023-03-17T14:09:48.488Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "McAfee Lazarus Nov 2020",
+          "description": "Beek, C. (2020, November 5). Operation North Star: Behind The Scenes. Retrieved December 20, 2021.",
+          "url": "https://www.mcafee.com/blogs/other-blogs/mcafee-labs/operation-north-star-behind-the-scenes/"
+        },
+        {
+          "source_name": "ESET Lazarus Jun 2020",
+          "description": "Breitenbacher, D and Osis, K. (2020, June 17). OPERATION IN(TER)CEPTION: Targeted Attacks Against European Aerospace and Military Companies. Retrieved December 20, 2021.",
+          "url": "https://www.welivesecurity.com/wp-content/uploads/2020/06/ESET_Operation_Interception.pdf"
+        },
+        {
+          "source_name": "McAfee Lazarus Jul 2020",
+          "description": "Cashman, M. (2020, July 29). Operation North Star Campaign. Retrieved December 20, 2021.",
+          "url": "https://www.mcafee.com/blogs/other-blogs/mcafee-labs/operation-north-star-a-job-offer-thats-too-good-to-be-true/?hilite=%27Operation%27%2C%27North%27%2C%27Star%27"
+        },
+        {
+          "source_name": "ClearSky Lazarus Aug 2020",
+          "description": "ClearSky Research Team. (2020, August 13). Operation 'Dream Job' Widespread North Korean Espionage Campaign. Retrieved December 20, 2021.",
+          "url": "https://www.clearskysec.com/wp-content/uploads/2020/08/Dream-Job-Campaign.pdf"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [Operation Dream Job](https://attack.mitre.org/campaigns/C0022), [Lazarus Group](https://attack.mitre.org/groups/G0032) encrypted malware such as  [DRATzarus](https://attack.mitre.org/software/S0694) with XOR and DLL files with base64.(Citation: ClearSky Lazarus Aug 2020)(Citation: ESET Lazarus Jun 2020)(Citation: McAfee Lazarus Jul 2020)(Citation: McAfee Lazarus Nov 2020)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--0257b35b-93ef-4a70-80dd-ad5258e6045b",
+      "target_ref": "attack-pattern--0d91b3c0-5e50-47c3-949a-2a796f04d144",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--ae1592ae-15a3-45e3-a509-4fe9be3f9ed9",
+      "modified": "2026-07-31T21:14:22.791Z",
+      "created": "2023-03-17T15:01:40.524Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "ESET Lazarus Jun 2020",
+          "description": "Breitenbacher, D and Osis, K. (2020, June 17). OPERATION IN(TER)CEPTION: Targeted Attacks Against European Aerospace and Military Companies. Retrieved December 20, 2021.",
+          "url": "https://www.welivesecurity.com/wp-content/uploads/2020/06/ESET_Operation_Interception.pdf"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [Operation Dream Job](https://attack.mitre.org/campaigns/C0022), [Lazarus Group](https://attack.mitre.org/groups/G0032) used `regsvr32` to execute malware.(Citation: ESET Lazarus Jun 2020)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--0257b35b-93ef-4a70-80dd-ad5258e6045b",
+      "target_ref": "attack-pattern--b97f1d35-4249-4486-a6b5-ee60ccf24fab",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--62192379-d052-4618-be33-8511d636c67c",
+      "modified": "2026-07-31T21:14:22.635Z",
+      "created": "2023-03-17T14:56:40.450Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "ESET Lazarus Jun 2020",
+          "description": "Breitenbacher, D and Osis, K. (2020, June 17). OPERATION IN(TER)CEPTION: Targeted Attacks Against European Aerospace and Military Companies. Retrieved December 20, 2021.",
+          "url": "https://www.welivesecurity.com/wp-content/uploads/2020/06/ESET_Operation_Interception.pdf"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [Operation Dream Job](https://attack.mitre.org/campaigns/C0022), [Lazarus Group](https://attack.mitre.org/groups/G0032) performed brute force attacks against administrator accounts.(Citation: ESET Lazarus Jun 2020) ",
+      "relationship_type": "uses",
+      "source_ref": "campaign--0257b35b-93ef-4a70-80dd-ad5258e6045b",
+      "target_ref": "attack-pattern--a93494bb-4b80-4ea1-8695-3236a49916fd",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--3c6ad797-8dba-4dee-8930-d35e26a782da",
+      "modified": "2026-07-31T18:47:19.308Z",
+      "created": "2025-01-14T23:06:51.941Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Recorded Future RedDelta 2025",
+          "description": "Insikt Group. (2025, January 9). Chinese State-Sponsored RedDelta Targeted Taiwan, Mongolia, and Southeast Asia with Adapted PlugX Infection Chain. Retrieved January 14, 2025.",
+          "url": "https://go.recordedfuture.com/hubfs/reports/cta-cn-2025-0109.pdf"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "[Mustang Panda](https://attack.mitre.org/groups/G0129) communicated over TCP 5000 from adversary administrative servers to adversary command and control nodes during [RedDelta Modified PlugX Infection Chain Operations](https://attack.mitre.org/campaigns/C0047).(Citation: Recorded Future RedDelta 2025)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--276671b5-5425-48db-ad65-c8c2564a969b",
+      "target_ref": "attack-pattern--c21d5a77-d422-4a69-acd7-2c53c1faa34b",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--899555f4-8eb6-4685-89b4-06358bbc4e73",
+      "modified": "2026-07-31T18:47:18.565Z",
+      "created": "2025-10-16T19:37:56.814Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Microsoft SharePoint Exploit JUL 2025",
+          "description": "Microsoft Threat Intelligence. (2025, July 22). Disrupting active exploitation of on-premises SharePoint vulnerabilities. Retrieved October 15, 2025.",
+          "url": "https://www.microsoft.com/en-us/security/blog/2025/07/22/disrupting-active-exploitation-of-on-premises-sharepoint-vulnerabilities/#storm-2603"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "(Citation: Microsoft SharePoint Exploit JUL 2025)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--1a0576df-df21-4775-843e-844d8a58a94b",
+      "target_ref": "tool--2f7f03bb-f367-4a5a-ad9b-310a12a48906",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--b7cba2d6-7f3e-4402-b195-a21b0cf5e5d2",
+      "modified": "2026-07-31T18:47:18.993Z",
+      "created": "2025-10-16T16:29:51.350Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "ESET ToolShell JUL 2025",
+          "description": "ESET Research. (2025, July 24). ToolShell: An all-you-can-eat buffet for threat actors. Retrieved October 15, 2025.",
+          "url": "https://www.welivesecurity.com/en/eset-research/toolshell-an-all-you-can-eat-buffet-for-threat-actors/"
+        },
+        {
+          "source_name": "Microsoft SharePoint Exploit JUL 2025",
+          "description": "Microsoft Threat Intelligence. (2025, July 22). Disrupting active exploitation of on-premises SharePoint vulnerabilities. Retrieved October 15, 2025.",
+          "url": "https://www.microsoft.com/en-us/security/blog/2025/07/22/disrupting-active-exploitation-of-on-premises-sharepoint-vulnerabilities/#storm-2603"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [SharePoint ToolShell Exploitation](https://attack.mitre.org/campaigns/C0058), threat actors used Fast Reverse Proxy to communicate with C2.(Citation: Microsoft SharePoint Exploit JUL 2025)(Citation: ESET ToolShell JUL 2025)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--1a0576df-df21-4775-843e-844d8a58a94b",
+      "target_ref": "attack-pattern--731f4f55-b6d0-41d1-a7a9-072a66389aea",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--d1bd6ce6-eb5f-41a1-b26f-4fe0d83e51ea",
+      "modified": "2026-07-31T21:14:22.885Z",
+      "created": "2023-03-17T15:35:48.668Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "McAfee Lazarus Nov 2020",
+          "description": "Beek, C. (2020, November 5). Operation North Star: Behind The Scenes. Retrieved December 20, 2021.",
+          "url": "https://www.mcafee.com/blogs/other-blogs/mcafee-labs/operation-north-star-behind-the-scenes/"
+        },
+        {
+          "source_name": "ESET Lazarus Jun 2020",
+          "description": "Breitenbacher, D and Osis, K. (2020, June 17). OPERATION IN(TER)CEPTION: Targeted Attacks Against European Aerospace and Military Companies. Retrieved December 20, 2021.",
+          "url": "https://www.welivesecurity.com/wp-content/uploads/2020/06/ESET_Operation_Interception.pdf"
+        },
+        {
+          "source_name": "McAfee Lazarus Jul 2020",
+          "description": "Cashman, M. (2020, July 29). Operation North Star Campaign. Retrieved December 20, 2021.",
+          "url": "https://www.mcafee.com/blogs/other-blogs/mcafee-labs/operation-north-star-a-job-offer-thats-too-good-to-be-true/?hilite=%27Operation%27%2C%27North%27%2C%27Star%27"
+        },
+        {
+          "source_name": "ClearSky Lazarus Aug 2020",
+          "description": "ClearSky Research Team. (2020, August 13). Operation 'Dream Job' Widespread North Korean Espionage Campaign. Retrieved December 20, 2021.",
+          "url": "https://www.clearskysec.com/wp-content/uploads/2020/08/Dream-Job-Campaign.pdf"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "For [Operation Dream Job](https://attack.mitre.org/campaigns/C0022), [Lazarus Group](https://attack.mitre.org/groups/G0032) developed custom tools such as Sumarta, DBLL Dropper, [Torisma](https://attack.mitre.org/software/S0678), and [DRATzarus](https://attack.mitre.org/software/S0694) for their operations.(Citation: ClearSky Lazarus Aug 2020)(Citation: ESET Lazarus Jun 2020)(Citation: McAfee Lazarus Jul 2020)(Citation: McAfee Lazarus Nov 2020)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--0257b35b-93ef-4a70-80dd-ad5258e6045b",
+      "target_ref": "attack-pattern--212306d8-efa4-44c9-8c2d-ed3d2e224aa0",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--78a7e89b-4560-4105-adfb-47393c39625b",
+      "modified": "2026-07-31T21:14:22.679Z",
+      "created": "2023-03-17T15:29:42.232Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "ClearSky Lazarus Aug 2020",
+          "description": "ClearSky Research Team. (2020, August 13). Operation 'Dream Job' Widespread North Korean Espionage Campaign. Retrieved December 20, 2021.",
+          "url": "https://www.clearskysec.com/wp-content/uploads/2020/08/Dream-Job-Campaign.pdf"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [Operation Dream Job](https://attack.mitre.org/campaigns/C0022), [Lazarus Group](https://attack.mitre.org/groups/G0032) used file hosting services like DropBox and OneDrive.(Citation: ClearSky Lazarus Aug 2020)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--0257b35b-93ef-4a70-80dd-ad5258e6045b",
+      "target_ref": "attack-pattern--88d31120-5bc7-4ce3-a9c0-7cf147be8e54",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--2caa19fb-fe02-4365-b53a-1ff554a13889",
+      "modified": "2026-07-31T18:47:18.718Z",
+      "created": "2022-09-07T13:51:23.961Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Talos Frankenstein June 2019",
+          "description": "Adamitis, D. et al. (2019, June 4). It's alive: Threat actors cobble together open-source pieces into monstrous Frankenstein campaign. Retrieved May 11, 2020.",
+          "url": "https://blog.talosintelligence.com/2019/06/frankenstein-campaign.html"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [Frankenstein](https://attack.mitre.org/campaigns/C0001), the threat actors collected information via [Empire](https://attack.mitre.org/software/S0363), which was automatically sent back to the adversary's C2.(Citation: Talos Frankenstein June 2019)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--26d9ebae-de59-427f-ae9a-349456bae4b1",
+      "target_ref": "attack-pattern--774a3188-6ba9-4dc4-879d-d54ee48a5ce9",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--fb35e052-245d-4da3-b43f-664e1595cca2",
+      "modified": "2026-07-31T18:47:19.384Z",
+      "created": "2025-10-16T16:51:17.330Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Microsoft SharePoint Exploit JUL 2025",
+          "description": "Microsoft Threat Intelligence. (2025, July 22). Disrupting active exploitation of on-premises SharePoint vulnerabilities. Retrieved October 15, 2025.",
+          "url": "https://www.microsoft.com/en-us/security/blog/2025/07/22/disrupting-active-exploitation-of-on-premises-sharepoint-vulnerabilities/#storm-2603"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [SharePoint ToolShell Exploitation](https://attack.mitre.org/campaigns/C0058), threat actors exfiltrated stolen credentials and internal data over HTTPS to C2 infrastructure.(Citation: Microsoft SharePoint Exploit JUL 2025)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--1a0576df-df21-4775-843e-844d8a58a94b",
+      "target_ref": "attack-pattern--92d7da27-2d91-488e-a00c-059dc162766d",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--61cfb178-a097-4788-a084-48d0d7c602b5",
+      "modified": "2026-07-31T21:14:22.624Z",
+      "created": "2023-03-17T14:09:07.593Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "McAfee Lazarus Jul 2020",
+          "description": "Cashman, M. (2020, July 29). Operation North Star Campaign. Retrieved December 20, 2021.",
+          "url": "https://www.mcafee.com/blogs/other-blogs/mcafee-labs/operation-north-star-a-job-offer-thats-too-good-to-be-true/?hilite=%27Operation%27%2C%27North%27%2C%27Star%27"
+        },
+        {
+          "source_name": "ClearSky Lazarus Aug 2020",
+          "description": "ClearSky Research Team. (2020, August 13). Operation 'Dream Job' Widespread North Korean Espionage Campaign. Retrieved December 20, 2021.",
+          "url": "https://www.clearskysec.com/wp-content/uploads/2020/08/Dream-Job-Campaign.pdf"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [Operation Dream Job](https://attack.mitre.org/campaigns/C0022), [Lazarus Group](https://attack.mitre.org/groups/G0032) used malicious Trojans and DLL files to exfiltrate data from an infected host.(Citation: ClearSky Lazarus Aug 2020)(Citation: McAfee Lazarus Jul 2020)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--0257b35b-93ef-4a70-80dd-ad5258e6045b",
+      "target_ref": "attack-pattern--3c4a2599-71ee-4405-ba1e-0e28414b4bc5",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--061c7b3d-775a-403f-9fd6-af0962a2e25e",
+      "modified": "2026-07-31T21:14:22.382Z",
+      "created": "2023-03-17T15:54:02.183Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "McAfee Lazarus Nov 2020",
+          "description": "Beek, C. (2020, November 5). Operation North Star: Behind The Scenes. Retrieved December 20, 2021.",
+          "url": "https://www.mcafee.com/blogs/other-blogs/mcafee-labs/operation-north-star-behind-the-scenes/"
+        },
+        {
+          "source_name": "ESET Lazarus Jun 2020",
+          "description": "Breitenbacher, D and Osis, K. (2020, June 17). OPERATION IN(TER)CEPTION: Targeted Attacks Against European Aerospace and Military Companies. Retrieved December 20, 2021.",
+          "url": "https://www.welivesecurity.com/wp-content/uploads/2020/06/ESET_Operation_Interception.pdf"
+        },
+        {
+          "source_name": "McAfee Lazarus Jul 2020",
+          "description": "Cashman, M. (2020, July 29). Operation North Star Campaign. Retrieved December 20, 2021.",
+          "url": "https://www.mcafee.com/blogs/other-blogs/mcafee-labs/operation-north-star-a-job-offer-thats-too-good-to-be-true/?hilite=%27Operation%27%2C%27North%27%2C%27Star%27"
+        },
+        {
+          "source_name": "ClearSky Lazarus Aug 2020",
+          "description": "ClearSky Research Team. (2020, August 13). Operation 'Dream Job' Widespread North Korean Espionage Campaign. Retrieved December 20, 2021.",
+          "url": "https://www.clearskysec.com/wp-content/uploads/2020/08/Dream-Job-Campaign.pdf"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "For [Operation Dream Job](https://attack.mitre.org/campaigns/C0022), [Lazarus Group](https://attack.mitre.org/groups/G0032) used compromised servers to host malware.(Citation: ClearSky Lazarus Aug 2020)(Citation: ESET Lazarus Jun 2020)(Citation: McAfee Lazarus Jul 2020)(Citation: McAfee Lazarus Nov 2020)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--0257b35b-93ef-4a70-80dd-ad5258e6045b",
+      "target_ref": "attack-pattern--3ee16395-03f0-4690-a32e-69ce9ada0f9e",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--1f3caa29-45d7-4ae7-b407-c5a4cccb3998",
+      "modified": "2026-07-31T18:47:19.198Z",
+      "created": "2025-01-14T22:59:21.405Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Recorded Future RedDelta 2025",
+          "description": "Insikt Group. (2025, January 9). Chinese State-Sponsored RedDelta Targeted Taiwan, Mongolia, and Southeast Asia with Adapted PlugX Infection Chain. Retrieved January 14, 2025.",
+          "url": "https://go.recordedfuture.com/hubfs/reports/cta-cn-2025-0109.pdf"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "[Mustang Panda](https://attack.mitre.org/groups/G0129) staged malware on adversary-controlled domains and cloud storage instances during [RedDelta Modified PlugX Infection Chain Operations](https://attack.mitre.org/campaigns/C0047).(Citation: Recorded Future RedDelta 2025)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--276671b5-5425-48db-ad65-c8c2564a969b",
+      "target_ref": "attack-pattern--3ee16395-03f0-4690-a32e-69ce9ada0f9e",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--12e8b4b1-e6b4-4ced-b171-e9e2fb881e7b",
+      "modified": "2026-07-31T18:47:17.937Z",
+      "created": "2025-10-16T16:47:06.011Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "SentinelOne ToolShell JUL 2025",
+          "description": "Kenin, S. et al. (2025, July 21). SharePoint ToolShell | Zero-Day Exploited in-the-Wild Targets Enterprise Servers. Retrieved October 15, 2025.",
+          "url": "https://www.sentinelone.com/blog/sharepoint-toolshell-zero-day-exploited-in-the-wild-targets-enterprise-servers/"
+        },
+        {
+          "source_name": "Microsoft SharePoint Exploit JUL 2025",
+          "description": "Microsoft Threat Intelligence. (2025, July 22). Disrupting active exploitation of on-premises SharePoint vulnerabilities. Retrieved October 15, 2025.",
+          "url": "https://www.microsoft.com/en-us/security/blog/2025/07/22/disrupting-active-exploitation-of-on-premises-sharepoint-vulnerabilities/#storm-2603"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [SharePoint ToolShell Exploitation](https://attack.mitre.org/campaigns/C0058), threat actors executed `whoami` on victim machines to enumerate user context and validate privilege levels.(Citation: Microsoft SharePoint Exploit JUL 2025)(Citation: SentinelOne ToolShell JUL 2025)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--1a0576df-df21-4775-843e-844d8a58a94b",
+      "target_ref": "attack-pattern--03d7999c-1f4c-42cc-8373-e7690d318104",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--55323dcc-68cb-4e92-bcf3-33c7d26f9b5e",
+      "modified": "2026-07-31T21:14:22.580Z",
+      "created": "2023-03-17T15:05:41.137Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "McAfee Lazarus Jul 2020",
+          "description": "Cashman, M. (2020, July 29). Operation North Star Campaign. Retrieved December 20, 2021.",
+          "url": "https://www.mcafee.com/blogs/other-blogs/mcafee-labs/operation-north-star-a-job-offer-thats-too-good-to-be-true/?hilite=%27Operation%27%2C%27North%27%2C%27Star%27"
+        },
+        {
+          "source_name": "ClearSky Lazarus Aug 2020",
+          "description": "ClearSky Research Team. (2020, August 13). Operation 'Dream Job' Widespread North Korean Espionage Campaign. Retrieved December 20, 2021.",
+          "url": "https://www.clearskysec.com/wp-content/uploads/2020/08/Dream-Job-Campaign.pdf"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [Operation Dream Job](https://attack.mitre.org/campaigns/C0022), [Lazarus Group](https://attack.mitre.org/groups/G0032) used DOCX files to retrieve a malicious document template/DOTM file.(Citation: ClearSky Lazarus Aug 2020)(Citation: McAfee Lazarus Jul 2020)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--0257b35b-93ef-4a70-80dd-ad5258e6045b",
+      "target_ref": "attack-pattern--dc31fe1e-d722-49da-8f5f-92c7b5aff534",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    },
+    {
+      "id": "relationship--4c9c2fb2-8e06-4ad8-93e5-45d4e8b2494c",
+      "modified": "2026-07-31T18:47:18.261Z",
+      "created": "2025-10-16T16:18:10.958Z",
+      "type": "relationship",
+      "spec_version": "2.1",
+      "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "revoked": false,
+      "external_references": [
+        {
+          "source_name": "Microsoft SharePoint Exploit JUL 2025",
+          "description": "Microsoft Threat Intelligence. (2025, July 22). Disrupting active exploitation of on-premises SharePoint vulnerabilities. Retrieved October 15, 2025.",
+          "url": "https://www.microsoft.com/en-us/security/blog/2025/07/22/disrupting-active-exploitation-of-on-premises-sharepoint-vulnerabilities/#storm-2603"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+      ],
+      "description": "During [SharePoint ToolShell Exploitation](https://attack.mitre.org/campaigns/C0058), threat actors, including Storm-2603, modified group policy to enable ransomware distribution.(Citation: Microsoft SharePoint Exploit JUL 2025)",
+      "relationship_type": "uses",
+      "source_ref": "campaign--1a0576df-df21-4775-843e-844d8a58a94b",
+      "target_ref": "attack-pattern--5d2be8b9-d24c-4e98-83bf-2f5f79477163",
+      "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+      "x_mitre_deprecated": false,
+      "x_mitre_attack_spec_version": "3.3.0"
+    }
+  ]
+}

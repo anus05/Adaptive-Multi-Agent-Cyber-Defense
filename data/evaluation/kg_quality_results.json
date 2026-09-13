@@ -1,0 +1,219 @@
+{
+  "overview": {
+    "total_nodes": 2085,
+    "total_relationships": 20382,
+    "database": "Neo4j Community Edition"
+  },
+  "node_statistics": {
+    "Technique": 858,
+    "Malware": 733,
+    "ThreatActor": 191,
+    "Tool": 95,
+    "Campaign": 56,
+    "CourseOfAction": 54,
+    "Software": 41,
+    "CVE": 40,
+    "Tactic": 15,
+    "Weakness": 2
+  },
+  "relationship_statistics": {
+    "USES": 18555,
+    "BELONGS_TO": 1090,
+    "SUBTECHNIQUE_OF": 477,
+    "REVOKED_BY": 157,
+    "AFFECTS": 54,
+    "ATTRIBUTED_TO": 28,
+    "HAS_WEAKNESS": 21
+  },
+  "connectivity": {
+    "total_nodes": 2085,
+    "total_relationships": 20382,
+    "isolated_nodes": 64,
+    "average_degree": 19.55,
+    "maximum_degree": 524,
+    "connected_nodes": 2021,
+    "percentage_connected_nodes": 96.93
+  },
+  "mitre_attck_integrity": {
+    "technique": {
+      "total": 858,
+      "valid_id": 858,
+      "valid_pct": 100.0
+    },
+    "malware": {
+      "total": 733,
+      "valid_id": 733,
+      "valid_pct": 100.0
+    },
+    "threat_actor": {
+      "total": 191,
+      "valid_id": 191,
+      "valid_pct": 100.0
+    },
+    "campaign": {
+      "total": 56,
+      "valid_id": 56,
+      "valid_pct": 100.0
+    },
+    "subtechnique_of_relationships": 477,
+    "uses_relationships": 18555,
+    "missing_relationship_endpoints": 0
+  },
+  "provenance": {
+    "nodes_with_provenance": 1987,
+    "nodes_without_provenance": 98,
+    "provenance_coverage_pct": 95.3,
+    "stix_identifier_nodes": 1987,
+    "source_distribution": {
+      "MITRE_TAXII_2.1": 99
+    }
+  },
+  "temporal_metadata": {
+    "published_available": 20,
+    "last_modified_available": 20,
+    "modified_available": 99,
+    "last_synced_available": 99,
+    "first_seen_available": 0,
+    "last_seen_available": 0
+  },
+  "cve_nvd_integrity": {
+    "total_cve_nodes": 40,
+    "cves_with_cvss": 1,
+    "cves_with_affected_software": 20,
+    "cves_with_weakness": 20,
+    "cves_missing_metadata": 39
+  },
+  "stix_taxii_scope": {
+    "stix_objects_count": 1987,
+    "taxii_sync_scope": "Initial 100-object relationship synchronization (partial collection window)",
+    "full_taxii_synced": false
+  },
+  "sample_queries": {
+    "technique_to_tactic": [
+      {
+        "technique": "Extra Window Memory Injection",
+        "tactics": [
+          "stealth",
+          "privilege-escalation"
+        ]
+      },
+      {
+        "technique": "Scheduled Task",
+        "tactics": [
+          "execution",
+          "persistence",
+          "privilege-escalation"
+        ]
+      },
+      {
+        "technique": "Socket Filters",
+        "tactics": [
+          "stealth",
+          "persistence",
+          "command-and-control"
+        ]
+      }
+    ],
+    "malware_to_technique": [
+      {
+        "malware": "HDoor",
+        "mitre_id": "T1685",
+        "technique": "Disable or Modify Tools"
+      },
+      {
+        "malware": "HDoor",
+        "mitre_id": "T1046",
+        "technique": "Network Service Discovery"
+      },
+      {
+        "malware": "TrickBot",
+        "mitre_id": "T1053.005",
+        "technique": "Scheduled Task"
+      }
+    ],
+    "threat_actor_to_technique": [
+      {
+        "actor": "APT38",
+        "mitre_id": "T1053.005",
+        "technique": "Scheduled Task"
+      },
+      {
+        "actor": "APT38",
+        "mitre_id": "T1033",
+        "technique": "System Owner/User Discovery"
+      },
+      {
+        "actor": "APT38",
+        "mitre_id": "T1218.011",
+        "technique": "Rundll32"
+      }
+    ],
+    "cve_to_software": [
+      {
+        "cve": "CVE-1999-0236",
+        "vendor": "apache",
+        "product": "http_server"
+      },
+      {
+        "cve": "CVE-1999-0236",
+        "vendor": "illinois",
+        "product": "ncsa_httpd"
+      },
+      {
+        "cve": "CVE-1999-0071",
+        "vendor": "apache",
+        "product": "http_server"
+      }
+    ],
+    "cve_to_weakness": [
+      {
+        "cve": "CVE-1999-0095",
+        "weakness": "NVD-CWE-Other"
+      },
+      {
+        "cve": "CVE-1999-0082",
+        "weakness": "NVD-CWE-Other"
+      },
+      {
+        "cve": "CVE-1999-1471",
+        "weakness": "NVD-CWE-Other"
+      }
+    ],
+    "campaign_to_threat_actor": [
+      {
+        "campaign": "Operation Dream Job",
+        "actor": "Lazarus Group"
+      },
+      {
+        "campaign": "Operation Dream Job",
+        "actor": "Lazarus Group"
+      },
+      {
+        "campaign": "KV Botnet Activity",
+        "actor": "Volt Typhoon"
+      }
+    ],
+    "campaign_to_technique": [
+      {
+        "campaign": "Operation Dream Job",
+        "mitre_id": "T1053.005",
+        "technique": "Scheduled Task"
+      },
+      {
+        "campaign": "Operation Dream Job",
+        "mitre_id": "T1053.005",
+        "technique": "Scheduled Task"
+      },
+      {
+        "campaign": "Operation Dream Job",
+        "mitre_id": "T1560.001",
+        "technique": "Archive via Utility"
+      }
+    ]
+  },
+  "integrity_issues": [
+    "39 out of 40 CVE nodes lack explicit CVSS score/severity metadata properties",
+    "64 out of 2085 nodes (3.07%) are isolated without active incoming/outgoing edges",
+    "Temporal fields 'first_seen' and 'last_seen' are absent across current node schemas (0 nodes)"
+  ]
+}

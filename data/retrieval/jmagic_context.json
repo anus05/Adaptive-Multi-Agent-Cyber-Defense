@@ -1,0 +1,3269 @@
+{
+    "query": "J-magic Campaign",
+    "entities": [
+        {
+            "type": "Campaign",
+            "name": "J-magic Campaign",
+            "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45",
+            "external_id": "C0050"
+        }
+    ],
+    "relationships": [
+        {
+            "source": "J-magic Campaign",
+            "source_type": "Campaign",
+            "relationship": "USES",
+            "target": "Digital Certificates",
+            "target_type": "Technique",
+            "target_stix_id": "attack-pattern--1cec9319-743b-4840-bb65-431547bce82a",
+            "target_external_id": null
+        },
+        {
+            "source": "J-magic Campaign",
+            "source_type": "Campaign",
+            "relationship": "USES",
+            "target": "J-magic",
+            "target_type": "Malware",
+            "target_stix_id": "malware--2ade64da-5114-42e4-9d56-335379cca561",
+            "target_external_id": null
+        },
+        {
+            "source": "J-magic Campaign",
+            "source_type": "Campaign",
+            "relationship": "USES",
+            "target": "Malware",
+            "target_type": "Technique",
+            "target_stix_id": "attack-pattern--7807d3a4-a885-4639-a786-c1ed41484970",
+            "target_external_id": null
+        },
+        {
+            "source": "J-magic Campaign",
+            "source_type": "Campaign",
+            "relationship": "USES",
+            "target": "Match Legitimate Resource Name or Location",
+            "target_type": "Technique",
+            "target_stix_id": "attack-pattern--1c4e5d32-1fe9-4116-9d9d-59e3925bd6a2",
+            "target_external_id": null
+        },
+        {
+            "source": "J-magic Campaign",
+            "source_type": "Campaign",
+            "relationship": "USES",
+            "target": "Virtual Private Server",
+            "target_type": "Technique",
+            "target_stix_id": "attack-pattern--79da0971-3147-4af6-a4f5-e8cd447cd795",
+            "target_external_id": null
+        }
+    ],
+    "paths": [
+        {
+            "path": "J-magic Campaign --[USES]--> Match Legitimate Resource Name or Location",
+            "nodes": [
+                {
+                    "external_id": "C0050",
+                    "labels": [
+                        "Campaign"
+                    ],
+                    "name": "J-magic Campaign",
+                    "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "Match Legitimate Resource Name or Location",
+                    "stix_id": "attack-pattern--1c4e5d32-1fe9-4116-9d9d-59e3925bd6a2"
+                }
+            ],
+            "relationships": [
+                "USES"
+            ],
+            "hop_count": 1
+        },
+        {
+            "path": "J-magic Campaign --[USES]--> Match Legitimate Resource Name or Location --[BELONGS_TO]--> stealth",
+            "nodes": [
+                {
+                    "external_id": "C0050",
+                    "labels": [
+                        "Campaign"
+                    ],
+                    "name": "J-magic Campaign",
+                    "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "Match Legitimate Resource Name or Location",
+                    "stix_id": "attack-pattern--1c4e5d32-1fe9-4116-9d9d-59e3925bd6a2"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Tactic"
+                    ],
+                    "name": "stealth",
+                    "stix_id": null
+                }
+            ],
+            "relationships": [
+                "USES",
+                "BELONGS_TO"
+            ],
+            "hop_count": 2
+        },
+        {
+            "path": "J-magic Campaign --[USES]--> Match Legitimate Resource Name or Location --[SUBTECHNIQUE_OF]--> Masquerading",
+            "nodes": [
+                {
+                    "external_id": "C0050",
+                    "labels": [
+                        "Campaign"
+                    ],
+                    "name": "J-magic Campaign",
+                    "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "Match Legitimate Resource Name or Location",
+                    "stix_id": "attack-pattern--1c4e5d32-1fe9-4116-9d9d-59e3925bd6a2"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "Masquerading",
+                    "stix_id": "attack-pattern--42e8de7b-37b2-4258-905a-6897815e58e0"
+                }
+            ],
+            "relationships": [
+                "USES",
+                "SUBTECHNIQUE_OF"
+            ],
+            "hop_count": 2
+        },
+        {
+            "path": "J-magic Campaign --[USES]--> Match Legitimate Resource Name or Location --[SUBTECHNIQUE_OF]--> Masquerading --[BELONGS_TO]--> stealth",
+            "nodes": [
+                {
+                    "external_id": "C0050",
+                    "labels": [
+                        "Campaign"
+                    ],
+                    "name": "J-magic Campaign",
+                    "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "Match Legitimate Resource Name or Location",
+                    "stix_id": "attack-pattern--1c4e5d32-1fe9-4116-9d9d-59e3925bd6a2"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "Masquerading",
+                    "stix_id": "attack-pattern--42e8de7b-37b2-4258-905a-6897815e58e0"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Tactic"
+                    ],
+                    "name": "stealth",
+                    "stix_id": null
+                }
+            ],
+            "relationships": [
+                "USES",
+                "SUBTECHNIQUE_OF",
+                "BELONGS_TO"
+            ],
+            "hop_count": 3
+        },
+        {
+            "path": "J-magic Campaign --[USES]--> Digital Certificates",
+            "nodes": [
+                {
+                    "external_id": "C0050",
+                    "labels": [
+                        "Campaign"
+                    ],
+                    "name": "J-magic Campaign",
+                    "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "Digital Certificates",
+                    "stix_id": "attack-pattern--1cec9319-743b-4840-bb65-431547bce82a"
+                }
+            ],
+            "relationships": [
+                "USES"
+            ],
+            "hop_count": 1
+        },
+        {
+            "path": "J-magic Campaign --[USES]--> Digital Certificates --[BELONGS_TO]--> resource-development",
+            "nodes": [
+                {
+                    "external_id": "C0050",
+                    "labels": [
+                        "Campaign"
+                    ],
+                    "name": "J-magic Campaign",
+                    "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "Digital Certificates",
+                    "stix_id": "attack-pattern--1cec9319-743b-4840-bb65-431547bce82a"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Tactic"
+                    ],
+                    "name": "resource-development",
+                    "stix_id": null
+                }
+            ],
+            "relationships": [
+                "USES",
+                "BELONGS_TO"
+            ],
+            "hop_count": 2
+        },
+        {
+            "path": "J-magic Campaign --[USES]--> Digital Certificates --[SUBTECHNIQUE_OF]--> Develop Capabilities",
+            "nodes": [
+                {
+                    "external_id": "C0050",
+                    "labels": [
+                        "Campaign"
+                    ],
+                    "name": "J-magic Campaign",
+                    "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "Digital Certificates",
+                    "stix_id": "attack-pattern--1cec9319-743b-4840-bb65-431547bce82a"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "Develop Capabilities",
+                    "stix_id": "attack-pattern--edadea33-549c-4ed1-9783-8f5a5853cbdf"
+                }
+            ],
+            "relationships": [
+                "USES",
+                "SUBTECHNIQUE_OF"
+            ],
+            "hop_count": 2
+        },
+        {
+            "path": "J-magic Campaign --[USES]--> Digital Certificates --[SUBTECHNIQUE_OF]--> Develop Capabilities --[BELONGS_TO]--> resource-development",
+            "nodes": [
+                {
+                    "external_id": "C0050",
+                    "labels": [
+                        "Campaign"
+                    ],
+                    "name": "J-magic Campaign",
+                    "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "Digital Certificates",
+                    "stix_id": "attack-pattern--1cec9319-743b-4840-bb65-431547bce82a"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "Develop Capabilities",
+                    "stix_id": "attack-pattern--edadea33-549c-4ed1-9783-8f5a5853cbdf"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Tactic"
+                    ],
+                    "name": "resource-development",
+                    "stix_id": null
+                }
+            ],
+            "relationships": [
+                "USES",
+                "SUBTECHNIQUE_OF",
+                "BELONGS_TO"
+            ],
+            "hop_count": 3
+        },
+        {
+            "path": "J-magic Campaign --[USES]--> Malware",
+            "nodes": [
+                {
+                    "external_id": "C0050",
+                    "labels": [
+                        "Campaign"
+                    ],
+                    "name": "J-magic Campaign",
+                    "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "Malware",
+                    "stix_id": "attack-pattern--7807d3a4-a885-4639-a786-c1ed41484970"
+                }
+            ],
+            "relationships": [
+                "USES"
+            ],
+            "hop_count": 1
+        },
+        {
+            "path": "J-magic Campaign --[USES]--> Malware --[BELONGS_TO]--> resource-development",
+            "nodes": [
+                {
+                    "external_id": "C0050",
+                    "labels": [
+                        "Campaign"
+                    ],
+                    "name": "J-magic Campaign",
+                    "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "Malware",
+                    "stix_id": "attack-pattern--7807d3a4-a885-4639-a786-c1ed41484970"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Tactic"
+                    ],
+                    "name": "resource-development",
+                    "stix_id": null
+                }
+            ],
+            "relationships": [
+                "USES",
+                "BELONGS_TO"
+            ],
+            "hop_count": 2
+        },
+        {
+            "path": "J-magic Campaign --[USES]--> Malware --[SUBTECHNIQUE_OF]--> Obtain Capabilities",
+            "nodes": [
+                {
+                    "external_id": "C0050",
+                    "labels": [
+                        "Campaign"
+                    ],
+                    "name": "J-magic Campaign",
+                    "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "Malware",
+                    "stix_id": "attack-pattern--7807d3a4-a885-4639-a786-c1ed41484970"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "Obtain Capabilities",
+                    "stix_id": "attack-pattern--ce0687a0-e692-4b77-964a-0784a8e54ff1"
+                }
+            ],
+            "relationships": [
+                "USES",
+                "SUBTECHNIQUE_OF"
+            ],
+            "hop_count": 2
+        },
+        {
+            "path": "J-magic Campaign --[USES]--> Malware --[SUBTECHNIQUE_OF]--> Obtain Capabilities --[BELONGS_TO]--> resource-development",
+            "nodes": [
+                {
+                    "external_id": "C0050",
+                    "labels": [
+                        "Campaign"
+                    ],
+                    "name": "J-magic Campaign",
+                    "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "Malware",
+                    "stix_id": "attack-pattern--7807d3a4-a885-4639-a786-c1ed41484970"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "Obtain Capabilities",
+                    "stix_id": "attack-pattern--ce0687a0-e692-4b77-964a-0784a8e54ff1"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Tactic"
+                    ],
+                    "name": "resource-development",
+                    "stix_id": null
+                }
+            ],
+            "relationships": [
+                "USES",
+                "SUBTECHNIQUE_OF",
+                "BELONGS_TO"
+            ],
+            "hop_count": 3
+        },
+        {
+            "path": "J-magic Campaign --[USES]--> Virtual Private Server",
+            "nodes": [
+                {
+                    "external_id": "C0050",
+                    "labels": [
+                        "Campaign"
+                    ],
+                    "name": "J-magic Campaign",
+                    "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "Virtual Private Server",
+                    "stix_id": "attack-pattern--79da0971-3147-4af6-a4f5-e8cd447cd795"
+                }
+            ],
+            "relationships": [
+                "USES"
+            ],
+            "hop_count": 1
+        },
+        {
+            "path": "J-magic Campaign --[USES]--> Virtual Private Server --[BELONGS_TO]--> resource-development",
+            "nodes": [
+                {
+                    "external_id": "C0050",
+                    "labels": [
+                        "Campaign"
+                    ],
+                    "name": "J-magic Campaign",
+                    "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "Virtual Private Server",
+                    "stix_id": "attack-pattern--79da0971-3147-4af6-a4f5-e8cd447cd795"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Tactic"
+                    ],
+                    "name": "resource-development",
+                    "stix_id": null
+                }
+            ],
+            "relationships": [
+                "USES",
+                "BELONGS_TO"
+            ],
+            "hop_count": 2
+        },
+        {
+            "path": "J-magic Campaign --[USES]--> Virtual Private Server --[SUBTECHNIQUE_OF]--> Acquire Infrastructure",
+            "nodes": [
+                {
+                    "external_id": "C0050",
+                    "labels": [
+                        "Campaign"
+                    ],
+                    "name": "J-magic Campaign",
+                    "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "Virtual Private Server",
+                    "stix_id": "attack-pattern--79da0971-3147-4af6-a4f5-e8cd447cd795"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "Acquire Infrastructure",
+                    "stix_id": "attack-pattern--0458aab9-ad42-4eac-9e22-706a95bafee2"
+                }
+            ],
+            "relationships": [
+                "USES",
+                "SUBTECHNIQUE_OF"
+            ],
+            "hop_count": 2
+        },
+        {
+            "path": "J-magic Campaign --[USES]--> Virtual Private Server --[SUBTECHNIQUE_OF]--> Acquire Infrastructure --[BELONGS_TO]--> resource-development",
+            "nodes": [
+                {
+                    "external_id": "C0050",
+                    "labels": [
+                        "Campaign"
+                    ],
+                    "name": "J-magic Campaign",
+                    "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "Virtual Private Server",
+                    "stix_id": "attack-pattern--79da0971-3147-4af6-a4f5-e8cd447cd795"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "Acquire Infrastructure",
+                    "stix_id": "attack-pattern--0458aab9-ad42-4eac-9e22-706a95bafee2"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Tactic"
+                    ],
+                    "name": "resource-development",
+                    "stix_id": null
+                }
+            ],
+            "relationships": [
+                "USES",
+                "SUBTECHNIQUE_OF",
+                "BELONGS_TO"
+            ],
+            "hop_count": 3
+        },
+        {
+            "path": "J-magic Campaign --[USES]--> J-magic",
+            "nodes": [
+                {
+                    "external_id": "C0050",
+                    "labels": [
+                        "Campaign"
+                    ],
+                    "name": "J-magic Campaign",
+                    "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Malware"
+                    ],
+                    "name": "J-magic",
+                    "stix_id": "malware--2ade64da-5114-42e4-9d56-335379cca561"
+                }
+            ],
+            "relationships": [
+                "USES"
+            ],
+            "hop_count": 1
+        },
+        {
+            "path": "J-magic Campaign --[USES]--> J-magic --[USES]--> Match Legitimate Resource Name or Location",
+            "nodes": [
+                {
+                    "external_id": "C0050",
+                    "labels": [
+                        "Campaign"
+                    ],
+                    "name": "J-magic Campaign",
+                    "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Malware"
+                    ],
+                    "name": "J-magic",
+                    "stix_id": "malware--2ade64da-5114-42e4-9d56-335379cca561"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "Match Legitimate Resource Name or Location",
+                    "stix_id": "attack-pattern--1c4e5d32-1fe9-4116-9d9d-59e3925bd6a2"
+                }
+            ],
+            "relationships": [
+                "USES",
+                "USES"
+            ],
+            "hop_count": 2
+        },
+        {
+            "path": "J-magic Campaign --[USES]--> J-magic --[USES]--> Match Legitimate Resource Name or Location --[BELONGS_TO]--> stealth",
+            "nodes": [
+                {
+                    "external_id": "C0050",
+                    "labels": [
+                        "Campaign"
+                    ],
+                    "name": "J-magic Campaign",
+                    "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Malware"
+                    ],
+                    "name": "J-magic",
+                    "stix_id": "malware--2ade64da-5114-42e4-9d56-335379cca561"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "Match Legitimate Resource Name or Location",
+                    "stix_id": "attack-pattern--1c4e5d32-1fe9-4116-9d9d-59e3925bd6a2"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Tactic"
+                    ],
+                    "name": "stealth",
+                    "stix_id": null
+                }
+            ],
+            "relationships": [
+                "USES",
+                "USES",
+                "BELONGS_TO"
+            ],
+            "hop_count": 3
+        },
+        {
+            "path": "J-magic Campaign --[USES]--> J-magic --[USES]--> Match Legitimate Resource Name or Location --[SUBTECHNIQUE_OF]--> Masquerading",
+            "nodes": [
+                {
+                    "external_id": "C0050",
+                    "labels": [
+                        "Campaign"
+                    ],
+                    "name": "J-magic Campaign",
+                    "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Malware"
+                    ],
+                    "name": "J-magic",
+                    "stix_id": "malware--2ade64da-5114-42e4-9d56-335379cca561"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "Match Legitimate Resource Name or Location",
+                    "stix_id": "attack-pattern--1c4e5d32-1fe9-4116-9d9d-59e3925bd6a2"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "Masquerading",
+                    "stix_id": "attack-pattern--42e8de7b-37b2-4258-905a-6897815e58e0"
+                }
+            ],
+            "relationships": [
+                "USES",
+                "USES",
+                "SUBTECHNIQUE_OF"
+            ],
+            "hop_count": 3
+        },
+        {
+            "path": "J-magic Campaign --[USES]--> J-magic --[USES]--> Network Sniffing",
+            "nodes": [
+                {
+                    "external_id": "C0050",
+                    "labels": [
+                        "Campaign"
+                    ],
+                    "name": "J-magic Campaign",
+                    "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Malware"
+                    ],
+                    "name": "J-magic",
+                    "stix_id": "malware--2ade64da-5114-42e4-9d56-335379cca561"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "Network Sniffing",
+                    "stix_id": "attack-pattern--3257eb21-f9a7-4430-8de1-d8b6e288f529"
+                }
+            ],
+            "relationships": [
+                "USES",
+                "USES"
+            ],
+            "hop_count": 2
+        },
+        {
+            "path": "J-magic Campaign --[USES]--> J-magic --[USES]--> Network Sniffing --[BELONGS_TO]--> credential-access",
+            "nodes": [
+                {
+                    "external_id": "C0050",
+                    "labels": [
+                        "Campaign"
+                    ],
+                    "name": "J-magic Campaign",
+                    "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Malware"
+                    ],
+                    "name": "J-magic",
+                    "stix_id": "malware--2ade64da-5114-42e4-9d56-335379cca561"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "Network Sniffing",
+                    "stix_id": "attack-pattern--3257eb21-f9a7-4430-8de1-d8b6e288f529"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Tactic"
+                    ],
+                    "name": "credential-access",
+                    "stix_id": null
+                }
+            ],
+            "relationships": [
+                "USES",
+                "USES",
+                "BELONGS_TO"
+            ],
+            "hop_count": 3
+        },
+        {
+            "path": "J-magic Campaign --[USES]--> J-magic --[USES]--> Network Sniffing --[BELONGS_TO]--> discovery",
+            "nodes": [
+                {
+                    "external_id": "C0050",
+                    "labels": [
+                        "Campaign"
+                    ],
+                    "name": "J-magic Campaign",
+                    "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Malware"
+                    ],
+                    "name": "J-magic",
+                    "stix_id": "malware--2ade64da-5114-42e4-9d56-335379cca561"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "Network Sniffing",
+                    "stix_id": "attack-pattern--3257eb21-f9a7-4430-8de1-d8b6e288f529"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Tactic"
+                    ],
+                    "name": "discovery",
+                    "stix_id": null
+                }
+            ],
+            "relationships": [
+                "USES",
+                "USES",
+                "BELONGS_TO"
+            ],
+            "hop_count": 3
+        },
+        {
+            "path": "J-magic Campaign --[USES]--> J-magic --[USES]--> Clear Command History",
+            "nodes": [
+                {
+                    "external_id": "C0050",
+                    "labels": [
+                        "Campaign"
+                    ],
+                    "name": "J-magic Campaign",
+                    "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Malware"
+                    ],
+                    "name": "J-magic",
+                    "stix_id": "malware--2ade64da-5114-42e4-9d56-335379cca561"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "Clear Command History",
+                    "stix_id": "attack-pattern--3aef9463-9a7a-43ba-8957-a867e07c1e6a"
+                }
+            ],
+            "relationships": [
+                "USES",
+                "USES"
+            ],
+            "hop_count": 2
+        },
+        {
+            "path": "J-magic Campaign --[USES]--> J-magic --[USES]--> Clear Command History --[BELONGS_TO]--> stealth",
+            "nodes": [
+                {
+                    "external_id": "C0050",
+                    "labels": [
+                        "Campaign"
+                    ],
+                    "name": "J-magic Campaign",
+                    "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Malware"
+                    ],
+                    "name": "J-magic",
+                    "stix_id": "malware--2ade64da-5114-42e4-9d56-335379cca561"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "Clear Command History",
+                    "stix_id": "attack-pattern--3aef9463-9a7a-43ba-8957-a867e07c1e6a"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Tactic"
+                    ],
+                    "name": "stealth",
+                    "stix_id": null
+                }
+            ],
+            "relationships": [
+                "USES",
+                "USES",
+                "BELONGS_TO"
+            ],
+            "hop_count": 3
+        },
+        {
+            "path": "J-magic Campaign --[USES]--> J-magic --[USES]--> Clear Command History --[SUBTECHNIQUE_OF]--> Indicator Removal",
+            "nodes": [
+                {
+                    "external_id": "C0050",
+                    "labels": [
+                        "Campaign"
+                    ],
+                    "name": "J-magic Campaign",
+                    "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Malware"
+                    ],
+                    "name": "J-magic",
+                    "stix_id": "malware--2ade64da-5114-42e4-9d56-335379cca561"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "Clear Command History",
+                    "stix_id": "attack-pattern--3aef9463-9a7a-43ba-8957-a867e07c1e6a"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "Indicator Removal",
+                    "stix_id": "attack-pattern--799ace7f-e227-4411-baa0-8868704f2a69"
+                }
+            ],
+            "relationships": [
+                "USES",
+                "USES",
+                "SUBTECHNIQUE_OF"
+            ],
+            "hop_count": 3
+        },
+        {
+            "path": "J-magic Campaign --[USES]--> J-magic --[USES]--> Traffic Signaling",
+            "nodes": [
+                {
+                    "external_id": "C0050",
+                    "labels": [
+                        "Campaign"
+                    ],
+                    "name": "J-magic Campaign",
+                    "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Malware"
+                    ],
+                    "name": "J-magic",
+                    "stix_id": "malware--2ade64da-5114-42e4-9d56-335379cca561"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "Traffic Signaling",
+                    "stix_id": "attack-pattern--451a9977-d255-43c9-b431-66de80130c8c"
+                }
+            ],
+            "relationships": [
+                "USES",
+                "USES"
+            ],
+            "hop_count": 2
+        },
+        {
+            "path": "J-magic Campaign --[USES]--> J-magic --[USES]--> Traffic Signaling --[BELONGS_TO]--> stealth",
+            "nodes": [
+                {
+                    "external_id": "C0050",
+                    "labels": [
+                        "Campaign"
+                    ],
+                    "name": "J-magic Campaign",
+                    "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Malware"
+                    ],
+                    "name": "J-magic",
+                    "stix_id": "malware--2ade64da-5114-42e4-9d56-335379cca561"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "Traffic Signaling",
+                    "stix_id": "attack-pattern--451a9977-d255-43c9-b431-66de80130c8c"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Tactic"
+                    ],
+                    "name": "stealth",
+                    "stix_id": null
+                }
+            ],
+            "relationships": [
+                "USES",
+                "USES",
+                "BELONGS_TO"
+            ],
+            "hop_count": 3
+        },
+        {
+            "path": "J-magic Campaign --[USES]--> J-magic --[USES]--> Traffic Signaling --[BELONGS_TO]--> command-and-control",
+            "nodes": [
+                {
+                    "external_id": "C0050",
+                    "labels": [
+                        "Campaign"
+                    ],
+                    "name": "J-magic Campaign",
+                    "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Malware"
+                    ],
+                    "name": "J-magic",
+                    "stix_id": "malware--2ade64da-5114-42e4-9d56-335379cca561"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "Traffic Signaling",
+                    "stix_id": "attack-pattern--451a9977-d255-43c9-b431-66de80130c8c"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Tactic"
+                    ],
+                    "name": "command-and-control",
+                    "stix_id": null
+                }
+            ],
+            "relationships": [
+                "USES",
+                "USES",
+                "BELONGS_TO"
+            ],
+            "hop_count": 3
+        },
+        {
+            "path": "J-magic Campaign --[USES]--> J-magic --[USES]--> Traffic Signaling --[BELONGS_TO]--> persistence",
+            "nodes": [
+                {
+                    "external_id": "C0050",
+                    "labels": [
+                        "Campaign"
+                    ],
+                    "name": "J-magic Campaign",
+                    "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Malware"
+                    ],
+                    "name": "J-magic",
+                    "stix_id": "malware--2ade64da-5114-42e4-9d56-335379cca561"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "Traffic Signaling",
+                    "stix_id": "attack-pattern--451a9977-d255-43c9-b431-66de80130c8c"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Tactic"
+                    ],
+                    "name": "persistence",
+                    "stix_id": null
+                }
+            ],
+            "relationships": [
+                "USES",
+                "USES",
+                "BELONGS_TO"
+            ],
+            "hop_count": 3
+        },
+        {
+            "path": "J-magic Campaign --[USES]--> J-magic --[USES]--> System Network Configuration Discovery",
+            "nodes": [
+                {
+                    "external_id": "C0050",
+                    "labels": [
+                        "Campaign"
+                    ],
+                    "name": "J-magic Campaign",
+                    "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Malware"
+                    ],
+                    "name": "J-magic",
+                    "stix_id": "malware--2ade64da-5114-42e4-9d56-335379cca561"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "System Network Configuration Discovery",
+                    "stix_id": "attack-pattern--707399d6-ab3e-4963-9315-d9d3818cd6a0"
+                }
+            ],
+            "relationships": [
+                "USES",
+                "USES"
+            ],
+            "hop_count": 2
+        },
+        {
+            "path": "J-magic Campaign --[USES]--> J-magic --[USES]--> System Network Configuration Discovery --[BELONGS_TO]--> discovery",
+            "nodes": [
+                {
+                    "external_id": "C0050",
+                    "labels": [
+                        "Campaign"
+                    ],
+                    "name": "J-magic Campaign",
+                    "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Malware"
+                    ],
+                    "name": "J-magic",
+                    "stix_id": "malware--2ade64da-5114-42e4-9d56-335379cca561"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "System Network Configuration Discovery",
+                    "stix_id": "attack-pattern--707399d6-ab3e-4963-9315-d9d3818cd6a0"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Tactic"
+                    ],
+                    "name": "discovery",
+                    "stix_id": null
+                }
+            ],
+            "relationships": [
+                "USES",
+                "USES",
+                "BELONGS_TO"
+            ],
+            "hop_count": 3
+        },
+        {
+            "path": "J-magic Campaign --[USES]--> J-magic --[USES]--> Unix Shell",
+            "nodes": [
+                {
+                    "external_id": "C0050",
+                    "labels": [
+                        "Campaign"
+                    ],
+                    "name": "J-magic Campaign",
+                    "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Malware"
+                    ],
+                    "name": "J-magic",
+                    "stix_id": "malware--2ade64da-5114-42e4-9d56-335379cca561"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "Unix Shell",
+                    "stix_id": "attack-pattern--a9d4b653-6915-42af-98b2-5758c4ceee56"
+                }
+            ],
+            "relationships": [
+                "USES",
+                "USES"
+            ],
+            "hop_count": 2
+        },
+        {
+            "path": "J-magic Campaign --[USES]--> J-magic --[USES]--> Unix Shell --[BELONGS_TO]--> execution",
+            "nodes": [
+                {
+                    "external_id": "C0050",
+                    "labels": [
+                        "Campaign"
+                    ],
+                    "name": "J-magic Campaign",
+                    "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Malware"
+                    ],
+                    "name": "J-magic",
+                    "stix_id": "malware--2ade64da-5114-42e4-9d56-335379cca561"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "Unix Shell",
+                    "stix_id": "attack-pattern--a9d4b653-6915-42af-98b2-5758c4ceee56"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Tactic"
+                    ],
+                    "name": "execution",
+                    "stix_id": null
+                }
+            ],
+            "relationships": [
+                "USES",
+                "USES",
+                "BELONGS_TO"
+            ],
+            "hop_count": 3
+        },
+        {
+            "path": "J-magic Campaign --[USES]--> J-magic --[USES]--> Unix Shell --[SUBTECHNIQUE_OF]--> Command and Scripting Interpreter",
+            "nodes": [
+                {
+                    "external_id": "C0050",
+                    "labels": [
+                        "Campaign"
+                    ],
+                    "name": "J-magic Campaign",
+                    "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Malware"
+                    ],
+                    "name": "J-magic",
+                    "stix_id": "malware--2ade64da-5114-42e4-9d56-335379cca561"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "Unix Shell",
+                    "stix_id": "attack-pattern--a9d4b653-6915-42af-98b2-5758c4ceee56"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "Command and Scripting Interpreter",
+                    "stix_id": "attack-pattern--7385dfaf-6886-4229-9ecd-6fd678040830"
+                }
+            ],
+            "relationships": [
+                "USES",
+                "USES",
+                "SUBTECHNIQUE_OF"
+            ],
+            "hop_count": 3
+        },
+        {
+            "path": "J-magic Campaign --[USES]--> J-magic --[USES]--> Asymmetric Cryptography",
+            "nodes": [
+                {
+                    "external_id": "C0050",
+                    "labels": [
+                        "Campaign"
+                    ],
+                    "name": "J-magic Campaign",
+                    "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Malware"
+                    ],
+                    "name": "J-magic",
+                    "stix_id": "malware--2ade64da-5114-42e4-9d56-335379cca561"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "Asymmetric Cryptography",
+                    "stix_id": "attack-pattern--bf176076-b789-408e-8cba-7275e81c0ada"
+                }
+            ],
+            "relationships": [
+                "USES",
+                "USES"
+            ],
+            "hop_count": 2
+        },
+        {
+            "path": "J-magic Campaign --[USES]--> J-magic --[USES]--> Asymmetric Cryptography --[BELONGS_TO]--> command-and-control",
+            "nodes": [
+                {
+                    "external_id": "C0050",
+                    "labels": [
+                        "Campaign"
+                    ],
+                    "name": "J-magic Campaign",
+                    "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Malware"
+                    ],
+                    "name": "J-magic",
+                    "stix_id": "malware--2ade64da-5114-42e4-9d56-335379cca561"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "Asymmetric Cryptography",
+                    "stix_id": "attack-pattern--bf176076-b789-408e-8cba-7275e81c0ada"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Tactic"
+                    ],
+                    "name": "command-and-control",
+                    "stix_id": null
+                }
+            ],
+            "relationships": [
+                "USES",
+                "USES",
+                "BELONGS_TO"
+            ],
+            "hop_count": 3
+        },
+        {
+            "path": "J-magic Campaign --[USES]--> J-magic --[USES]--> Asymmetric Cryptography --[SUBTECHNIQUE_OF]--> Encrypted Channel",
+            "nodes": [
+                {
+                    "external_id": "C0050",
+                    "labels": [
+                        "Campaign"
+                    ],
+                    "name": "J-magic Campaign",
+                    "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Malware"
+                    ],
+                    "name": "J-magic",
+                    "stix_id": "malware--2ade64da-5114-42e4-9d56-335379cca561"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "Asymmetric Cryptography",
+                    "stix_id": "attack-pattern--bf176076-b789-408e-8cba-7275e81c0ada"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "Encrypted Channel",
+                    "stix_id": "attack-pattern--b8902400-e6c5-4ba2-95aa-2d35b442b118"
+                }
+            ],
+            "relationships": [
+                "USES",
+                "USES",
+                "SUBTECHNIQUE_OF"
+            ],
+            "hop_count": 3
+        },
+        {
+            "path": "J-magic Campaign --[USES]--> J-magic --[USES]--> Non-Application Layer Protocol",
+            "nodes": [
+                {
+                    "external_id": "C0050",
+                    "labels": [
+                        "Campaign"
+                    ],
+                    "name": "J-magic Campaign",
+                    "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Malware"
+                    ],
+                    "name": "J-magic",
+                    "stix_id": "malware--2ade64da-5114-42e4-9d56-335379cca561"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "Non-Application Layer Protocol",
+                    "stix_id": "attack-pattern--c21d5a77-d422-4a69-acd7-2c53c1faa34b"
+                }
+            ],
+            "relationships": [
+                "USES",
+                "USES"
+            ],
+            "hop_count": 2
+        },
+        {
+            "path": "J-magic Campaign --[USES]--> J-magic --[USES]--> Non-Application Layer Protocol --[BELONGS_TO]--> command-and-control",
+            "nodes": [
+                {
+                    "external_id": "C0050",
+                    "labels": [
+                        "Campaign"
+                    ],
+                    "name": "J-magic Campaign",
+                    "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Malware"
+                    ],
+                    "name": "J-magic",
+                    "stix_id": "malware--2ade64da-5114-42e4-9d56-335379cca561"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Technique"
+                    ],
+                    "name": "Non-Application Layer Protocol",
+                    "stix_id": "attack-pattern--c21d5a77-d422-4a69-acd7-2c53c1faa34b"
+                },
+                {
+                    "external_id": null,
+                    "labels": [
+                        "Tactic"
+                    ],
+                    "name": "command-and-control",
+                    "stix_id": null
+                }
+            ],
+            "relationships": [
+                "USES",
+                "USES",
+                "BELONGS_TO"
+            ],
+            "hop_count": 3
+        }
+    ],
+    "evidence": [
+        {
+            "evidence_type": "entity",
+            "content": {
+                "type": "Campaign",
+                "name": "J-magic Campaign",
+                "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45",
+                "external_id": "C0050"
+            },
+            "source": "Neo4j Cybersecurity Knowledge Graph"
+        },
+        {
+            "evidence_type": "relationship",
+            "content": {
+                "source": "J-magic Campaign",
+                "source_type": "Campaign",
+                "relationship": "USES",
+                "target": "Digital Certificates",
+                "target_type": "Technique",
+                "target_stix_id": "attack-pattern--1cec9319-743b-4840-bb65-431547bce82a",
+                "target_external_id": null
+            },
+            "source": "Neo4j Cybersecurity Knowledge Graph"
+        },
+        {
+            "evidence_type": "relationship",
+            "content": {
+                "source": "J-magic Campaign",
+                "source_type": "Campaign",
+                "relationship": "USES",
+                "target": "J-magic",
+                "target_type": "Malware",
+                "target_stix_id": "malware--2ade64da-5114-42e4-9d56-335379cca561",
+                "target_external_id": null
+            },
+            "source": "Neo4j Cybersecurity Knowledge Graph"
+        },
+        {
+            "evidence_type": "relationship",
+            "content": {
+                "source": "J-magic Campaign",
+                "source_type": "Campaign",
+                "relationship": "USES",
+                "target": "Malware",
+                "target_type": "Technique",
+                "target_stix_id": "attack-pattern--7807d3a4-a885-4639-a786-c1ed41484970",
+                "target_external_id": null
+            },
+            "source": "Neo4j Cybersecurity Knowledge Graph"
+        },
+        {
+            "evidence_type": "relationship",
+            "content": {
+                "source": "J-magic Campaign",
+                "source_type": "Campaign",
+                "relationship": "USES",
+                "target": "Match Legitimate Resource Name or Location",
+                "target_type": "Technique",
+                "target_stix_id": "attack-pattern--1c4e5d32-1fe9-4116-9d9d-59e3925bd6a2",
+                "target_external_id": null
+            },
+            "source": "Neo4j Cybersecurity Knowledge Graph"
+        },
+        {
+            "evidence_type": "relationship",
+            "content": {
+                "source": "J-magic Campaign",
+                "source_type": "Campaign",
+                "relationship": "USES",
+                "target": "Virtual Private Server",
+                "target_type": "Technique",
+                "target_stix_id": "attack-pattern--79da0971-3147-4af6-a4f5-e8cd447cd795",
+                "target_external_id": null
+            },
+            "source": "Neo4j Cybersecurity Knowledge Graph"
+        },
+        {
+            "evidence_type": "graph_path",
+            "content": {
+                "path": "J-magic Campaign --[USES]--> Match Legitimate Resource Name or Location",
+                "nodes": [
+                    {
+                        "external_id": "C0050",
+                        "labels": [
+                            "Campaign"
+                        ],
+                        "name": "J-magic Campaign",
+                        "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "Match Legitimate Resource Name or Location",
+                        "stix_id": "attack-pattern--1c4e5d32-1fe9-4116-9d9d-59e3925bd6a2"
+                    }
+                ],
+                "relationships": [
+                    "USES"
+                ],
+                "hop_count": 1
+            },
+            "source": "Neo4j Cybersecurity Knowledge Graph"
+        },
+        {
+            "evidence_type": "graph_path",
+            "content": {
+                "path": "J-magic Campaign --[USES]--> Match Legitimate Resource Name or Location --[BELONGS_TO]--> stealth",
+                "nodes": [
+                    {
+                        "external_id": "C0050",
+                        "labels": [
+                            "Campaign"
+                        ],
+                        "name": "J-magic Campaign",
+                        "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "Match Legitimate Resource Name or Location",
+                        "stix_id": "attack-pattern--1c4e5d32-1fe9-4116-9d9d-59e3925bd6a2"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Tactic"
+                        ],
+                        "name": "stealth",
+                        "stix_id": null
+                    }
+                ],
+                "relationships": [
+                    "USES",
+                    "BELONGS_TO"
+                ],
+                "hop_count": 2
+            },
+            "source": "Neo4j Cybersecurity Knowledge Graph"
+        },
+        {
+            "evidence_type": "graph_path",
+            "content": {
+                "path": "J-magic Campaign --[USES]--> Match Legitimate Resource Name or Location --[SUBTECHNIQUE_OF]--> Masquerading",
+                "nodes": [
+                    {
+                        "external_id": "C0050",
+                        "labels": [
+                            "Campaign"
+                        ],
+                        "name": "J-magic Campaign",
+                        "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "Match Legitimate Resource Name or Location",
+                        "stix_id": "attack-pattern--1c4e5d32-1fe9-4116-9d9d-59e3925bd6a2"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "Masquerading",
+                        "stix_id": "attack-pattern--42e8de7b-37b2-4258-905a-6897815e58e0"
+                    }
+                ],
+                "relationships": [
+                    "USES",
+                    "SUBTECHNIQUE_OF"
+                ],
+                "hop_count": 2
+            },
+            "source": "Neo4j Cybersecurity Knowledge Graph"
+        },
+        {
+            "evidence_type": "graph_path",
+            "content": {
+                "path": "J-magic Campaign --[USES]--> Match Legitimate Resource Name or Location --[SUBTECHNIQUE_OF]--> Masquerading --[BELONGS_TO]--> stealth",
+                "nodes": [
+                    {
+                        "external_id": "C0050",
+                        "labels": [
+                            "Campaign"
+                        ],
+                        "name": "J-magic Campaign",
+                        "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "Match Legitimate Resource Name or Location",
+                        "stix_id": "attack-pattern--1c4e5d32-1fe9-4116-9d9d-59e3925bd6a2"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "Masquerading",
+                        "stix_id": "attack-pattern--42e8de7b-37b2-4258-905a-6897815e58e0"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Tactic"
+                        ],
+                        "name": "stealth",
+                        "stix_id": null
+                    }
+                ],
+                "relationships": [
+                    "USES",
+                    "SUBTECHNIQUE_OF",
+                    "BELONGS_TO"
+                ],
+                "hop_count": 3
+            },
+            "source": "Neo4j Cybersecurity Knowledge Graph"
+        },
+        {
+            "evidence_type": "graph_path",
+            "content": {
+                "path": "J-magic Campaign --[USES]--> Digital Certificates",
+                "nodes": [
+                    {
+                        "external_id": "C0050",
+                        "labels": [
+                            "Campaign"
+                        ],
+                        "name": "J-magic Campaign",
+                        "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "Digital Certificates",
+                        "stix_id": "attack-pattern--1cec9319-743b-4840-bb65-431547bce82a"
+                    }
+                ],
+                "relationships": [
+                    "USES"
+                ],
+                "hop_count": 1
+            },
+            "source": "Neo4j Cybersecurity Knowledge Graph"
+        },
+        {
+            "evidence_type": "graph_path",
+            "content": {
+                "path": "J-magic Campaign --[USES]--> Digital Certificates --[BELONGS_TO]--> resource-development",
+                "nodes": [
+                    {
+                        "external_id": "C0050",
+                        "labels": [
+                            "Campaign"
+                        ],
+                        "name": "J-magic Campaign",
+                        "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "Digital Certificates",
+                        "stix_id": "attack-pattern--1cec9319-743b-4840-bb65-431547bce82a"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Tactic"
+                        ],
+                        "name": "resource-development",
+                        "stix_id": null
+                    }
+                ],
+                "relationships": [
+                    "USES",
+                    "BELONGS_TO"
+                ],
+                "hop_count": 2
+            },
+            "source": "Neo4j Cybersecurity Knowledge Graph"
+        },
+        {
+            "evidence_type": "graph_path",
+            "content": {
+                "path": "J-magic Campaign --[USES]--> Digital Certificates --[SUBTECHNIQUE_OF]--> Develop Capabilities",
+                "nodes": [
+                    {
+                        "external_id": "C0050",
+                        "labels": [
+                            "Campaign"
+                        ],
+                        "name": "J-magic Campaign",
+                        "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "Digital Certificates",
+                        "stix_id": "attack-pattern--1cec9319-743b-4840-bb65-431547bce82a"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "Develop Capabilities",
+                        "stix_id": "attack-pattern--edadea33-549c-4ed1-9783-8f5a5853cbdf"
+                    }
+                ],
+                "relationships": [
+                    "USES",
+                    "SUBTECHNIQUE_OF"
+                ],
+                "hop_count": 2
+            },
+            "source": "Neo4j Cybersecurity Knowledge Graph"
+        },
+        {
+            "evidence_type": "graph_path",
+            "content": {
+                "path": "J-magic Campaign --[USES]--> Digital Certificates --[SUBTECHNIQUE_OF]--> Develop Capabilities --[BELONGS_TO]--> resource-development",
+                "nodes": [
+                    {
+                        "external_id": "C0050",
+                        "labels": [
+                            "Campaign"
+                        ],
+                        "name": "J-magic Campaign",
+                        "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "Digital Certificates",
+                        "stix_id": "attack-pattern--1cec9319-743b-4840-bb65-431547bce82a"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "Develop Capabilities",
+                        "stix_id": "attack-pattern--edadea33-549c-4ed1-9783-8f5a5853cbdf"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Tactic"
+                        ],
+                        "name": "resource-development",
+                        "stix_id": null
+                    }
+                ],
+                "relationships": [
+                    "USES",
+                    "SUBTECHNIQUE_OF",
+                    "BELONGS_TO"
+                ],
+                "hop_count": 3
+            },
+            "source": "Neo4j Cybersecurity Knowledge Graph"
+        },
+        {
+            "evidence_type": "graph_path",
+            "content": {
+                "path": "J-magic Campaign --[USES]--> Malware",
+                "nodes": [
+                    {
+                        "external_id": "C0050",
+                        "labels": [
+                            "Campaign"
+                        ],
+                        "name": "J-magic Campaign",
+                        "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "Malware",
+                        "stix_id": "attack-pattern--7807d3a4-a885-4639-a786-c1ed41484970"
+                    }
+                ],
+                "relationships": [
+                    "USES"
+                ],
+                "hop_count": 1
+            },
+            "source": "Neo4j Cybersecurity Knowledge Graph"
+        },
+        {
+            "evidence_type": "graph_path",
+            "content": {
+                "path": "J-magic Campaign --[USES]--> Malware --[BELONGS_TO]--> resource-development",
+                "nodes": [
+                    {
+                        "external_id": "C0050",
+                        "labels": [
+                            "Campaign"
+                        ],
+                        "name": "J-magic Campaign",
+                        "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "Malware",
+                        "stix_id": "attack-pattern--7807d3a4-a885-4639-a786-c1ed41484970"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Tactic"
+                        ],
+                        "name": "resource-development",
+                        "stix_id": null
+                    }
+                ],
+                "relationships": [
+                    "USES",
+                    "BELONGS_TO"
+                ],
+                "hop_count": 2
+            },
+            "source": "Neo4j Cybersecurity Knowledge Graph"
+        },
+        {
+            "evidence_type": "graph_path",
+            "content": {
+                "path": "J-magic Campaign --[USES]--> Malware --[SUBTECHNIQUE_OF]--> Obtain Capabilities",
+                "nodes": [
+                    {
+                        "external_id": "C0050",
+                        "labels": [
+                            "Campaign"
+                        ],
+                        "name": "J-magic Campaign",
+                        "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "Malware",
+                        "stix_id": "attack-pattern--7807d3a4-a885-4639-a786-c1ed41484970"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "Obtain Capabilities",
+                        "stix_id": "attack-pattern--ce0687a0-e692-4b77-964a-0784a8e54ff1"
+                    }
+                ],
+                "relationships": [
+                    "USES",
+                    "SUBTECHNIQUE_OF"
+                ],
+                "hop_count": 2
+            },
+            "source": "Neo4j Cybersecurity Knowledge Graph"
+        },
+        {
+            "evidence_type": "graph_path",
+            "content": {
+                "path": "J-magic Campaign --[USES]--> Malware --[SUBTECHNIQUE_OF]--> Obtain Capabilities --[BELONGS_TO]--> resource-development",
+                "nodes": [
+                    {
+                        "external_id": "C0050",
+                        "labels": [
+                            "Campaign"
+                        ],
+                        "name": "J-magic Campaign",
+                        "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "Malware",
+                        "stix_id": "attack-pattern--7807d3a4-a885-4639-a786-c1ed41484970"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "Obtain Capabilities",
+                        "stix_id": "attack-pattern--ce0687a0-e692-4b77-964a-0784a8e54ff1"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Tactic"
+                        ],
+                        "name": "resource-development",
+                        "stix_id": null
+                    }
+                ],
+                "relationships": [
+                    "USES",
+                    "SUBTECHNIQUE_OF",
+                    "BELONGS_TO"
+                ],
+                "hop_count": 3
+            },
+            "source": "Neo4j Cybersecurity Knowledge Graph"
+        },
+        {
+            "evidence_type": "graph_path",
+            "content": {
+                "path": "J-magic Campaign --[USES]--> Virtual Private Server",
+                "nodes": [
+                    {
+                        "external_id": "C0050",
+                        "labels": [
+                            "Campaign"
+                        ],
+                        "name": "J-magic Campaign",
+                        "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "Virtual Private Server",
+                        "stix_id": "attack-pattern--79da0971-3147-4af6-a4f5-e8cd447cd795"
+                    }
+                ],
+                "relationships": [
+                    "USES"
+                ],
+                "hop_count": 1
+            },
+            "source": "Neo4j Cybersecurity Knowledge Graph"
+        },
+        {
+            "evidence_type": "graph_path",
+            "content": {
+                "path": "J-magic Campaign --[USES]--> Virtual Private Server --[BELONGS_TO]--> resource-development",
+                "nodes": [
+                    {
+                        "external_id": "C0050",
+                        "labels": [
+                            "Campaign"
+                        ],
+                        "name": "J-magic Campaign",
+                        "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "Virtual Private Server",
+                        "stix_id": "attack-pattern--79da0971-3147-4af6-a4f5-e8cd447cd795"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Tactic"
+                        ],
+                        "name": "resource-development",
+                        "stix_id": null
+                    }
+                ],
+                "relationships": [
+                    "USES",
+                    "BELONGS_TO"
+                ],
+                "hop_count": 2
+            },
+            "source": "Neo4j Cybersecurity Knowledge Graph"
+        },
+        {
+            "evidence_type": "graph_path",
+            "content": {
+                "path": "J-magic Campaign --[USES]--> Virtual Private Server --[SUBTECHNIQUE_OF]--> Acquire Infrastructure",
+                "nodes": [
+                    {
+                        "external_id": "C0050",
+                        "labels": [
+                            "Campaign"
+                        ],
+                        "name": "J-magic Campaign",
+                        "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "Virtual Private Server",
+                        "stix_id": "attack-pattern--79da0971-3147-4af6-a4f5-e8cd447cd795"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "Acquire Infrastructure",
+                        "stix_id": "attack-pattern--0458aab9-ad42-4eac-9e22-706a95bafee2"
+                    }
+                ],
+                "relationships": [
+                    "USES",
+                    "SUBTECHNIQUE_OF"
+                ],
+                "hop_count": 2
+            },
+            "source": "Neo4j Cybersecurity Knowledge Graph"
+        },
+        {
+            "evidence_type": "graph_path",
+            "content": {
+                "path": "J-magic Campaign --[USES]--> Virtual Private Server --[SUBTECHNIQUE_OF]--> Acquire Infrastructure --[BELONGS_TO]--> resource-development",
+                "nodes": [
+                    {
+                        "external_id": "C0050",
+                        "labels": [
+                            "Campaign"
+                        ],
+                        "name": "J-magic Campaign",
+                        "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "Virtual Private Server",
+                        "stix_id": "attack-pattern--79da0971-3147-4af6-a4f5-e8cd447cd795"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "Acquire Infrastructure",
+                        "stix_id": "attack-pattern--0458aab9-ad42-4eac-9e22-706a95bafee2"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Tactic"
+                        ],
+                        "name": "resource-development",
+                        "stix_id": null
+                    }
+                ],
+                "relationships": [
+                    "USES",
+                    "SUBTECHNIQUE_OF",
+                    "BELONGS_TO"
+                ],
+                "hop_count": 3
+            },
+            "source": "Neo4j Cybersecurity Knowledge Graph"
+        },
+        {
+            "evidence_type": "graph_path",
+            "content": {
+                "path": "J-magic Campaign --[USES]--> J-magic",
+                "nodes": [
+                    {
+                        "external_id": "C0050",
+                        "labels": [
+                            "Campaign"
+                        ],
+                        "name": "J-magic Campaign",
+                        "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Malware"
+                        ],
+                        "name": "J-magic",
+                        "stix_id": "malware--2ade64da-5114-42e4-9d56-335379cca561"
+                    }
+                ],
+                "relationships": [
+                    "USES"
+                ],
+                "hop_count": 1
+            },
+            "source": "Neo4j Cybersecurity Knowledge Graph"
+        },
+        {
+            "evidence_type": "graph_path",
+            "content": {
+                "path": "J-magic Campaign --[USES]--> J-magic --[USES]--> Match Legitimate Resource Name or Location",
+                "nodes": [
+                    {
+                        "external_id": "C0050",
+                        "labels": [
+                            "Campaign"
+                        ],
+                        "name": "J-magic Campaign",
+                        "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Malware"
+                        ],
+                        "name": "J-magic",
+                        "stix_id": "malware--2ade64da-5114-42e4-9d56-335379cca561"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "Match Legitimate Resource Name or Location",
+                        "stix_id": "attack-pattern--1c4e5d32-1fe9-4116-9d9d-59e3925bd6a2"
+                    }
+                ],
+                "relationships": [
+                    "USES",
+                    "USES"
+                ],
+                "hop_count": 2
+            },
+            "source": "Neo4j Cybersecurity Knowledge Graph"
+        },
+        {
+            "evidence_type": "graph_path",
+            "content": {
+                "path": "J-magic Campaign --[USES]--> J-magic --[USES]--> Match Legitimate Resource Name or Location --[BELONGS_TO]--> stealth",
+                "nodes": [
+                    {
+                        "external_id": "C0050",
+                        "labels": [
+                            "Campaign"
+                        ],
+                        "name": "J-magic Campaign",
+                        "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Malware"
+                        ],
+                        "name": "J-magic",
+                        "stix_id": "malware--2ade64da-5114-42e4-9d56-335379cca561"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "Match Legitimate Resource Name or Location",
+                        "stix_id": "attack-pattern--1c4e5d32-1fe9-4116-9d9d-59e3925bd6a2"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Tactic"
+                        ],
+                        "name": "stealth",
+                        "stix_id": null
+                    }
+                ],
+                "relationships": [
+                    "USES",
+                    "USES",
+                    "BELONGS_TO"
+                ],
+                "hop_count": 3
+            },
+            "source": "Neo4j Cybersecurity Knowledge Graph"
+        },
+        {
+            "evidence_type": "graph_path",
+            "content": {
+                "path": "J-magic Campaign --[USES]--> J-magic --[USES]--> Match Legitimate Resource Name or Location --[SUBTECHNIQUE_OF]--> Masquerading",
+                "nodes": [
+                    {
+                        "external_id": "C0050",
+                        "labels": [
+                            "Campaign"
+                        ],
+                        "name": "J-magic Campaign",
+                        "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Malware"
+                        ],
+                        "name": "J-magic",
+                        "stix_id": "malware--2ade64da-5114-42e4-9d56-335379cca561"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "Match Legitimate Resource Name or Location",
+                        "stix_id": "attack-pattern--1c4e5d32-1fe9-4116-9d9d-59e3925bd6a2"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "Masquerading",
+                        "stix_id": "attack-pattern--42e8de7b-37b2-4258-905a-6897815e58e0"
+                    }
+                ],
+                "relationships": [
+                    "USES",
+                    "USES",
+                    "SUBTECHNIQUE_OF"
+                ],
+                "hop_count": 3
+            },
+            "source": "Neo4j Cybersecurity Knowledge Graph"
+        },
+        {
+            "evidence_type": "graph_path",
+            "content": {
+                "path": "J-magic Campaign --[USES]--> J-magic --[USES]--> Network Sniffing",
+                "nodes": [
+                    {
+                        "external_id": "C0050",
+                        "labels": [
+                            "Campaign"
+                        ],
+                        "name": "J-magic Campaign",
+                        "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Malware"
+                        ],
+                        "name": "J-magic",
+                        "stix_id": "malware--2ade64da-5114-42e4-9d56-335379cca561"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "Network Sniffing",
+                        "stix_id": "attack-pattern--3257eb21-f9a7-4430-8de1-d8b6e288f529"
+                    }
+                ],
+                "relationships": [
+                    "USES",
+                    "USES"
+                ],
+                "hop_count": 2
+            },
+            "source": "Neo4j Cybersecurity Knowledge Graph"
+        },
+        {
+            "evidence_type": "graph_path",
+            "content": {
+                "path": "J-magic Campaign --[USES]--> J-magic --[USES]--> Network Sniffing --[BELONGS_TO]--> credential-access",
+                "nodes": [
+                    {
+                        "external_id": "C0050",
+                        "labels": [
+                            "Campaign"
+                        ],
+                        "name": "J-magic Campaign",
+                        "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Malware"
+                        ],
+                        "name": "J-magic",
+                        "stix_id": "malware--2ade64da-5114-42e4-9d56-335379cca561"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "Network Sniffing",
+                        "stix_id": "attack-pattern--3257eb21-f9a7-4430-8de1-d8b6e288f529"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Tactic"
+                        ],
+                        "name": "credential-access",
+                        "stix_id": null
+                    }
+                ],
+                "relationships": [
+                    "USES",
+                    "USES",
+                    "BELONGS_TO"
+                ],
+                "hop_count": 3
+            },
+            "source": "Neo4j Cybersecurity Knowledge Graph"
+        },
+        {
+            "evidence_type": "graph_path",
+            "content": {
+                "path": "J-magic Campaign --[USES]--> J-magic --[USES]--> Network Sniffing --[BELONGS_TO]--> discovery",
+                "nodes": [
+                    {
+                        "external_id": "C0050",
+                        "labels": [
+                            "Campaign"
+                        ],
+                        "name": "J-magic Campaign",
+                        "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Malware"
+                        ],
+                        "name": "J-magic",
+                        "stix_id": "malware--2ade64da-5114-42e4-9d56-335379cca561"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "Network Sniffing",
+                        "stix_id": "attack-pattern--3257eb21-f9a7-4430-8de1-d8b6e288f529"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Tactic"
+                        ],
+                        "name": "discovery",
+                        "stix_id": null
+                    }
+                ],
+                "relationships": [
+                    "USES",
+                    "USES",
+                    "BELONGS_TO"
+                ],
+                "hop_count": 3
+            },
+            "source": "Neo4j Cybersecurity Knowledge Graph"
+        },
+        {
+            "evidence_type": "graph_path",
+            "content": {
+                "path": "J-magic Campaign --[USES]--> J-magic --[USES]--> Clear Command History",
+                "nodes": [
+                    {
+                        "external_id": "C0050",
+                        "labels": [
+                            "Campaign"
+                        ],
+                        "name": "J-magic Campaign",
+                        "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Malware"
+                        ],
+                        "name": "J-magic",
+                        "stix_id": "malware--2ade64da-5114-42e4-9d56-335379cca561"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "Clear Command History",
+                        "stix_id": "attack-pattern--3aef9463-9a7a-43ba-8957-a867e07c1e6a"
+                    }
+                ],
+                "relationships": [
+                    "USES",
+                    "USES"
+                ],
+                "hop_count": 2
+            },
+            "source": "Neo4j Cybersecurity Knowledge Graph"
+        },
+        {
+            "evidence_type": "graph_path",
+            "content": {
+                "path": "J-magic Campaign --[USES]--> J-magic --[USES]--> Clear Command History --[BELONGS_TO]--> stealth",
+                "nodes": [
+                    {
+                        "external_id": "C0050",
+                        "labels": [
+                            "Campaign"
+                        ],
+                        "name": "J-magic Campaign",
+                        "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Malware"
+                        ],
+                        "name": "J-magic",
+                        "stix_id": "malware--2ade64da-5114-42e4-9d56-335379cca561"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "Clear Command History",
+                        "stix_id": "attack-pattern--3aef9463-9a7a-43ba-8957-a867e07c1e6a"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Tactic"
+                        ],
+                        "name": "stealth",
+                        "stix_id": null
+                    }
+                ],
+                "relationships": [
+                    "USES",
+                    "USES",
+                    "BELONGS_TO"
+                ],
+                "hop_count": 3
+            },
+            "source": "Neo4j Cybersecurity Knowledge Graph"
+        },
+        {
+            "evidence_type": "graph_path",
+            "content": {
+                "path": "J-magic Campaign --[USES]--> J-magic --[USES]--> Clear Command History --[SUBTECHNIQUE_OF]--> Indicator Removal",
+                "nodes": [
+                    {
+                        "external_id": "C0050",
+                        "labels": [
+                            "Campaign"
+                        ],
+                        "name": "J-magic Campaign",
+                        "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Malware"
+                        ],
+                        "name": "J-magic",
+                        "stix_id": "malware--2ade64da-5114-42e4-9d56-335379cca561"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "Clear Command History",
+                        "stix_id": "attack-pattern--3aef9463-9a7a-43ba-8957-a867e07c1e6a"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "Indicator Removal",
+                        "stix_id": "attack-pattern--799ace7f-e227-4411-baa0-8868704f2a69"
+                    }
+                ],
+                "relationships": [
+                    "USES",
+                    "USES",
+                    "SUBTECHNIQUE_OF"
+                ],
+                "hop_count": 3
+            },
+            "source": "Neo4j Cybersecurity Knowledge Graph"
+        },
+        {
+            "evidence_type": "graph_path",
+            "content": {
+                "path": "J-magic Campaign --[USES]--> J-magic --[USES]--> Traffic Signaling",
+                "nodes": [
+                    {
+                        "external_id": "C0050",
+                        "labels": [
+                            "Campaign"
+                        ],
+                        "name": "J-magic Campaign",
+                        "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Malware"
+                        ],
+                        "name": "J-magic",
+                        "stix_id": "malware--2ade64da-5114-42e4-9d56-335379cca561"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "Traffic Signaling",
+                        "stix_id": "attack-pattern--451a9977-d255-43c9-b431-66de80130c8c"
+                    }
+                ],
+                "relationships": [
+                    "USES",
+                    "USES"
+                ],
+                "hop_count": 2
+            },
+            "source": "Neo4j Cybersecurity Knowledge Graph"
+        },
+        {
+            "evidence_type": "graph_path",
+            "content": {
+                "path": "J-magic Campaign --[USES]--> J-magic --[USES]--> Traffic Signaling --[BELONGS_TO]--> stealth",
+                "nodes": [
+                    {
+                        "external_id": "C0050",
+                        "labels": [
+                            "Campaign"
+                        ],
+                        "name": "J-magic Campaign",
+                        "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Malware"
+                        ],
+                        "name": "J-magic",
+                        "stix_id": "malware--2ade64da-5114-42e4-9d56-335379cca561"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "Traffic Signaling",
+                        "stix_id": "attack-pattern--451a9977-d255-43c9-b431-66de80130c8c"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Tactic"
+                        ],
+                        "name": "stealth",
+                        "stix_id": null
+                    }
+                ],
+                "relationships": [
+                    "USES",
+                    "USES",
+                    "BELONGS_TO"
+                ],
+                "hop_count": 3
+            },
+            "source": "Neo4j Cybersecurity Knowledge Graph"
+        },
+        {
+            "evidence_type": "graph_path",
+            "content": {
+                "path": "J-magic Campaign --[USES]--> J-magic --[USES]--> Traffic Signaling --[BELONGS_TO]--> command-and-control",
+                "nodes": [
+                    {
+                        "external_id": "C0050",
+                        "labels": [
+                            "Campaign"
+                        ],
+                        "name": "J-magic Campaign",
+                        "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Malware"
+                        ],
+                        "name": "J-magic",
+                        "stix_id": "malware--2ade64da-5114-42e4-9d56-335379cca561"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "Traffic Signaling",
+                        "stix_id": "attack-pattern--451a9977-d255-43c9-b431-66de80130c8c"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Tactic"
+                        ],
+                        "name": "command-and-control",
+                        "stix_id": null
+                    }
+                ],
+                "relationships": [
+                    "USES",
+                    "USES",
+                    "BELONGS_TO"
+                ],
+                "hop_count": 3
+            },
+            "source": "Neo4j Cybersecurity Knowledge Graph"
+        },
+        {
+            "evidence_type": "graph_path",
+            "content": {
+                "path": "J-magic Campaign --[USES]--> J-magic --[USES]--> Traffic Signaling --[BELONGS_TO]--> persistence",
+                "nodes": [
+                    {
+                        "external_id": "C0050",
+                        "labels": [
+                            "Campaign"
+                        ],
+                        "name": "J-magic Campaign",
+                        "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Malware"
+                        ],
+                        "name": "J-magic",
+                        "stix_id": "malware--2ade64da-5114-42e4-9d56-335379cca561"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "Traffic Signaling",
+                        "stix_id": "attack-pattern--451a9977-d255-43c9-b431-66de80130c8c"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Tactic"
+                        ],
+                        "name": "persistence",
+                        "stix_id": null
+                    }
+                ],
+                "relationships": [
+                    "USES",
+                    "USES",
+                    "BELONGS_TO"
+                ],
+                "hop_count": 3
+            },
+            "source": "Neo4j Cybersecurity Knowledge Graph"
+        },
+        {
+            "evidence_type": "graph_path",
+            "content": {
+                "path": "J-magic Campaign --[USES]--> J-magic --[USES]--> System Network Configuration Discovery",
+                "nodes": [
+                    {
+                        "external_id": "C0050",
+                        "labels": [
+                            "Campaign"
+                        ],
+                        "name": "J-magic Campaign",
+                        "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Malware"
+                        ],
+                        "name": "J-magic",
+                        "stix_id": "malware--2ade64da-5114-42e4-9d56-335379cca561"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "System Network Configuration Discovery",
+                        "stix_id": "attack-pattern--707399d6-ab3e-4963-9315-d9d3818cd6a0"
+                    }
+                ],
+                "relationships": [
+                    "USES",
+                    "USES"
+                ],
+                "hop_count": 2
+            },
+            "source": "Neo4j Cybersecurity Knowledge Graph"
+        },
+        {
+            "evidence_type": "graph_path",
+            "content": {
+                "path": "J-magic Campaign --[USES]--> J-magic --[USES]--> System Network Configuration Discovery --[BELONGS_TO]--> discovery",
+                "nodes": [
+                    {
+                        "external_id": "C0050",
+                        "labels": [
+                            "Campaign"
+                        ],
+                        "name": "J-magic Campaign",
+                        "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Malware"
+                        ],
+                        "name": "J-magic",
+                        "stix_id": "malware--2ade64da-5114-42e4-9d56-335379cca561"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "System Network Configuration Discovery",
+                        "stix_id": "attack-pattern--707399d6-ab3e-4963-9315-d9d3818cd6a0"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Tactic"
+                        ],
+                        "name": "discovery",
+                        "stix_id": null
+                    }
+                ],
+                "relationships": [
+                    "USES",
+                    "USES",
+                    "BELONGS_TO"
+                ],
+                "hop_count": 3
+            },
+            "source": "Neo4j Cybersecurity Knowledge Graph"
+        },
+        {
+            "evidence_type": "graph_path",
+            "content": {
+                "path": "J-magic Campaign --[USES]--> J-magic --[USES]--> Unix Shell",
+                "nodes": [
+                    {
+                        "external_id": "C0050",
+                        "labels": [
+                            "Campaign"
+                        ],
+                        "name": "J-magic Campaign",
+                        "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Malware"
+                        ],
+                        "name": "J-magic",
+                        "stix_id": "malware--2ade64da-5114-42e4-9d56-335379cca561"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "Unix Shell",
+                        "stix_id": "attack-pattern--a9d4b653-6915-42af-98b2-5758c4ceee56"
+                    }
+                ],
+                "relationships": [
+                    "USES",
+                    "USES"
+                ],
+                "hop_count": 2
+            },
+            "source": "Neo4j Cybersecurity Knowledge Graph"
+        },
+        {
+            "evidence_type": "graph_path",
+            "content": {
+                "path": "J-magic Campaign --[USES]--> J-magic --[USES]--> Unix Shell --[BELONGS_TO]--> execution",
+                "nodes": [
+                    {
+                        "external_id": "C0050",
+                        "labels": [
+                            "Campaign"
+                        ],
+                        "name": "J-magic Campaign",
+                        "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Malware"
+                        ],
+                        "name": "J-magic",
+                        "stix_id": "malware--2ade64da-5114-42e4-9d56-335379cca561"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "Unix Shell",
+                        "stix_id": "attack-pattern--a9d4b653-6915-42af-98b2-5758c4ceee56"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Tactic"
+                        ],
+                        "name": "execution",
+                        "stix_id": null
+                    }
+                ],
+                "relationships": [
+                    "USES",
+                    "USES",
+                    "BELONGS_TO"
+                ],
+                "hop_count": 3
+            },
+            "source": "Neo4j Cybersecurity Knowledge Graph"
+        },
+        {
+            "evidence_type": "graph_path",
+            "content": {
+                "path": "J-magic Campaign --[USES]--> J-magic --[USES]--> Unix Shell --[SUBTECHNIQUE_OF]--> Command and Scripting Interpreter",
+                "nodes": [
+                    {
+                        "external_id": "C0050",
+                        "labels": [
+                            "Campaign"
+                        ],
+                        "name": "J-magic Campaign",
+                        "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Malware"
+                        ],
+                        "name": "J-magic",
+                        "stix_id": "malware--2ade64da-5114-42e4-9d56-335379cca561"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "Unix Shell",
+                        "stix_id": "attack-pattern--a9d4b653-6915-42af-98b2-5758c4ceee56"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "Command and Scripting Interpreter",
+                        "stix_id": "attack-pattern--7385dfaf-6886-4229-9ecd-6fd678040830"
+                    }
+                ],
+                "relationships": [
+                    "USES",
+                    "USES",
+                    "SUBTECHNIQUE_OF"
+                ],
+                "hop_count": 3
+            },
+            "source": "Neo4j Cybersecurity Knowledge Graph"
+        },
+        {
+            "evidence_type": "graph_path",
+            "content": {
+                "path": "J-magic Campaign --[USES]--> J-magic --[USES]--> Asymmetric Cryptography",
+                "nodes": [
+                    {
+                        "external_id": "C0050",
+                        "labels": [
+                            "Campaign"
+                        ],
+                        "name": "J-magic Campaign",
+                        "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Malware"
+                        ],
+                        "name": "J-magic",
+                        "stix_id": "malware--2ade64da-5114-42e4-9d56-335379cca561"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "Asymmetric Cryptography",
+                        "stix_id": "attack-pattern--bf176076-b789-408e-8cba-7275e81c0ada"
+                    }
+                ],
+                "relationships": [
+                    "USES",
+                    "USES"
+                ],
+                "hop_count": 2
+            },
+            "source": "Neo4j Cybersecurity Knowledge Graph"
+        },
+        {
+            "evidence_type": "graph_path",
+            "content": {
+                "path": "J-magic Campaign --[USES]--> J-magic --[USES]--> Asymmetric Cryptography --[BELONGS_TO]--> command-and-control",
+                "nodes": [
+                    {
+                        "external_id": "C0050",
+                        "labels": [
+                            "Campaign"
+                        ],
+                        "name": "J-magic Campaign",
+                        "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Malware"
+                        ],
+                        "name": "J-magic",
+                        "stix_id": "malware--2ade64da-5114-42e4-9d56-335379cca561"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "Asymmetric Cryptography",
+                        "stix_id": "attack-pattern--bf176076-b789-408e-8cba-7275e81c0ada"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Tactic"
+                        ],
+                        "name": "command-and-control",
+                        "stix_id": null
+                    }
+                ],
+                "relationships": [
+                    "USES",
+                    "USES",
+                    "BELONGS_TO"
+                ],
+                "hop_count": 3
+            },
+            "source": "Neo4j Cybersecurity Knowledge Graph"
+        },
+        {
+            "evidence_type": "graph_path",
+            "content": {
+                "path": "J-magic Campaign --[USES]--> J-magic --[USES]--> Asymmetric Cryptography --[SUBTECHNIQUE_OF]--> Encrypted Channel",
+                "nodes": [
+                    {
+                        "external_id": "C0050",
+                        "labels": [
+                            "Campaign"
+                        ],
+                        "name": "J-magic Campaign",
+                        "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Malware"
+                        ],
+                        "name": "J-magic",
+                        "stix_id": "malware--2ade64da-5114-42e4-9d56-335379cca561"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "Asymmetric Cryptography",
+                        "stix_id": "attack-pattern--bf176076-b789-408e-8cba-7275e81c0ada"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "Encrypted Channel",
+                        "stix_id": "attack-pattern--b8902400-e6c5-4ba2-95aa-2d35b442b118"
+                    }
+                ],
+                "relationships": [
+                    "USES",
+                    "USES",
+                    "SUBTECHNIQUE_OF"
+                ],
+                "hop_count": 3
+            },
+            "source": "Neo4j Cybersecurity Knowledge Graph"
+        },
+        {
+            "evidence_type": "graph_path",
+            "content": {
+                "path": "J-magic Campaign --[USES]--> J-magic --[USES]--> Non-Application Layer Protocol",
+                "nodes": [
+                    {
+                        "external_id": "C0050",
+                        "labels": [
+                            "Campaign"
+                        ],
+                        "name": "J-magic Campaign",
+                        "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Malware"
+                        ],
+                        "name": "J-magic",
+                        "stix_id": "malware--2ade64da-5114-42e4-9d56-335379cca561"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "Non-Application Layer Protocol",
+                        "stix_id": "attack-pattern--c21d5a77-d422-4a69-acd7-2c53c1faa34b"
+                    }
+                ],
+                "relationships": [
+                    "USES",
+                    "USES"
+                ],
+                "hop_count": 2
+            },
+            "source": "Neo4j Cybersecurity Knowledge Graph"
+        },
+        {
+            "evidence_type": "graph_path",
+            "content": {
+                "path": "J-magic Campaign --[USES]--> J-magic --[USES]--> Non-Application Layer Protocol --[BELONGS_TO]--> command-and-control",
+                "nodes": [
+                    {
+                        "external_id": "C0050",
+                        "labels": [
+                            "Campaign"
+                        ],
+                        "name": "J-magic Campaign",
+                        "stix_id": "campaign--58c4fd17-88f5-433a-8242-e9cac31f3c45"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Malware"
+                        ],
+                        "name": "J-magic",
+                        "stix_id": "malware--2ade64da-5114-42e4-9d56-335379cca561"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Technique"
+                        ],
+                        "name": "Non-Application Layer Protocol",
+                        "stix_id": "attack-pattern--c21d5a77-d422-4a69-acd7-2c53c1faa34b"
+                    },
+                    {
+                        "external_id": null,
+                        "labels": [
+                            "Tactic"
+                        ],
+                        "name": "command-and-control",
+                        "stix_id": null
+                    }
+                ],
+                "relationships": [
+                    "USES",
+                    "USES",
+                    "BELONGS_TO"
+                ],
+                "hop_count": 3
+            },
+            "source": "Neo4j Cybersecurity Knowledge Graph"
+        }
+    ]
+}

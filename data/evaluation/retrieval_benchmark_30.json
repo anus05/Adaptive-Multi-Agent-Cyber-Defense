@@ -1,0 +1,212 @@
+[
+  {
+    "id": "Q01",
+    "query": "How can attackers execute commands using PowerShell?",
+    "expected_mitre_ids": [
+      "T1059.001"
+    ]
+  },
+  {
+    "id": "Q02",
+    "query": "What MITRE technique represents Windows Command Shell execution?",
+    "expected_mitre_ids": [
+      "T1059.003"
+    ]
+  },
+  {
+    "id": "Q03",
+    "query": "Which technique involves injecting code into another running process?",
+    "expected_mitre_ids": [
+      "T1055"
+    ]
+  },
+  {
+    "id": "Q04",
+    "query": "Which MITRE technique covers credential dumping from operating systems?",
+    "expected_mitre_ids": [
+      "T1003"
+    ]
+  },
+  {
+    "id": "Q05",
+    "query": "What technique represents phishing attacks?",
+    "expected_mitre_ids": [
+      "T1566"
+    ]
+  },
+  {
+    "id": "Q06",
+    "query": "Which technique involves attackers using legitimate accounts?",
+    "expected_mitre_ids": [
+      "T1078"
+    ]
+  },
+  {
+    "id": "Q07",
+    "query": "Which MITRE technique represents remote services used by attackers?",
+    "expected_mitre_ids": [
+      "T1021"
+    ]
+  },
+  {
+    "id": "Q08",
+    "query": "Which technique is used to transfer tools or files into a compromised system?",
+    "expected_mitre_ids": [
+      "T1105"
+    ]
+  },
+  {
+    "id": "Q09",
+    "query": "Which technique involves scheduled tasks or jobs for persistence?",
+    "expected_mitre_ids": [
+      "T1053"
+    ]
+  },
+  {
+    "id": "Q10",
+    "query": "Which MITRE technique represents command and scripting interpreter activity?",
+    "expected_mitre_ids": [
+      "T1059"
+    ]
+  },
+  {
+    "id": "Q11",
+    "query": "Which MITRE technique covers execution via Windows Management Instrumentation?",
+    "expected_mitre_ids": [
+      "T1047"
+    ]
+  },
+  {
+    "id": "Q12",
+    "query": "Which technique involves adversaries abusing system services for execution?",
+    "expected_mitre_ids": [
+      "T1569"
+    ]
+  },
+  {
+    "id": "Q13",
+    "query": "Which MITRE technique involves modifying Windows Registry run keys or startup folder for persistence?",
+    "expected_mitre_ids": [
+      "T1547.001"
+    ]
+  },
+  {
+    "id": "Q14",
+    "query": "What technique represents creating or modifying system processes or services for persistence?",
+    "expected_mitre_ids": [
+      "T1543"
+    ]
+  },
+  {
+    "id": "Q15",
+    "query": "Which technique involves abusing sudo or sudoers file to elevate privileges on Unix systems?",
+    "expected_mitre_ids": [
+      "T1548.003"
+    ]
+  },
+  {
+    "id": "Q16",
+    "query": "Which MITRE technique covers process elevation control mechanism bypass such as UAC bypass?",
+    "expected_mitre_ids": [
+      "T1548.002"
+    ]
+  },
+  {
+    "id": "Q17",
+    "query": "Which MITRE technique covers obfuscated files or information used to evade detection?",
+    "expected_mitre_ids": [
+      "T1027"
+    ]
+  },
+  {
+    "id": "Q18",
+    "query": "Which technique represents adversaries disabling or modifying security tools?",
+    "expected_mitre_ids": [
+      "T1562.001"
+    ]
+  },
+  {
+    "id": "Q19",
+    "query": "Which MITRE technique covers masquerading as legitimate software or system utilities?",
+    "expected_mitre_ids": [
+      "T1036"
+    ]
+  },
+  {
+    "id": "Q20",
+    "query": "Which MITRE technique represents brute force attempts to guess account credentials?",
+    "expected_mitre_ids": [
+      "T1110"
+    ]
+  },
+  {
+    "id": "Q21",
+    "query": "Which technique involves extracting credentials stored in web browsers?",
+    "expected_mitre_ids": [
+      "T1555.003"
+    ]
+  },
+  {
+    "id": "Q22",
+    "query": "Which MITRE technique covers OS credential dumping from LSASS memory?",
+    "expected_mitre_ids": [
+      "T1003.001"
+    ]
+  },
+  {
+    "id": "Q23",
+    "query": "Which technique is used to discover active system network connections and listening ports?",
+    "expected_mitre_ids": [
+      "T1049"
+    ]
+  },
+  {
+    "id": "Q24",
+    "query": "Which MITRE technique covers system information discovery such as OS version and hostname?",
+    "expected_mitre_ids": [
+      "T1082"
+    ]
+  },
+  {
+    "id": "Q25",
+    "query": "Which technique represents system network configuration discovery using ipconfig or ifconfig?",
+    "expected_mitre_ids": [
+      "T1016"
+    ]
+  },
+  {
+    "id": "Q26",
+    "query": "Which MITRE technique involves remote desktop protocol used for lateral movement?",
+    "expected_mitre_ids": [
+      "T1021.001"
+    ]
+  },
+  {
+    "id": "Q27",
+    "query": "Which technique involves lateral movement using SMB or Windows Admin Shares?",
+    "expected_mitre_ids": [
+      "T1021.002"
+    ]
+  },
+  {
+    "id": "Q28",
+    "query": "Which MITRE technique covers screen capture or taking screenshots of desktop activity?",
+    "expected_mitre_ids": [
+      "T1113"
+    ]
+  },
+  {
+    "id": "Q29",
+    "query": "Which MITRE technique covers command and control over web protocols such as HTTP or HTTPS?",
+    "expected_mitre_ids": [
+      "T1071.001"
+    ]
+  },
+  {
+    "id": "Q30",
+    "query": "Which technique represents data destruction or wiping disk content for impact?",
+    "expected_mitre_ids": [
+      "T1485"
+    ]
+  }
+]

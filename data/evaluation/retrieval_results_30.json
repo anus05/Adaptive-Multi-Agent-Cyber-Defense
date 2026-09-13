@@ -1,0 +1,1429 @@
+[
+  {
+    "id": "Q01",
+    "query": "How can attackers execute commands using PowerShell?",
+    "expected_mitre_ids": [
+      "T1059.001"
+    ],
+    "results": {
+      "vector": {
+        "retrieved_ids": [
+          "T1086",
+          "T1059.001",
+          "T1504",
+          "T1546.013",
+          "T1059"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 0.5,
+        "latency_ms": 304.418
+      },
+      "graph": {
+        "retrieved_ids": [
+          "T1546.017",
+          "T1053.002",
+          "T1053.001",
+          "T1059.010",
+          "T1042"
+        ],
+        "precision_at_5": 0.0,
+        "recall_at_5": 0.0,
+        "mrr": 0.0,
+        "latency_ms": 357.087
+      },
+      "hybrid_graphrag": {
+        "retrieved_ids": [
+          "T1086",
+          "T1059.001",
+          "T1504",
+          "T1546.013",
+          "T1059"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 0.5,
+        "latency_ms": 274.087
+      }
+    }
+  },
+  {
+    "id": "Q02",
+    "query": "What MITRE technique represents Windows Command Shell execution?",
+    "expected_mitre_ids": [
+      "T1059.003"
+    ],
+    "results": {
+      "vector": {
+        "retrieved_ids": [
+          "T1059.003",
+          "T1059",
+          "T1202",
+          "T1059.004"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "latency_ms": 10.205
+      },
+      "graph": {
+        "retrieved_ids": [
+          "T1059.003",
+          "T1070.003",
+          "T1562.003",
+          "T1690",
+          "T1070.001"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "latency_ms": 355.033
+      },
+      "hybrid_graphrag": {
+        "retrieved_ids": [
+          "T1059.003",
+          "T1202",
+          "T1059",
+          "T1027.010",
+          "T1086"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "latency_ms": 311.076
+      }
+    }
+  },
+  {
+    "id": "Q03",
+    "query": "Which technique involves injecting code into another running process?",
+    "expected_mitre_ids": [
+      "T1055"
+    ],
+    "results": {
+      "vector": {
+        "retrieved_ids": [
+          "T1055",
+          "T1055.002",
+          "T1055.012",
+          "T1055.001",
+          "T1055.003"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "latency_ms": 13.195
+      },
+      "graph": {
+        "retrieved_ids": [
+          "T1055.009",
+          "T1620",
+          "T1055.014",
+          "T1055.004",
+          "T1185"
+        ],
+        "precision_at_5": 0.0,
+        "recall_at_5": 0.0,
+        "mrr": 0.0,
+        "latency_ms": 342.888
+      },
+      "hybrid_graphrag": {
+        "retrieved_ids": [
+          "T1055",
+          "T1055.012",
+          "T1134.002",
+          "T1055.002",
+          "T1057"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "latency_ms": 288.922
+      }
+    }
+  },
+  {
+    "id": "Q04",
+    "query": "Which MITRE technique covers credential dumping from operating systems?",
+    "expected_mitre_ids": [
+      "T1003"
+    ],
+    "results": {
+      "vector": {
+        "retrieved_ids": [
+          "T1003",
+          "T1552",
+          "T1056.001",
+          "T1110.004",
+          "T1003.001"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "latency_ms": 10.08
+      },
+      "graph": {
+        "retrieved_ids": [
+          "T1555.003",
+          "T1003",
+          "T1098.001",
+          "T1552.001",
+          "T1555"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 0.5,
+        "latency_ms": 48.748
+      },
+      "hybrid_graphrag": {
+        "retrieved_ids": [
+          "T1003",
+          "T1552",
+          "T1552.001",
+          "T1081",
+          "T1056.001"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "latency_ms": 256.267
+      }
+    }
+  },
+  {
+    "id": "Q05",
+    "query": "What technique represents phishing attacks?",
+    "expected_mitre_ids": [
+      "T1566"
+    ],
+    "results": {
+      "vector": {
+        "retrieved_ids": [
+          "T1566",
+          "T1598",
+          "T1598.004",
+          "T1598.003",
+          "T1566.004"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "latency_ms": 10.135
+      },
+      "graph": {
+        "retrieved_ids": [
+          "T1598.003",
+          "T1534",
+          "T1566",
+          "T1598",
+          "T1193"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 0.3333,
+        "latency_ms": 183.485
+      },
+      "hybrid_graphrag": {
+        "retrieved_ids": [
+          "T1566",
+          "T1598",
+          "T1598.003",
+          "T1534",
+          "T1598.004"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "latency_ms": 248.467
+      }
+    }
+  },
+  {
+    "id": "Q06",
+    "query": "Which technique involves attackers using legitimate accounts?",
+    "expected_mitre_ids": [
+      "T1078"
+    ],
+    "results": {
+      "vector": {
+        "retrieved_ids": [
+          "T1586",
+          "T1586.002",
+          "T1657",
+          "T1586.001",
+          "T1684.001"
+        ],
+        "precision_at_5": 0.0,
+        "recall_at_5": 0.0,
+        "mrr": 0.0,
+        "latency_ms": 9.011
+      },
+      "graph": {
+        "retrieved_ids": [
+          "T1574.001",
+          "T1055.009",
+          "T1563.002",
+          "T1076",
+          "T1598.003"
+        ],
+        "precision_at_5": 0.0,
+        "recall_at_5": 0.0,
+        "mrr": 0.0,
+        "latency_ms": 262.618
+      },
+      "hybrid_graphrag": {
+        "retrieved_ids": [
+          "T1586",
+          "T1586.002",
+          "T1078.001",
+          "T1078",
+          "T1586.003"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 0.25,
+        "latency_ms": 255.5
+      }
+    }
+  },
+  {
+    "id": "Q07",
+    "query": "Which MITRE technique represents remote services used by attackers?",
+    "expected_mitre_ids": [
+      "T1021"
+    ],
+    "results": {
+      "vector": {
+        "retrieved_ids": [
+          "T1210",
+          "T1563",
+          "T1108",
+          "T1583.004",
+          "T1133"
+        ],
+        "precision_at_5": 0.0,
+        "recall_at_5": 0.0,
+        "mrr": 0.0,
+        "latency_ms": 11.731
+      },
+      "graph": {
+        "retrieved_ids": [
+          "T1210",
+          "T1133",
+          "T1021",
+          "T1076",
+          "T1574.011"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 0.3333,
+        "latency_ms": 38.724
+      },
+      "hybrid_graphrag": {
+        "retrieved_ids": [
+          "T1210",
+          "T1133",
+          "T1563",
+          "T1108",
+          "T1021"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 0.2,
+        "latency_ms": 291.955
+      }
+    }
+  },
+  {
+    "id": "Q08",
+    "query": "Which technique is used to transfer tools or files into a compromised system?",
+    "expected_mitre_ids": [
+      "T1105"
+    ],
+    "results": {
+      "vector": {
+        "retrieved_ids": [
+          "T1570",
+          "T1105",
+          "T1070.004",
+          "T1608.002",
+          "T1071.002"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 0.5,
+        "latency_ms": 10.965
+      },
+      "graph": {
+        "retrieved_ids": [
+          "T1195.001",
+          "T1105",
+          "T1562.001",
+          "T1570",
+          "T1558.005"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 0.5,
+        "latency_ms": 287.731
+      },
+      "hybrid_graphrag": {
+        "retrieved_ids": [
+          "T1105",
+          "T1570",
+          "T1071.002",
+          "T1195.001",
+          "T1070.004"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "latency_ms": 253.097
+      }
+    }
+  },
+  {
+    "id": "Q09",
+    "query": "Which technique involves scheduled tasks or jobs for persistence?",
+    "expected_mitre_ids": [
+      "T1053"
+    ],
+    "results": {
+      "vector": {
+        "retrieved_ids": [
+          "T1168",
+          "T1053.007",
+          "T1053",
+          "T1053.003",
+          "T1053.001"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 0.3333,
+        "latency_ms": 9.855
+      },
+      "graph": {
+        "retrieved_ids": [
+          "T1197",
+          "T1053.005",
+          "T1053.002",
+          "T1179",
+          "T1168"
+        ],
+        "precision_at_5": 0.0,
+        "recall_at_5": 0.0,
+        "mrr": 0.0,
+        "latency_ms": 220.169
+      },
+      "hybrid_graphrag": {
+        "retrieved_ids": [
+          "T1053",
+          "T1053.007",
+          "T1053.001",
+          "T1053.003",
+          "T1197"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "latency_ms": 241.184
+      }
+    }
+  },
+  {
+    "id": "Q10",
+    "query": "Which MITRE technique represents command and scripting interpreter activity?",
+    "expected_mitre_ids": [
+      "T1059"
+    ],
+    "results": {
+      "vector": {
+        "retrieved_ids": [
+          "T1059",
+          "T1202",
+          "T1064",
+          "T1027.010"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "latency_ms": 9.158
+      },
+      "graph": {
+        "retrieved_ids": [
+          "T1059",
+          "T1202",
+          "T1064",
+          "T1027.010",
+          "T1562.003"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "latency_ms": 222.045
+      },
+      "hybrid_graphrag": {
+        "retrieved_ids": [
+          "T1059",
+          "T1202",
+          "T1027.010",
+          "T1064",
+          "T1070.003"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "latency_ms": 270.784
+      }
+    }
+  },
+  {
+    "id": "Q11",
+    "query": "Which MITRE technique covers execution via Windows Management Instrumentation?",
+    "expected_mitre_ids": [
+      "T1047"
+    ],
+    "results": {
+      "vector": {
+        "retrieved_ids": [
+          "T1064",
+          "T1202",
+          "T1057",
+          "T1035"
+        ],
+        "precision_at_5": 0.0,
+        "recall_at_5": 0.0,
+        "mrr": 0.0,
+        "latency_ms": 12.757
+      },
+      "graph": {
+        "retrieved_ids": [
+          "T1047",
+          "T1021.006",
+          "T1546.012",
+          "T1183",
+          "T1202"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "latency_ms": 198.684
+      },
+      "hybrid_graphrag": {
+        "retrieved_ids": [
+          "T1047",
+          "T1064",
+          "T1546.003",
+          "T1202",
+          "T1084"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "latency_ms": 296.689
+      }
+    }
+  },
+  {
+    "id": "Q12",
+    "query": "Which technique involves adversaries abusing system services for execution?",
+    "expected_mitre_ids": [
+      "T1569"
+    ],
+    "results": {
+      "vector": {
+        "retrieved_ids": [
+          "T1574.010",
+          "T1044",
+          "T1569",
+          "T1543",
+          "T1055"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 0.3333,
+        "latency_ms": 10.556
+      },
+      "graph": {
+        "retrieved_ids": [
+          "T1569",
+          "T1499.004",
+          "T1210",
+          "T1133",
+          "T1044"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "latency_ms": 218.834
+      },
+      "hybrid_graphrag": {
+        "retrieved_ids": [
+          "T1569",
+          "T1574.010",
+          "T1559.003",
+          "T1546",
+          "T1044"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "latency_ms": 239.771
+      }
+    }
+  },
+  {
+    "id": "Q13",
+    "query": "Which MITRE technique involves modifying Windows Registry run keys or startup folder for persistence?",
+    "expected_mitre_ids": [
+      "T1547.001"
+    ],
+    "results": {
+      "vector": {
+        "retrieved_ids": [
+          "T1060",
+          "T1547.001",
+          "T1547",
+          "T1543.003",
+          "T1112"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 0.5,
+        "latency_ms": 10.94
+      },
+      "graph": {
+        "retrieved_ids": [
+          "T1547.001",
+          "T1060",
+          "T1112",
+          "T1127.002",
+          "T1562.001"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "latency_ms": 279.196
+      },
+      "hybrid_graphrag": {
+        "retrieved_ids": [
+          "T1060",
+          "T1547.001",
+          "T1112",
+          "T1543.003",
+          "T1547"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 0.5,
+        "latency_ms": 279.337
+      }
+    }
+  },
+  {
+    "id": "Q14",
+    "query": "What technique represents creating or modifying system processes or services for persistence?",
+    "expected_mitre_ids": [
+      "T1543"
+    ],
+    "results": {
+      "vector": {
+        "retrieved_ids": [
+          "T1543",
+          "T1547",
+          "T1501",
+          "T1543.002",
+          "T1044"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "latency_ms": 10.015
+      },
+      "graph": {
+        "retrieved_ids": [
+          "T1569",
+          "T1501",
+          "T1543",
+          "T1562.004",
+          "T1044"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 0.3333,
+        "latency_ms": 231.739
+      },
+      "hybrid_graphrag": {
+        "retrieved_ids": [
+          "T1543",
+          "T1574.010",
+          "T1547",
+          "T1569",
+          "T1501"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "latency_ms": 241.561
+      }
+    }
+  },
+  {
+    "id": "Q15",
+    "query": "Which technique involves abusing sudo or sudoers file to elevate privileges on Unix systems?",
+    "expected_mitre_ids": [
+      "T1548.003"
+    ],
+    "results": {
+      "vector": {
+        "retrieved_ids": [
+          "T1548.003",
+          "T1169",
+          "T1166",
+          "T1548",
+          "T1206"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "latency_ms": 11.657
+      },
+      "graph": {
+        "retrieved_ids": [
+          "T1558.005",
+          "T1169",
+          "T1548.003",
+          "T1548.005",
+          "T1574.012"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 0.3333,
+        "latency_ms": 219.26
+      },
+      "hybrid_graphrag": {
+        "retrieved_ids": [
+          "T1169",
+          "T1548.003",
+          "T1206",
+          "T1558.005",
+          "T1166"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 0.5,
+        "latency_ms": 275.217
+      }
+    }
+  },
+  {
+    "id": "Q16",
+    "query": "Which MITRE technique covers process elevation control mechanism bypass such as UAC bypass?",
+    "expected_mitre_ids": [
+      "T1548.002"
+    ],
+    "results": {
+      "vector": {
+        "retrieved_ids": [
+          "T1548.002",
+          "T1548",
+          "T1088",
+          "T1134.004"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "latency_ms": 9.198
+      },
+      "graph": {
+        "retrieved_ids": [
+          "T1548.002",
+          "T1088",
+          "T1548",
+          "T1556",
+          "T1218.002"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "latency_ms": 48.211
+      },
+      "hybrid_graphrag": {
+        "retrieved_ids": [
+          "T1548",
+          "T1548.002",
+          "T1088",
+          "T1556",
+          "T1134.002"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 0.5,
+        "latency_ms": 245.013
+      }
+    }
+  },
+  {
+    "id": "Q17",
+    "query": "Which MITRE technique covers obfuscated files or information used to evade detection?",
+    "expected_mitre_ids": [
+      "T1027"
+    ],
+    "results": {
+      "vector": {
+        "retrieved_ids": [
+          "T1140",
+          "T1027.013",
+          "T1027",
+          "T1022",
+          "T1500"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 0.3333,
+        "latency_ms": 13.951
+      },
+      "graph": {
+        "retrieved_ids": [
+          "T1027",
+          "T1140",
+          "T1558.005",
+          "T1562.001",
+          "T1027.007"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "latency_ms": 263.123
+      },
+      "hybrid_graphrag": {
+        "retrieved_ids": [
+          "T1140",
+          "T1027",
+          "T1027.013",
+          "T1564.001",
+          "T1217"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 0.5,
+        "latency_ms": 222.865
+      }
+    }
+  },
+  {
+    "id": "Q18",
+    "query": "Which technique represents adversaries disabling or modifying security tools?",
+    "expected_mitre_ids": [
+      "T1562.001"
+    ],
+    "results": {
+      "vector": {
+        "retrieved_ids": [
+          "T1685",
+          "T1685.003",
+          "T1562",
+          "T1089",
+          "T1562.001"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 0.2,
+        "latency_ms": 9.291
+      },
+      "graph": {
+        "retrieved_ids": [
+          "T1089",
+          "T1562.001",
+          "T1518.001",
+          "T1553.006",
+          "T1562.002"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 0.5,
+        "latency_ms": 37.928
+      },
+      "hybrid_graphrag": {
+        "retrieved_ids": [
+          "T1685",
+          "T1089",
+          "T1562.001",
+          "T1685.003",
+          "T1562"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 0.3333,
+        "latency_ms": 241.558
+      }
+    }
+  },
+  {
+    "id": "Q19",
+    "query": "Which MITRE technique covers masquerading as legitimate software or system utilities?",
+    "expected_mitre_ids": [
+      "T1036"
+    ],
+    "results": {
+      "vector": {
+        "retrieved_ids": [
+          "T1036",
+          "T1127",
+          "T1588.002",
+          "T1195",
+          "T1518"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "latency_ms": 11.423
+      },
+      "graph": {
+        "retrieved_ids": [
+          "T1044",
+          "T1499.004",
+          "T1554",
+          "T1195.001",
+          "T1005"
+        ],
+        "precision_at_5": 0.0,
+        "recall_at_5": 0.0,
+        "mrr": 0.0,
+        "latency_ms": 210.002
+      },
+      "hybrid_graphrag": {
+        "retrieved_ids": [
+          "T1036",
+          "T1127",
+          "T1036.003",
+          "T1588.002",
+          "T1554"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "latency_ms": 221.164
+      }
+    }
+  },
+  {
+    "id": "Q20",
+    "query": "Which MITRE technique represents brute force attempts to guess account credentials?",
+    "expected_mitre_ids": [
+      "T1110"
+    ],
+    "results": {
+      "vector": {
+        "retrieved_ids": [
+          "T1110",
+          "T1110.001",
+          "T1003",
+          "T1201",
+          "T1586"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "latency_ms": 8.396
+      },
+      "graph": {
+        "retrieved_ids": [
+          "T1110",
+          "T1187",
+          "T1078.004",
+          "T1110.001",
+          "T1087"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "latency_ms": 195.463
+      },
+      "hybrid_graphrag": {
+        "retrieved_ids": [
+          "T1110",
+          "T1110.001",
+          "T1586",
+          "T1187",
+          "T1003"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "latency_ms": 257.599
+      }
+    }
+  },
+  {
+    "id": "Q21",
+    "query": "Which technique involves extracting credentials stored in web browsers?",
+    "expected_mitre_ids": [
+      "T1555.003"
+    ],
+    "results": {
+      "vector": {
+        "retrieved_ids": [
+          "T1555.003",
+          "T1503",
+          "T1555.004",
+          "T1056.001",
+          "T1555.005"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "latency_ms": 9.845
+      },
+      "graph": {
+        "retrieved_ids": [
+          "T1098.001",
+          "T1056.004",
+          "T1552.001",
+          "T1555.003",
+          "T1081"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 0.25,
+        "latency_ms": 180.298
+      },
+      "hybrid_graphrag": {
+        "retrieved_ids": [
+          "T1555.003",
+          "T1503",
+          "T1606",
+          "T1555.004",
+          "T1056.001"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "latency_ms": 216.881
+      }
+    }
+  },
+  {
+    "id": "Q22",
+    "query": "Which MITRE technique covers OS credential dumping from LSASS memory?",
+    "expected_mitre_ids": [
+      "T1003.001"
+    ],
+    "results": {
+      "vector": {
+        "retrieved_ids": [
+          "T1003.001",
+          "T1003.004",
+          "T1003",
+          "T1547.008"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "latency_ms": 9.512
+      },
+      "graph": {
+        "retrieved_ids": [
+          "T1555.003",
+          "T1003",
+          "T1003.001",
+          "T1098.001",
+          "T1552.001"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 0.3333,
+        "latency_ms": 43.585
+      },
+      "hybrid_graphrag": {
+        "retrieved_ids": [
+          "T1003.001",
+          "T1003",
+          "T1003.004",
+          "T1552.001",
+          "T1555.003"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "latency_ms": 246.035
+      }
+    }
+  },
+  {
+    "id": "Q23",
+    "query": "Which technique is used to discover active system network connections and listening ports?",
+    "expected_mitre_ids": [
+      "T1049"
+    ],
+    "results": {
+      "vector": {
+        "retrieved_ids": [
+          "T1016",
+          "T1049",
+          "T1016.001"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 0.5,
+        "latency_ms": 9.031
+      },
+      "graph": {
+        "retrieved_ids": [
+          "T1049",
+          "T1016",
+          "T1082",
+          "T1033",
+          "T1018"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "latency_ms": 196.355
+      },
+      "hybrid_graphrag": {
+        "retrieved_ids": [
+          "T1049",
+          "T1016",
+          "T1046",
+          "T1135",
+          "T1615"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "latency_ms": 204.424
+      }
+    }
+  },
+  {
+    "id": "Q24",
+    "query": "Which MITRE technique covers system information discovery such as OS version and hostname?",
+    "expected_mitre_ids": [
+      "T1082"
+    ],
+    "results": {
+      "vector": {
+        "retrieved_ids": [
+          "T1082",
+          "T1016",
+          "T1518",
+          "T1595.002"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "latency_ms": 10.835
+      },
+      "graph": {
+        "retrieved_ids": [
+          "T1082",
+          "T1018",
+          "T1614.001",
+          "T1614",
+          "T1016"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "latency_ms": 191.769
+      },
+      "hybrid_graphrag": {
+        "retrieved_ids": [
+          "T1082",
+          "T1518",
+          "T1217",
+          "T1018",
+          "T1016"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "latency_ms": 208.19
+      }
+    }
+  },
+  {
+    "id": "Q25",
+    "query": "Which technique represents system network configuration discovery using ipconfig or ifconfig?",
+    "expected_mitre_ids": [
+      "T1016"
+    ],
+    "results": {
+      "vector": {
+        "retrieved_ids": [
+          "T1602.002",
+          "T1016",
+          "T1049"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 0.5,
+        "latency_ms": 15.05
+      },
+      "graph": {
+        "retrieved_ids": [
+          "T1016",
+          "T1049",
+          "T1082",
+          "T1124",
+          "T1018"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "latency_ms": 43.709
+      },
+      "hybrid_graphrag": {
+        "retrieved_ids": [
+          "T1016",
+          "T1602.002",
+          "T1049",
+          "T1070.007",
+          "T1046"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "latency_ms": 218.937
+      }
+    }
+  },
+  {
+    "id": "Q26",
+    "query": "Which MITRE technique involves remote desktop protocol used for lateral movement?",
+    "expected_mitre_ids": [
+      "T1021.001"
+    ],
+    "results": {
+      "vector": {
+        "retrieved_ids": [
+          "T1219.002",
+          "T1021.005",
+          "T1021.001",
+          "T1076"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 0.3333,
+        "latency_ms": 8.365
+      },
+      "graph": {
+        "retrieved_ids": [
+          "T1076",
+          "T1021.001",
+          "T1021",
+          "T1210",
+          "T1133"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 0.5,
+        "latency_ms": 222.4
+      },
+      "hybrid_graphrag": {
+        "retrieved_ids": [
+          "T1219.002",
+          "T1021.001",
+          "T1076",
+          "T1021.005",
+          "T1570"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 0.5,
+        "latency_ms": 238.776
+      }
+    }
+  },
+  {
+    "id": "Q27",
+    "query": "Which technique involves lateral movement using SMB or Windows Admin Shares?",
+    "expected_mitre_ids": [
+      "T1021.002"
+    ],
+    "results": {
+      "vector": {
+        "retrieved_ids": [
+          "T1021.002",
+          "T1077",
+          "T1135",
+          "T1570",
+          "T1187"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "latency_ms": 9.386
+      },
+      "graph": {
+        "retrieved_ids": [
+          "T1021.002",
+          "T1570",
+          "T1077",
+          "T1053.002",
+          "T1175"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "latency_ms": 40.344
+      },
+      "hybrid_graphrag": {
+        "retrieved_ids": [
+          "T1021.002",
+          "T1077",
+          "T1570",
+          "T1135",
+          "T1070.001"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "latency_ms": 241.275
+      }
+    }
+  },
+  {
+    "id": "Q28",
+    "query": "Which MITRE technique covers screen capture or taking screenshots of desktop activity?",
+    "expected_mitre_ids": [
+      "T1113"
+    ],
+    "results": {
+      "vector": {
+        "retrieved_ids": [
+          "T1113",
+          "T1125",
+          "T1123",
+          "T1180",
+          "T1546.002"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "latency_ms": 14.083
+      },
+      "graph": {
+        "retrieved_ids": [
+          "T1113",
+          "T1076",
+          "T1125",
+          "T1056.002",
+          "T1564.003"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "latency_ms": 43.954
+      },
+      "hybrid_graphrag": {
+        "retrieved_ids": [
+          "T1113",
+          "T1125",
+          "T1180",
+          "T1546.002",
+          "T1123"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "latency_ms": 235.869
+      }
+    }
+  },
+  {
+    "id": "Q29",
+    "query": "Which MITRE technique covers command and control over web protocols such as HTTP or HTTPS?",
+    "expected_mitre_ids": [
+      "T1071.001"
+    ],
+    "results": {
+      "vector": {
+        "retrieved_ids": [
+          "T1094",
+          "T1071.001",
+          "T1048",
+          "T1071"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 0.5,
+        "latency_ms": 10.642
+      },
+      "graph": {
+        "retrieved_ids": [
+          "T1094",
+          "T1048",
+          "T1567.004",
+          "T1562.003",
+          "T1690"
+        ],
+        "precision_at_5": 0.0,
+        "recall_at_5": 0.0,
+        "mrr": 0.0,
+        "latency_ms": 46.331
+      },
+      "hybrid_graphrag": {
+        "retrieved_ids": [
+          "T1094",
+          "T1071.001",
+          "T1048",
+          "T1567.004",
+          "T1071"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 0.5,
+        "latency_ms": 234.868
+      }
+    }
+  },
+  {
+    "id": "Q30",
+    "query": "Which technique represents data destruction or wiping disk content for impact?",
+    "expected_mitre_ids": [
+      "T1485"
+    ],
+    "results": {
+      "vector": {
+        "retrieved_ids": [
+          "T1561.001",
+          "T1488",
+          "T1485",
+          "T1561"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 0.3333,
+        "latency_ms": 8.46
+      },
+      "graph": {
+        "retrieved_ids": [
+          "T1485",
+          "T1561.001",
+          "T1488",
+          "T1659",
+          "T1487"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "latency_ms": 40.673
+      },
+      "hybrid_graphrag": {
+        "retrieved_ids": [
+          "T1561.001",
+          "T1485",
+          "T1488",
+          "T1561",
+          "T1486"
+        ],
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 0.5,
+        "latency_ms": 225.876
+      }
+    }
+  }
+]

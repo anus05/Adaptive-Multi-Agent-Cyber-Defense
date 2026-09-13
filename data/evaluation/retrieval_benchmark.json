@@ -1,0 +1,52 @@
+[
+  {
+    "id": "Q01",
+    "query": "How can attackers execute commands using PowerShell?",
+    "expected_mitre_ids": ["T1059.001"]
+  },
+  {
+    "id": "Q02",
+    "query": "What MITRE technique represents Windows Command Shell execution?",
+    "expected_mitre_ids": ["T1059.003"]
+  },
+  {
+    "id": "Q03",
+    "query": "Which technique involves injecting code into another running process?",
+    "expected_mitre_ids": ["T1055"]
+  },
+  {
+    "id": "Q04",
+    "query": "Which MITRE technique covers credential dumping from operating systems?",
+    "expected_mitre_ids": ["T1003"]
+  },
+  {
+    "id": "Q05",
+    "query": "What technique represents phishing attacks?",
+    "expected_mitre_ids": ["T1566"]
+  },
+  {
+    "id": "Q06",
+    "query": "Which technique involves attackers using legitimate accounts?",
+    "expected_mitre_ids": ["T1078"]
+  },
+  {
+    "id": "Q07",
+    "query": "Which MITRE technique represents remote services used by attackers?",
+    "expected_mitre_ids": ["T1021"]
+  },
+  {
+    "id": "Q08",
+    "query": "Which technique is used to transfer tools or files into a compromised system?",
+    "expected_mitre_ids": ["T1105"]
+  },
+  {
+    "id": "Q09",
+    "query": "Which technique involves scheduled tasks or jobs for persistence?",
+    "expected_mitre_ids": ["T1053"]
+  },
+  {
+    "id": "Q10",
+    "query": "Which MITRE technique represents command and scripting interpreter activity?",
+    "expected_mitre_ids": ["T1059"]
+  }
+]
