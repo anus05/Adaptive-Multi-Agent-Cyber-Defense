@@ -4,3 +4,4 @@ __pycache__/
 *.pyc
 data/vector_db/
 chroma_db/
+*.dump
