@@ -1,0 +1,46 @@
+{
+  "evaluation_timestamp": "2026-09-17T15:19:16.009117+00:00",
+  "incident_id": "EVAL-001",
+  "pipeline_success": true,
+  "execution_time_seconds": 94.041,
+  "detection": {
+    "status": true,
+    "is_suspicious": true,
+    "severity": "medium",
+    "confidence": 0.9
+  },
+  "threat_intelligence": {
+    "status": "received",
+    "source": "Member 2 GraphRAG API",
+    "retrieval_available": true
+  },
+  "correlation": {
+    "status": true,
+    "confidence": 0.1
+  },
+  "response": {
+    "status": true,
+    "priority": null,
+    "recommendation_only": null
+  },
+  "explanation": {
+    "status": true,
+    "has_summary": true
+  },
+  "feedback": {
+    "status": true
+  },
+  "overall_confidence": 0.8,
+  "agent_message_count": 8,
+  "limitations": [
+    "The duration over which the 8 failed attempts occurred is not specified.",
+    "No information is provided about the usernames attempted during the logins.",
+    "Context regarding the network location (e.g., internal/external) of the source and destination IPs is not provided, beyond their private IP ranges.",
+    "The GraphRAG system did not return threat intelligence directly related to brute-force attacks or multiple failed login attempts via SSH.",
+    "The duration over which the 8 failed attempts occurred is not specified, which could impact the perceived intensity of the attack.",
+    "No information is provided about the usernames attempted during the logins, which could aid in identifying specific targets or patterns.",
+    "Context regarding the network location (e.g., internal/external) of the source and destination IPs is not provided, beyond their private IP ranges, limiting understanding of the attack's origin and potential scope.",
+    "The GraphRAG system did not return threat intelligence directly related to brute-force attacks or multiple failed login attempts via SSH, limiting specific threat actor or malware attribution.",
+    "A disagreement was detected between agent outputs and additional reasoning was requested."
+  ]
+}

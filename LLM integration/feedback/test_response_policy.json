@@ -1,0 +1,74 @@
+{
+    "history": [
+        {
+            "incident_id": "INC-001",
+            "recommendation": "Increase monitoring",
+            "action": "Increase monitoring on SSH service",
+            "outcome": "Suspicious activity was confirmed.",
+            "success": true,
+            "analyst_feedback": "Useful recommendation.",
+            "confidence": 0.9
+        },
+        {
+            "incident_id": "INC-002",
+            "recommendation": "Increase monitoring",
+            "action": "Increase monitoring on SSH service",
+            "outcome": "No further suspicious activity observed.",
+            "success": true,
+            "analyst_feedback": "Monitoring was effective.",
+            "confidence": 0.85
+        },
+        {
+            "incident_id": "INC-003",
+            "recommendation": "Block IP",
+            "action": "Block suspicious source IP",
+            "outcome": "Suspicious activity continued.",
+            "success": false,
+            "analyst_feedback": "Blocking this IP did not stop the activity.",
+            "confidence": 0.8
+        },
+        {
+            "incident_id": "INC-001",
+            "recommendation": "Increase monitoring",
+            "action": "Increase monitoring on SSH service",
+            "outcome": "Suspicious activity was confirmed.",
+            "success": true,
+            "analyst_feedback": "Useful recommendation.",
+            "confidence": 0.9
+        },
+        {
+            "incident_id": "INC-002",
+            "recommendation": "Increase monitoring",
+            "action": "Increase monitoring on SSH service",
+            "outcome": "No further suspicious activity observed.",
+            "success": true,
+            "analyst_feedback": "Monitoring was effective.",
+            "confidence": 0.85
+        },
+        {
+            "incident_id": "INC-003",
+            "recommendation": "Block IP",
+            "action": "Block suspicious source IP",
+            "outcome": "Suspicious activity continued.",
+            "success": false,
+            "analyst_feedback": "Blocking this IP did not stop the activity.",
+            "confidence": 0.8
+        }
+    ],
+    "policy": {
+        "Increase monitoring": {
+            "success_count": 4,
+            "failure_count": 0,
+            "total_count": 4,
+            "success_rate": 1.0,
+            "priority_adjustment": 1
+        },
+        "Block IP": {
+            "success_count": 0,
+            "failure_count": 2,
+            "total_count": 2,
+            "success_rate": 0.0,
+            "priority_adjustment": -1
+        }
+    }
+}

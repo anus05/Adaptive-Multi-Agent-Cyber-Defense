@@ -1,0 +1,31 @@
+{
+    "history": [
+        {
+            "incident_id": "INC-TEST-001",
+            "recommendation": "Increase monitoring",
+            "action": "Increase monitoring on SSH service",
+            "outcome": "Attack activity was detected and contained.",
+            "success": true,
+            "analyst_feedback": "Recommendation was useful.",
+            "confidence": 0.9
+        },
+        {
+            "incident_id": "INC-TEST-002",
+            "recommendation": "Increase monitoring",
+            "action": "Increase monitoring on SSH service",
+            "outcome": "No further suspicious activity observed.",
+            "success": true,
+            "analyst_feedback": "Monitoring helped confirm the activity.",
+            "confidence": 0.85
+        }
+    ],
+    "policy": {
+        "Increase monitoring": {
+            "success_count": 2,
+            "failure_count": 0,
+            "total_count": 2,
+            "success_rate": 1.0,
+            "priority_adjustment": 1
+        }
+    }
+}

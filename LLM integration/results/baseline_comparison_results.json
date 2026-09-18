@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-09-17T15:33:09.428194+00:00",
+  "evaluation_note": "Comparison uses measured execution time and pipeline completion. No accuracy or F1 score is reported because this evaluation does not contain ground-truth labels.",
+  "baseline": {
+    "name": "Detection Agent Only",
+    "execution_time_seconds": 8.895,
+    "completed": true,
+    "is_suspicious": true,
+    "confidence": 0.9
+  },
+  "proposed_system": {
+    "name": "Proposed Multi-Agent Framework",
+    "execution_time_seconds": 58.266,
+    "completed": true,
+    "overall_confidence": 0.8,
+    "agent_message_count": 8
+  }
+}
