@@ -181,7 +181,10 @@ def extract_techniques(
     )
 
     techniques = safe_list(
-        correlation.get("techniques")
+        # AttackCorrelationAgent writes "retrieved_techniques";
+        # fall back to "techniques" for backward compatibility.
+        correlation.get("retrieved_techniques")
+        or correlation.get("techniques")
     )
 
     if techniques:

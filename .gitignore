@@ -1,7 +1,11 @@
 .env
+.env.local
 .venv/
 __pycache__/
 *.pyc
+.pytest_cache/
+feedback_history.json
+*.log
 data/vector_db/
 chroma_db/
 *.dump

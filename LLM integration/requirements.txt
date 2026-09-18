@@ -1,2 +1,11 @@
-google-genai
-python-dotenv
+# Core LLM integration dependencies
+google-genai==2.24.0
+python-dotenv==1.2.2
+
+# API server (api/agents_api.py)
+fastapi==0.135.1
+pydantic==2.12.5
+uvicorn==0.41.0
+
+# Development / testing
+pytest==9.1.1
