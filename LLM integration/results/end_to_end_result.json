@@ -1,0 +1,34 @@
+{
+  "timestamp": "2026-09-19T07:21:03.169460+00:00",
+  "incident_id": "E2E-001",
+  "pipeline_stage": "pipeline_complete",
+  "pipeline_complete": true,
+  "execution_time_seconds": 77.382,
+  "components": {
+    "detection": true,
+    "threat_intelligence": true,
+    "correlation": true,
+    "response": true,
+    "explanation": true,
+    "feedback": true
+  },
+  "overall_confidence": 0.65,
+  "agent_message_count": 8,
+  "limitations": [
+    "Alert lacks timestamps or time windows for the failed attempts.",
+    "Usernames targeted during the attempts are missing.",
+    "No log data indicating whether subsequent login attempts succeeded.",
+    "No historical baseline for normal connection activity between these two IPs.",
+    "Retrieved knowledge from GraphRAG contains techniques (T1554, T1187, T1681, T1649) that lack supporting observed evidence in the alert.",
+    "Lack of timestamps or time window for the failed authentication attempts.",
+    "Targeted usernames during the SSH attempts are unknown in the observed telemetry.",
+    "No log evidence confirming whether any subsequent login attempt succeeded.",
+    "Lack of historical traffic baselines between source 192.168.1.10 and destination 10.0.0.5.",
+    "Retrieved threat intelligence techniques (T1554, T1187, T1681, T1649) lack supporting observed evidence in the alert.",
+    "Alert lacks timestamps or time windows for the failed SSH attempts.",
+    "Usernames targeted during the attempts are missing from the telemetry.",
+    "No log data indicating whether any subsequent login attempts succeeded.",
+    "No historical baseline for normal connection activity between 192.168.1.10 and 10.0.0.5.",
+    "A disagreement was detected between agent outputs and additional reasoning was requested."
+  ]
+}
