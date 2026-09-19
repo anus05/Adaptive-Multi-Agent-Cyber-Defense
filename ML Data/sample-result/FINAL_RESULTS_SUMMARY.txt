@@ -1,0 +1,144 @@
+======================================================================
+MEMBER 1 — FINAL RESULTS SUMMARY
+Threat Detection and Real-Time Event Processing
+======================================================================
+
+--- DATASET 1: CSE-CIC-IDS2018 ---
+File: 02-14-2018.csv
+Raw shape: 1048575 rows x 80 columns
+
+--- DATASET 2: TON_IoT ---
+File: Train_Test_Network.csv
+Raw shape: 461043 rows x 45 columns
+
+--- PREPROCESSING SUMMARY ---
+CIC-IDS2018: dropped 225628 duplicate rows, 3821 rows with missing/infinite values, 14 redundant correlated features, and 1 leaky feature ('Dst Port')
+  Final shape: (819126, 65)
+TON_IoT: dropped 11071 duplicate rows, 2 redundant correlated features
+  Final shape: (449972, 43)
+
+CIC-IDS2018 class distribution:
+Label
+Benign            662458
+SSH-Bruteforce    117322
+FTP-BruteForce     39346
+
+TON_IoT class distribution:
+type
+normal        288929
+scanning       20000
+dos            20000
+injection      20000
+ddos           20000
+password       20000
+xss            20000
+ransomware     20000
+backdoor       20000
+mitm            1043
+
+--- SPLITS ---
+CIC-IDS2018 train/val/test: 573388 / 122869 / 122869
+TON_IoT train/val/test: 2022500 (post-SMOTE) / 67496 / 67496
+
+--- MODEL COMPARISON (validation set) ---
+    dataset               model  train_time_s  latency_ms  accuracy  precision   recall  f1_weighted  f1_macro
+CIC-IDS2018 Logistic Regression          6.41     0.00023  0.999528   0.999529 0.999528     0.999528  0.999035
+CIC-IDS2018       Random Forest        210.32     0.00789  1.000000   1.000000 1.000000     1.000000  1.000000
+CIC-IDS2018             XGBoost         71.44     0.00752  1.000000   1.000000 1.000000     1.000000  1.000000
+    TON_IoT Logistic Regression       1272.78     0.00025  0.987184   0.987978 0.987184     0.987130  0.969554
+    TON_IoT       Random Forest        595.11     0.02234  0.999911   0.999911 0.999911     0.999911  0.999800
+    TON_IoT             XGBoost        485.77     0.02362  1.000000   1.000000 1.000000     1.000000  1.000000
+
+Best model — CIC-IDS2018: Random Forest (macro F1 = 1.0000)
+Best model — TON_IoT: XGBoost (macro F1 = 1.0000)
+
+--- FINAL TEST SET RESULTS ---
+
+CIC-IDS2018 (Random Forest, leakage-free — 'Dst Port' removed):
+                precision    recall  f1-score   support
+
+        Benign       1.00      1.00      1.00     99369
+FTP-BruteForce       1.00      1.00      1.00      5902
+SSH-Bruteforce       1.00      1.00      1.00     17598
+
+      accuracy                           1.00    122869
+     macro avg       1.00      1.00      1.00    122869
+  weighted avg       1.00      1.00      1.00    122869
+
+
+TON_IoT (XGBoost):
+              precision    recall  f1-score   support
+
+    backdoor       1.00      1.00      1.00      3000
+        ddos       1.00      1.00      1.00      3000
+         dos       1.00      1.00      1.00      3000
+   injection       1.00      1.00      1.00      3000
+        mitm       1.00      1.00      1.00       157
+      normal       1.00      1.00      1.00     43339
+    password       1.00      1.00      1.00      3000
+  ransomware       1.00      1.00      1.00      3000
+    scanning       1.00      1.00      1.00      3000
+         xss       1.00      1.00      1.00      3000
+
+    accuracy                           1.00     67496
+   macro avg       1.00      1.00      1.00     67496
+weighted avg       1.00      1.00      1.00     67496
+
+
+Top CIC-IDS2018 features (post leakage-fix): [('Fwd Seg Size Min', 0.1551), ('Init Fwd Win Byts', 0.0837), ('Bwd Pkts/s', 0.0691), ('Fwd Act Data Pkts', 0.0581), ('Timestamp', 0.0565), ('Fwd Header Len', 0.0467), ('Init Bwd Win Byts', 0.0452), ('Flow IAT Max', 0.0426), ('Flow Duration', 0.0422), ('Bwd Header Len', 0.0408)]
+
+Top TON_IoT features: [('conn_state', 0.1638), ('src_bytes', 0.1547), ('label', 0.1354), ('src_port', 0.1199), ('src_ip', 0.1038), ('service', 0.085), ('ts', 0.0633), ('dns_rcode', 0.0542), ('dst_port', 0.0359), ('dst_ip', 0.0252)]
+
+--- INFERENCE LATENCY (per-sample, validation set) ---
+CIC-IDS2018 — Logistic Regression: 0.00023 ms/sample
+CIC-IDS2018 — Random Forest: 0.00789 ms/sample
+CIC-IDS2018 — XGBoost: 0.00752 ms/sample
+TON_IoT — Logistic Regression: 0.00025 ms/sample
+TON_IoT — Random Forest: 0.02234 ms/sample
+TON_IoT — XGBoost: 0.02362 ms/sample
+
+--- LEAKAGE DIAGNOSTIC (post-fix, for methodology section) ---
+Top single-feature predictive accuracy on CIC-IDS2018 (leakage-free feature set): [('Fwd Seg Size Min', 0.9965067284282196), ('Init Bwd Win Byts', 0.9628680753695578), ('Init Fwd Win Byts', 0.9515005545982825)]
+Note: 'Dst Port' was identified as a leakage source (99.95% standalone accuracy)
+and removed prior to final training. See methodology section.
+
+======================================================================
+KNOWN DATASET LIMITATIONS
+======================================================================
+
+The near-perfect classification performance observed here (macro F1 =
+1.0000 for Random Forest on CSE-CIC-IDS2018, and
+1.0000 for XGBoost on TON_IoT) should be interpreted with
+caution rather than as evidence of production-ready detection capability.
+
+CSE-CIC-IDS2018: The single-feature diagnostic above shows individual
+flow features achieving near-perfect standalone predictive accuracy
+(top: 'Fwd Seg Size Min' at 99.65%). An earlier pipeline version also found
+'Dst Port' alone achieved 99.95% accuracy (an artifact of brute-force
+traffic using fixed ports 21/22), which was removed before final
+training. This pattern is consistent with published findings of
+systematic errors in the CIC-IDS dataset family:
+
+  - Engelen, Rimmer & Joosen (2021), "Troubleshooting an Intrusion
+    Detection Dataset: the CICIDS2017 Case Study," IEEE S&P Workshops,
+    found >25% of flows are "meaningless artefacts" and confirmed the
+    issue persists in CSE-CIC-IDS2018.
+  - Liu, Engelen, Lynar, Essam & Joosen (2022), "Error Prevalence in
+    NIDS Datasets: A Case Study on CIC-IDS-2017 and CSE-CIC-IDS-2018,"
+    IEEE CNS, further characterized these errors.
+  - Cantone et al. (2024) found models trained/evaluated on
+    CSE-CIC-IDS2018 achieve near-perfect in-dataset accuracy but
+    near random-chance performance on external datasets, indicating
+    in-dataset results substantially overstate real-world generalization.
+
+TON_IoT: A synthetic/lab-generated dataset; the single-feature check
+found no feature exceeding 51.5% standalone accuracy, so near-100%
+scores here likely reflect low real-world noise in controlled-generation
+data rather than a specific leakage source. Real-world performance is
+expected to be lower.
+
+Implication: these results validate the detection pipeline's
+architecture (cleaning, leakage diagnosis, model comparison, real-time
+scoring) rather than claiming generalizable real-world accuracy. Future
+work should use cross-dataset validation (train on one dataset, test on
+an independently generated one) for a realistic generalization estimate.

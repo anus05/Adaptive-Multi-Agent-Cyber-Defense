@@ -1,11 +1,25 @@
+# Datasets — too large for GitHub, download via kaggle_download_to_drive.py
+ML Data/dataset/
+**/cic_ids2018/*.csv
+**/ton_iot/*.csv
+02-*.csv
+03-*.csv
+Train_Test_Network.csv
+
+# Trained models / artifacts — regenerate via scripts, don't commit binaries
+**/models/*.joblib
+**/artifacts/*.joblib
+paper_outputs/*.png
+paper_outputs/*.pdf
+
+# Environment / secrets — never commit these
 .env
 .env.local
-.venv/
+
+# Python
 __pycache__/
 *.pyc
 .pytest_cache/
+
+# Neo4j / runtime data
 feedback_history.json
-*.log
-data/vector_db/
-chroma_db/
-*.dump
