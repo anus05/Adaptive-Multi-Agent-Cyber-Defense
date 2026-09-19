@@ -1,0 +1,37 @@
+{
+  "timestamp": "2026-09-19T07:29:13.831511+00:00",
+  "incident_id": "E2E-001",
+  "pipeline_stage": "pipeline_complete",
+  "pipeline_complete": true,
+  "execution_time_seconds": 212.011,
+  "components": {
+    "detection": true,
+    "threat_intelligence": true,
+    "correlation": true,
+    "response": true,
+    "explanation": true,
+    "feedback": true
+  },
+  "overall_confidence": 0.75,
+  "agent_message_count": 8,
+  "limitations": [
+    "No target account username(s) provided in the alert.",
+    "Time window or timestamp for the attempts is not specified.",
+    "No context on whether any subsequent authentication attempt succeeded.",
+    "Lack of historical baseline for host 192.168.1.10.",
+    "Target account username(s) were not provided in the detection evidence.",
+    "Time window and timestamps for the attempts were not specified.",
+    "Lack of historical baseline or host profile for 192.168.1.10.",
+    "Retrieved knowledge graph results did not contain explicit Brute Force (T1110) technique entries directly mapping to SSH password guessing.",
+    "Target account username(s) were not provided in the alert evidence.",
+    "Timestamps and exact time windows for the login attempts are unknown.",
+    "No telemetry is available to confirm whether any subsequent login attempt was successful.",
+    "Lack of historical baseline or host profile for 192.168.1.10 to evaluate normal activity.",
+    "No target account username(s) were provided in the alert evidence.",
+    "Timestamps and time window for the attempts were not specified.",
+    "Lack of telemetry confirming whether any subsequent login attempt succeeded.",
+    "Lack of historical baseline or activity profile for source IP 192.168.1.10.",
+    "Retrieved knowledge graph did not contain explicit Brute Force (T1110) entries mapping directly to SSH.",
+    "A disagreement was detected between agent outputs and additional reasoning was requested."
+  ]
+}
