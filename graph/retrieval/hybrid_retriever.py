@@ -278,6 +278,9 @@ class HybridRetriever:
             query
         )
 
+        if not getattr(self.graph, "driver", None):
+            return []
+
         if not terms:
             return []
 
