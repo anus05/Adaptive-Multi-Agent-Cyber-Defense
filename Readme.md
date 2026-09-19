@@ -1,6 +1,5 @@
 # Adaptive Multi-Agent Cyber Defence Using GraphRAG and Large Language Models for Explainable Real-Time Threat Intelligence
 
-> **AUTHOR EDIT AREA — Replace the placeholders below before publication.**
 
 ### Authors
 1. **ANUSMITA RAY CHAUDHURI**
