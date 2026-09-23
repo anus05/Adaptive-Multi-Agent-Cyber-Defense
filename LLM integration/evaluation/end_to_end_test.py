@@ -1,13 +1,16 @@
 import json
+import sys
 import time
 from pathlib import Path
 from datetime import datetime, timezone
 
+BASE_DIR = Path(__file__).resolve().parents[1]
+if str(BASE_DIR) not in sys.path:
+    sys.path.insert(0, str(BASE_DIR))
+
 from orchestration.state import AgentState
 from orchestration.supervisor import Supervisor
 
-
-BASE_DIR = Path(__file__).resolve().parents[1]
 RESULTS_DIR = BASE_DIR / "results"
 RESULTS_DIR.mkdir(exist_ok=True)
 

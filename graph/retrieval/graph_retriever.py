@@ -36,20 +36,24 @@ NEO4J_DATABASE = os.getenv(
 class GraphRetriever:
 
     def __init__(self):
-
-        self.driver = GraphDatabase.driver(
-            NEO4J_URI,
-            auth=(
-                NEO4J_USERNAME,
-                NEO4J_PASSWORD
+        self.driver = None
+        try:
+            self.driver = GraphDatabase.driver(
+                NEO4J_URI,
+                auth=(
+                    NEO4J_USERNAME,
+                    NEO4J_PASSWORD
+                )
             )
-        )
-
-        self.driver.verify_connectivity()
-
-        print(
-            "[OK] Graph Retriever connected to Neo4j"
-        )
+            self.driver.verify_connectivity()
+            print(
+                "[OK] Graph Retriever connected to Neo4j"
+            )
+        except Exception as e:
+            self.driver = None
+            print(
+                f"[WARNING] Graph Retriever could not connect to Neo4j ({e}). Running in vector-only fallback mode."
+            )
 
 
     # ========================================================
@@ -57,8 +61,8 @@ class GraphRetriever:
     # ========================================================
 
     def close(self):
-
-        self.driver.close()
+        if self.driver:
+            self.driver.close()
 
 
     # ========================================================
@@ -69,6 +73,8 @@ class GraphRetriever:
         self,
         name
     ):
+        if not self.driver:
+            return []
 
         query = """
         MATCH (n)
@@ -104,6 +110,8 @@ class GraphRetriever:
         self,
         name
     ):
+        if not self.driver:
+            return []
 
         query = """
         MATCH (n)-[r]->(m)
@@ -145,6 +153,8 @@ class GraphRetriever:
         self,
         name
     ):
+        if not self.driver:
+            return []
 
         query = """
         MATCH (n)<-[r]-(m)
@@ -187,6 +197,8 @@ class GraphRetriever:
         name,
         max_hops=3
     ):
+        if not self.driver:
+            return []
 
         # Keep the maximum traversal controlled.
         max_hops = min(
@@ -242,6 +254,8 @@ class GraphRetriever:
         self,
         external_id
     ):
+        if not self.driver:
+            return []
 
         query = """
         MATCH (n)
@@ -270,6 +284,7 @@ class GraphRetriever:
                 record.data()
                 for record in result
             ]
+
 
 
 # ============================================================
